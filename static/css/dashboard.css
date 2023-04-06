@@ -1,0 +1,550 @@
+/*
+
+*/
+/*************************************
+ * generic styling for ALS elements
+ ************************************//*
+
+.als-container {
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.als-viewport {
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+.als-wrapper {
+	position: relative;
+	list-style: none;
+}
+
+.als-item {
+	position: relative;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+}
+
+.als-prev, .als-next {
+	position: absolute;
+	cursor: pointer;
+	clear: both;
+}
+
+*/
+/*************************************
+ * specific styling for #demo2
+ ************************************//*
+
+
+.alsWrap {
+    width: 100%;
+    height: 87px;
+    position: relative;
+}
+#demo2 {
+width: 100%;
+margin: 0 auto;
+}
+
+#demo2 .als-item {
+	min-height: 80px;
+	width: 175px;
+	text-align: center;
+}
+
+#demo2 .als-item img {
+	display: block;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+#demo2 .als-prev, #demo2 .als-next {
+	top: 28px;
+}
+
+#demo2 .als-prev {
+	left: 1.7%;
+}
+
+#demo2 .als-next {
+	right: 1.7%;
+}
+
+
+.botConTotalNum{
+    font-size: 19px;
+    font-weight: 700;
+    color: #7f7f7f;
+    float: left;
+}
+
+.botConNum{
+    font-size: 14px;
+    color: #ff9000;
+    margin-top: 3px;
+}
+
+.botConNum0{
+    font-size: 14px;
+    color: #000;
+    margin-top: 3px;
+}
+
+.conBotTop{
+    margin-bottom: 10px;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 0.8em;
+    min-height: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.conBotBot{
+    width: 100%;
+    height: 20px;
+    margin-left: 38%;
+}
+
+.conBotImg{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.conBotImg a{
+    text-decoration: none;
+}
+
+.conBotIcon{
+    display: block;
+    line-height: 6px;
+    color: #7f7f7f;
+}
+
+#barChart{
+    font-size: 11px;;
+}
+
+#barChart .axis path,
+.axis line{
+    fill: none;
+    stroke: #919191;
+    shape-rendering: crispEdges;
+}
+
+#barLegend svg {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    font-size: 11px;
+    margin-left: 300px;
+    top: 85px;
+    left: 41px;
+}
+
+#barLegend text {
+    fill: #858796;
+}
+
+#lineChart {
+    font-size: 11px;
+}
+
+#lineChart path {
+	fill: none;
+	stroke: #919191;
+}
+
+#lineChart .domain {
+    shape-rendering: crispEdges;
+}
+
+#lineChart .line-group{
+	stroke-width: 3px;
+}
+
+#lineLegend svg {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    font-size: 11px;
+    margin-left: 300px;
+    top: 250px;
+}
+
+#lineLegend text {
+    fill: #858796;
+}
+
+#pieChart text{
+    pointer-events: none;
+    fill: #717384;
+}
+
+#koreaMap path {
+    stroke-linecap:round; stroke-linejoin:round;
+}
+
+#koreaMap svg {
+    width: 920px;
+    height: 580px;
+    margin: 0px auto 5px;
+}
+
+#koreaMap .municipality-label {
+ fill: #000000; font-size: 12px; font-weight: 500; text-anchor: middle; pointer-events: none;
+}
+
+#koreaMap path { fill: #d5d6dd; stroke: #gray; stroke-width: 0.5px;
+}
+
+#koreaMap text { font-family: "Nanum Gothic"; font-size: 10px; pointer-events: none;
+fill: #717384;
+}
+
+}
+
+#koreaMap .municipality-label {
+ fill: #000000; font-size: 12px; font-weight: 500; text-anchor: middle; pointer-events: none;
+}
+#koreaMap .placeCircle { fill: #fff; stroke: gray; opacity: 0.8; stroke-width: 1px;
+}
+#koreaMap .placeName {
+display: none; fill: #000000;
+font-family: "Nanum Gothic"; font-size: 10px; text-anchor: middle; font-weight: bold;
+stroke-width: 0.2px; stroke: #fff;
+}
+#koreaMap path { fill: #d5d6dd; stroke: #gray; stroke-width: 0.5px;
+}
+*/
+/* #koreaMap path:hover { fill: #ffcc00; } *//*
+
+#koreaMap text { font-family: "Nanum Gothic"; font-size: 10px; pointer-events: none;
+}
+#koreaMap #elecrail path { fill: none; stroke: #ff9900; stroke-width: 0.5px; opacity: 0.95;
+}
+#koreaMap #road path { fill: none; stroke: #df7454; stroke-width: 1px; opacity: 1;
+}
+#koreaMap #maps #path-99 { fill: #fff;
+}
+
+
+#koreaPopMap path {
+    stroke-linecap:round; stroke-linejoin:round;
+}
+#koreaPopMap .reloadButton {
+    border: solid 1px #000; width: auto; color: #000; background-color: #fff;
+    padding: 5px 7px; font-weight: bold; border-radius: 6px;
+    position: absolute; top: 20px; left: 20px;
+}
+#koreaPopMap .reloadButton:hover {
+    border: solid 1px #f00; color: #fff; background-color: #000066; cursor: pointer;
+}
+#koreaPopMap svg#legendsForKoreaMap {
+    width: 130px; height: 60px; border: 0; margin: 0; padding: 0;
+    position: absolute; top: 20px; left: 450px; border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+}
+#koreaPopMap svg#legendsForKoreaMap text {
+    fill: #000000; stroke: #000000; font-family: "Nanum Gothic";
+    font-size: 10px; text-anchor: left; font-weight: bold; stroke-width: 0;
+}
+#koreaPopMap svg {
+    width: 100%;
+    height: 820px;
+    margin: 0px auto 5px;
+}
+#koreaPopMap #river #hanriver { fill: #00ffff; opacity: 0.3;
+}
+#koreaPopMap .municipality { fill: lightgray; stroke: gray; stroke-width: 1px; fill-opacity: 1; stroke-opacity: 0.5;
+}
+#koreaPopMap .municipality-label {
+ fill: #000000; font-size: 12px; font-weight: 500; text-anchor: middle; pointer-events: none;
+}
+#koreaPopMap .placeCircle { fill: #fff; stroke: gray; opacity: 0.8; stroke-width: 1px;
+}
+#koreaPopMap .placeName {
+display: none; fill: #000000;
+font-family: "Nanum Gothic"; font-size: 10px; text-anchor: middle; font-weight: bold;
+stroke-width: 0.2px; stroke: #fff;
+}
+#koreaPopMap path { fill: lightgray; stroke: #gray; stroke-width: 0.5px;
+}
+*/
+/* #koreaPopMap path:hover { fill: #ffcc00; } *//*
+
+#koreaPopMap text { font-family: "Nanum Gothic"; font-size: 10px; pointer-events: none;
+}
+#koreaPopMap #elecrail path { fill: none; stroke: #ff9900; stroke-width: 0.5px; opacity: 0.95;
+}
+#koreaPopMap #road path { fill: none; stroke: #df7454; stroke-width: 1px; opacity: 1;
+}
+#koreaPopMap #maps #path-99 { fill: #fff;
+}
+
+#guMap{
+    width: 900px;
+    height: 571px;
+    margin-left: 5%;
+    float: left;
+    margin-top: 22px;
+}
+
+#guMap .link line {
+  stroke: #696969;
+}
+
+#guMap .link line.separator {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+#guMap .node circle {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+#guMap .node text {
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+
+
+#dongMap{
+    width:  100%;
+    height: 100%;
+    margin-left: 18%;
+}
+
+#dongMap .link {
+    stroke: #e08a0b;
+}
+
+#dongMap .node text {
+    pointer-events: none;
+    font: 10px sans-serif;
+}
+
+#dongMap @font-face {
+    font-family: 'overwatch';
+    src: url('fonts/koverwatch.woff2');
+}
+*/
+
+
+/*************************************
+ * generic styling for ALS elements
+ ************************************/
+/*
+.als-container {
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	z-index: 0;
+}
+
+.als-viewport {
+    display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+	width: 100%;
+}
+
+.als-wrapper {
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	padding-left: 0rem;
+}
+
+.als-item {
+	position: relative;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	overflow: hidden;
+}
+
+.als-prev, .als-next {
+	position: absolute;
+	cursor: pointer;
+	clear: both;
+	z-index: 10;
+}
+*/
+
+
+/*************************************
+ * specific styling for #demo2
+ ************************************/
+/*
+#demo2 {
+    overflow: hidden;
+}
+
+#demo2 .als-item {
+	margin: 0px 20px;
+	padding: 4px 0px;
+	min-height: 82px;
+	width: 174px;
+	text-align: center;
+}
+
+#demo2 .als-item img {
+	display: block;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+#demo2 .als-prev, #demo2 .als-next {
+	top: 28px;
+}
+
+#demo2 .als-prev {
+	left: 1.7%;
+}
+
+#demo2 .als-next {
+	right: 1.7%;
+}*/
+
+
+
+
+/******* seongnam-map css *******/
+
+#seongnam-map svg circle {
+          fill: orange;
+/*          opacity: .5;
+          stroke: white;*/
+        }
+#seongnam-map svg circle:hover {
+          fill: red;
+          stroke: #333;
+        }
+#seongnam-map svg text {
+          pointer-events: none;
+          fill: #fff;
+        }
+#seongnam-map svg .municipality {
+          fill: #d5d6dd;
+          stroke: #fff;
+          opacity: 0.2;
+        }
+#seongnam-map svg .municipality-label {
+          fill: #fff;
+          font-size: 12px;
+          font-weight: 300;
+          text-anchor: middle;
+        }
+#seongnam-map svg #map text {
+          color: #fff;
+          font-size: 10px;
+          text-anchor: middle;
+        }
+#seongnam-map svg #places text {
+          color: #fff;
+          font: 10px sans-serif;
+          text-anchor: start;
+        }
+
+#guMap text {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+
+
+/*
+
+#apexRadarChart {
+    width: 60%;
+}
+
+.raderRightWrap{
+    width: 30%;
+    margin-left: 70%;
+}
+
+.raderRightWrapTop{
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+}
+.raderRightWrapBot{
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    padding-top: 1rem;
+}
+*/
+
+/*.jvectormap-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+
+/******* BEGIN swiper css *******/
+.swiper-container {
+    height: 98px;
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.conBanner {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 5px #fff inset;
+    max-width: 100%;
+    height: 98px;
+}
+
+.count-title {
+    padding-bottom: 0.625em;
+}
+
+.count-num {
+    display: flex;
+    flex-direction: row;
+/*    justify-content: space-between;
+    margin: 0 4.063em;*/
+    margin: 0 auto;
+}
+.conTotalnum {
+    padding-right: 1em;
+}
+
+.conNumIcon {
+    display: inline-block;
+    padding-top: 0.313em;
+    padding-right: 0.625em;
+}
+
+.conArrow {
+    padding-top: 0.625em;
+    padding-right: 0.625em;
+}
+
+.conNum {
+    padding-top: 0.375em;
+}
+/******* END swiper css *******/

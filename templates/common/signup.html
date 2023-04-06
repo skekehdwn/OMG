@@ -1,0 +1,210 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>X-Factor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+    <!-- favicon -->
+    <link rel="shortcunt icon" href="{% static 'img/X-Factor_favicon/favicon.ico' %}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/X-Factor_favicon/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/X-Factor_favicon/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/X-Factor_favicon/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/X-Factor_favicon/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/X-Factor_favicon/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/X-Factor_favicon/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/X-Factor_favicon/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/X-Factor_favicon/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{% static 'img/X-Factor_favicon/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32"  href="{% static 'img/X-Factor_favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96"  href="{% static 'img/X-Factor_favicon/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16"  href="{% static 'img/X-Factor_favicon/favicon-16x16.png' %}">
+
+	<!-- ================== BEGIN core-css ================== -->
+	<link href="{% static 'assets/css/vendor.min.css' %}" rel="stylesheet" />
+	<link href="{% static 'assets/css/app.min.css' %}" rel="stylesheet" />
+	<!-- ================== END core-css ================== -->
+
+</head>
+<body class='pace-top theme-orange'>
+	<!-- BEGIN #app -->
+	<div id="app" class="app app-full-height app-without-header">
+		<!-- BEGIN register -->
+		<div class="register">
+			<!-- BEGIN register-content -->
+			<div class="register-content">
+				<form action="{% url 'signup' %}" method="POST" name="signup_form">
+                    {% csrf_token %}
+                    {% include "../form_errors.html" %}
+					{% if error %}
+						<div class="alert alert-danger" role="alert">{{error}}</div>
+					{% endif %}
+					<h1 class="text-center">회원가입</h1>
+					<p class="fs-13px text-white text-opacity-50 text-center">사용자 아이디는 변경할 수 없으니 신중히 확인해 주세요.</p>
+					<div class="mb-3">
+						<label class="form-label">사용자 아이디 <span class="text-danger">*</span></label>
+						<input type="text" class="form-control form-control-lg bg-white bg-opacity-5" placeholder="" id="user_id"
+                   value="{{ user_id|default_if_none:'' }}" name="user_id" autocomplete="off"/>
+					</div>
+					<div class = "col-md-12">
+						<div class = "row">
+							<div class="col-md-6 mb-3">
+								<label class="form-label">비밀번호 <span class="text-danger">*</span></label>
+								<input type="password" class="form-control form-control-lg bg-white bg-opacity-5" id="user_pw"
+						   value="" name="user_pw"/>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label class="form-label">비밀번호 확인 <span class="text-danger">*</span></label>
+								<input type="password" class="form-control form-control-lg bg-white bg-opacity-5" id="re_user_pw"
+						   value="" name="re_user_pw"/>
+							</div>
+						</div>
+					</div>
+					<div class="mb-3">
+						<label class="form-label">이름 <span class="text-danger">*</span></label>
+						<input type="text" class="form-control form-control-lg bg-white bg-opacity-5" name="user_name" id="user_name"
+                   value="{{user_name|default_if_none:'' }}" autocomplete="off"/>
+					</div>
+					<div class="mb-3">
+						<label class="form-label">전화번호 <span class="text-danger">*</span></label>
+						<input type="text" class="form-control form-control-lg bg-white bg-opacity-5" name="user_phone" id="user_phone"
+                   value="{{user_phone|default_if_none:'' }}" autocomplete="off"/>
+					</div>
+					<div class="mb-3">
+						<label class="form-label">이메일 <span class="text-danger">*</span></label>
+						<input type="text" class="form-control form-control-lg bg-white bg-opacity-5" name="user_email" id="user_email"
+                   value="{{user_email|default_if_none:'' }}" autocomplete="off"/>
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label">부서 <span class="text-danger">*</span></label>
+						<input type="text" class="form-control form-control-lg bg-white bg-opacity-5" name="user_dep" id="user_dep"
+                   value="{{user_dep|default_if_none:'' }}" autocomplete="off"/>
+					</div>
+					<div class="mb-3">
+						<label class="form-label">팀명</label>
+						<input type="text" class="form-control form-control-lg bg-white bg-opacity-5" name="user_team" id="user_team"
+                   value="{{user_team|default_if_none:' ' }}" placeholder="팀명이 없을경우 공란입력" autocomplete="off"/>
+					</div>
+					<div class="mb-3">
+						<label class="form-label">직급 <span class="text-danger">*</span></label>
+						<input type="text" class="form-control form-control-lg bg-white bg-opacity-5" name="user_rank" id="user_rank"
+                   value="{{user_rank|default_if_none:'' }}" autocomplete="off"/>
+					</div>
+<!--					<div class="mb-3">-->
+<!--						<div class="form-check">-->
+<!--							<input class="form-check-input" type="checkbox" value="1" id="customCheck1" name="customCheck1" />-->
+<!--							<label class="form-check-label" for="customCheck1">I have read and agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</label>-->
+<!--							<label class="form-check-label" for="customCheck1"><a href="#">이용 약관</a> 및 <a href="#">개인 정보 보호 정책</a>을 읽었으며 이에 동의합니다.</label>-->
+<!--						</div>-->
+<!--					</div>-->
+					<div class="mb-3">
+						<button type="button" class="btn btn-outline-theme btn-lg d-block w-100" onclick="check();">확인</button>
+					</div>
+					<div class="text-white text-opacity-50 text-center">
+						사용자 아이디가 이미 있습니까? <a href="/">로그인</a>
+					</div>
+				</form>
+			</div>
+			<!-- END register-content -->
+		</div>
+		<!-- END register -->
+
+		<!-- BEGIN btn-scroll-top -->
+		<a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+		<!-- END btn-scroll-top -->
+	</div>
+	<!-- END #app -->
+
+	<!-- ================== BEGIN core-js ================== -->
+	<script src="assets/js/vendor.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+	<!-- ================== END core-js ================== -->
+
+
+
+	<script>
+
+		function check() {
+			var uid = document.getElementById("user_id");
+			var pwd = document.getElementById("user_pw");
+			var repwd = document.getElementById("re_user_pw");
+			var uname = document.getElementById("user_name");
+			var mobile = document.getElementById("user_phone");
+			var email_id = document.getElementById("user_email");
+			var dep = document.getElementById("user_dep");
+			var rank = document.getElementById("user_rank");
+			var agree = document.getElementById("customCheck1");
+
+			var uidCheck = /^[a-zA-z0-9]{4,12}$/;
+			if (!uidCheck.test(uid.value)) {
+			alert("아이디는 영문 대소문자와 숫자 4~12자리로 입력해야합니다.");
+			uid.focus(); //focus(): 커서가 깜빡이는 현상, blur(): 커서가 사라지는 현상
+			return false;
+			};
+
+			if (pwd.value == "") {
+			alert("비밀번호를 입력하세요.");
+			pwd.focus();
+			return false;
+			};
+
+			//비밀번호 영문자+숫자+특수조합(8~25자리 입력) 정규식
+			var pwdCheck = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
+
+			if (!pwdCheck.test(pwd.value)) {
+			alert("비밀번호는 영문자+숫자+특수문자 조합으로 8~25자리 사용해야 합니다.");
+			pwd.focus();
+			return false;
+			};
+
+			if (repwd.value !== pwd.value) {
+			alert("비밀번호가 일치하지 않습니다..");
+			repwd.focus();
+			return false;
+			};
+
+
+			if (uname.value == ""){
+			alert("이름을 입력해 주세요");
+			uname.focus();
+			return false;
+			};
+
+
+			var mobileCheck = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+
+			if (!mobileCheck.test(mobile.value)) {
+			alert("전화번호는 숫자만 입력할 수 있습니다.");
+			mobile.focus();
+			return false;
+			}
+
+			var email_idCheck=/^[A-Za-z0-9_]+[A-Za-z0-9]*[@]{1}[A-Za-z0-9]+[A-Za-z0-9]*[.]{1}[A-Za-z]{1,3}$/;
+
+			if (!email_idCheck.test(email_id.value)) {
+			alert("이메일 형식이 올바르지 않습니다.");
+			email_id.focus();
+			return false;
+			}
+
+			if (dep.value == "") {
+			alert("부서명을 입력해 주세요.");
+			dep.focus();
+			return false;
+			}
+
+			if (rank.value == "") {
+			alert("직급을 입력해 주세요.");
+			rank.focus();
+			return false;
+			}
+
+			//입력 값 전송
+			document.signup_form.submit(); //유효성 검사의 포인트
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+INFO, 2023-03-08 08:35:51,268, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-08 08:35:51,791, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-08 08:35:52,095, dashboard_function.py - alarmData - Success
+INFO, 2023-03-08 08:35:52,470, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-08 08:35:52,814, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-08 08:35:53,001, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-08 08:35:53,192, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-08 08:35:53,635, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-08 08:35:53,635, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-08 08:35:53,795, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-08 08:35:53,981, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-08 08:35:54,139, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-08 08:35:54,303, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-08 08:43:05,009, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-08 08:43:05,188, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-08 08:43:05,276, dashboard_function.py - alarmData - Success
+INFO, 2023-03-08 08:43:05,368, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-08 08:43:05,498, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-08 08:43:05,578, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-08 08:43:05,670, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-08 08:43:05,840, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-08 08:43:05,840, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-08 08:43:05,923, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-08 08:43:06,001, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-08 08:43:06,079, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-08 08:43:06,158, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-08 08:44:03,596, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-08 08:44:03,870, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-08 08:44:04,035, dashboard_function.py - alarmData - Success
+INFO, 2023-03-08 08:44:04,186, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-08 08:44:04,320, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-08 08:44:04,464, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-08 08:44:04,622, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-08 08:44:05,036, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-08 08:44:05,037, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-08 08:44:05,314, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-08 08:44:05,549, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-08 08:44:05,799, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-08 08:44:06,001, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-08 08:46:55,736, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-08 08:46:55,828, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-08 08:46:55,915, dashboard_function.py - alarmData - Success
+INFO, 2023-03-08 08:46:56,005, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-08 08:46:56,084, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-08 08:46:56,164, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-08 08:46:56,320, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-08 08:46:56,491, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-08 08:46:56,491, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-08 08:46:56,576, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-08 08:46:56,669, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-08 08:46:56,762, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-08 08:46:56,864, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-08 08:47:32,743, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-08 08:47:32,937, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-08 08:47:33,044, dashboard_function.py - alarmData - Success
+INFO, 2023-03-08 08:47:33,145, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-08 08:47:33,246, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-08 08:47:33,364, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-08 08:47:33,466, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-08 08:47:33,653, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-08 08:47:33,653, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-08 08:47:33,756, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-08 08:47:33,838, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-08 08:47:33,918, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-08 08:47:33,997, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-08 08:47:38,119, Run Finished

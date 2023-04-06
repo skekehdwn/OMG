@@ -1,0 +1,919 @@
+INFO, 20230202192651, Run Started
+INFO, 20230202192652, Run Started
+INFO, 20230202192652, Watching for file changes with StatReloader
+INFO, 20230202192705, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202192705, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202192705, dashboard_function.py - alarmData - Success
+INFO, 20230202192705, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202192705, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202192705, dashboard_function.py - vendorChartList - Success
+INFO, 20230202192705, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202192705, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202192705, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202192705, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202192706, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202192706, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202192706, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202193430, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202193431, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202193431, dashboard_function.py - alarmData - Success
+INFO, 20230202193431, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202193431, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202193431, dashboard_function.py - vendorChartList - Success
+INFO, 20230202193431, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202193431, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202193431, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202193432, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202193432, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202193432, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202193432, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202193509, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202193509, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202193509, dashboard_function.py - alarmData - Success
+INFO, 20230202193510, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202193510, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202193510, dashboard_function.py - vendorChartList - Success
+INFO, 20230202193511, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202193511, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202193511, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202193511, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202193512, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202193512, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202193512, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194038, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194041, Run Started
+INFO, 20230202194046, Watching for file changes with StatReloader
+INFO, 20230202194118, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194120, Run Started
+INFO, 20230202194121, Watching for file changes with StatReloader
+INFO, 20230202194125, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194125, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194125, dashboard_function.py - alarmData - Success
+INFO, 20230202194126, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194126, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194126, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194126, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194127, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194127, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194127, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194127, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194127, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194127, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194142, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194143, Run Started
+INFO, 20230202194145, Watching for file changes with StatReloader
+INFO, 20230202194147, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194147, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194147, dashboard_function.py - alarmData - Success
+INFO, 20230202194147, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194147, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194147, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194147, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194148, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194148, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194148, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194148, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194148, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194148, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194156, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194157, Run Started
+INFO, 20230202194158, Watching for file changes with StatReloader
+INFO, 20230202194202, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194202, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194203, dashboard_function.py - alarmData - Success
+INFO, 20230202194203, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194204, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194204, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194204, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194205, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194205, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194205, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194205, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194206, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194206, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194309, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194312, Run Started
+INFO, 20230202194315, Watching for file changes with StatReloader
+INFO, 20230202194442, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194444, Run Started
+INFO, 20230202194445, Watching for file changes with StatReloader
+INFO, 20230202194456, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194457, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194457, dashboard_function.py - alarmData - Success
+WARNING, 20230202194457, dashboard_function.py - Error Occurred
+WARNING, 20230202194457, Error - server_LChartDataList
+INFO, 20230202194457, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194457, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194457, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194458, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194458, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194458, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194458, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194458, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194458, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230202194458, Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 33, in dashboard
+    DCDL = DashboardData()
+  File "c:\X-FACTOR\X-Factor_0105\web\model\dashboard_function.py", line 274, in DashboardData
+    SLCD = server_LChartDataList
+UnboundLocalError: local variable 'server_LChartDataList' referenced before assignment
+WARNING, 20230202194458, Not Found: /favicon.ico
+INFO, 20230202194516, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194517, Run Started
+INFO, 20230202194517, Watching for file changes with StatReloader
+INFO, 20230202194521, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194521, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194522, dashboard_function.py - alarmData - Success
+WARNING, 20230202194522, dashboard_function.py - Error Occurred
+WARNING, 20230202194522, Error - server_LChartDataList
+INFO, 20230202194523, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194523, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194524, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194525, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194525, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194525, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194525, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194526, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194526, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230202194526, Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 33, in dashboard
+    DCDL = DashboardData()
+  File "c:\X-FACTOR\X-Factor_0105\web\model\dashboard_function.py", line 274, in DashboardData
+    SLCD = server_LChartDataList
+UnboundLocalError: local variable 'server_LChartDataList' referenced before assignment
+INFO, 20230202194535, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194537, Run Started
+INFO, 20230202194540, Watching for file changes with StatReloader
+INFO, 20230202194543, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194544, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194544, dashboard_function.py - alarmData - Success
+WARNING, 20230202194544, dashboard_function.py - Error Occurred
+WARNING, 20230202194544, Error - server_LChartDataList
+INFO, 20230202194544, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194545, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194545, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194545, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194545, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194545, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194545, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194546, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194546, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230202194546, Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 33, in dashboard
+    DCDL = DashboardData()
+  File "c:\X-FACTOR\X-Factor_0105\web\model\dashboard_function.py", line 274, in DashboardData
+    SLCD = server_LChartDataList
+UnboundLocalError: local variable 'server_LChartDataList' referenced before assignment
+INFO, 20230202194612, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194614, Run Started
+INFO, 20230202194617, Watching for file changes with StatReloader
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - server_BChartDataList
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - service_donutChartData
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - alarmData
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - server_LChartDataList
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - os_donutChartData
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - vendorChartList
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - alarm_donutChartData
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - BNChartDataList
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - WMCDL(World Map Chart Data List)
+INFO, 20230202194620, dashboard_function.py - GpuServerDataList - Success
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - connectIpDataList
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - connectServerDataList
+WARNING, 20230202194620, dashboard_function.py - Error Occurred
+WARNING, 20230202194620, Error - memoryMoreDataList
+ERROR, 20230202194620, Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 33, in dashboard
+    DCDL = DashboardData()
+  File "c:\X-FACTOR\X-Factor_0105\web\model\dashboard_function.py", line 271, in DashboardData
+    OCPO = os_chartPartOne
+UnboundLocalError: local variable 'os_chartPartOne' referenced before assignment
+INFO, 20230202194644, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194645, Run Started
+INFO, 20230202194646, Watching for file changes with StatReloader
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - server_BChartDataList
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - service_donutChartData
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - alarmData
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - server_LChartDataList
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - os_donutChartData
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - vendorChartList
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - alarm_donutChartData
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - BNChartDataList
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - WMCDL(World Map Chart Data List)
+INFO, 20230202194653, dashboard_function.py - GpuServerDataList - Success
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - connectIpDataList
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - connectServerDataList
+WARNING, 20230202194653, dashboard_function.py - Error Occurred
+WARNING, 20230202194653, Error - memoryMoreDataList
+ERROR, 20230202194653, Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 33, in dashboard
+    DCDL = DashboardData()
+  File "c:\X-FACTOR\X-Factor_0105\web\model\dashboard_function.py", line 271, in DashboardData
+    OCPO = os_chartPartOne
+UnboundLocalError: local variable 'os_chartPartOne' referenced before assignment
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - server_BChartDataList
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - service_donutChartData
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - alarmData
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - server_LChartDataList
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - os_donutChartData
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - vendorChartList
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - alarm_donutChartData
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - BNChartDataList
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - WMCDL(World Map Chart Data List)
+INFO, 20230202194657, dashboard_function.py - GpuServerDataList - Success
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - connectIpDataList
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - connectServerDataList
+WARNING, 20230202194657, dashboard_function.py - Error Occurred
+WARNING, 20230202194657, Error - memoryMoreDataList
+ERROR, 20230202194657, Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 33, in dashboard
+    DCDL = DashboardData()
+  File "c:\X-FACTOR\X-Factor_0105\web\model\dashboard_function.py", line 271, in DashboardData
+    OCPO = os_chartPartOne
+UnboundLocalError: local variable 'os_chartPartOne' referenced before assignment
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - server_BChartDataList
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - service_donutChartData
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - alarmData
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - server_LChartDataList
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - os_donutChartData
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - vendorChartList
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - alarm_donutChartData
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - BNChartDataList
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - WMCDL(World Map Chart Data List)
+INFO, 20230202194658, dashboard_function.py - GpuServerDataList - Success
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - connectIpDataList
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - connectServerDataList
+WARNING, 20230202194658, dashboard_function.py - Error Occurred
+WARNING, 20230202194658, Error - memoryMoreDataList
+ERROR, 20230202194658, Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 33, in dashboard
+    DCDL = DashboardData()
+  File "c:\X-FACTOR\X-Factor_0105\web\model\dashboard_function.py", line 271, in DashboardData
+    OCPO = os_chartPartOne
+UnboundLocalError: local variable 'os_chartPartOne' referenced before assignment
+INFO, 20230202194705, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194705, Run Started
+INFO, 20230202194706, Watching for file changes with StatReloader
+INFO, 20230202194711, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194711, Run Started
+INFO, 20230202194712, Watching for file changes with StatReloader
+INFO, 20230202194716, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194716, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194716, dashboard_function.py - alarmData - Success
+INFO, 20230202194716, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194716, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194716, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194717, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194717, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194717, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194717, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194717, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194717, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194717, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194731, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194731, Run Started
+INFO, 20230202194732, Watching for file changes with StatReloader
+INFO, 20230202194735, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194735, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194735, dashboard_function.py - alarmData - Success
+INFO, 20230202194735, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194736, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194736, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194736, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194736, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194736, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194736, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194736, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194736, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194737, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194759, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194800, Run Started
+INFO, 20230202194800, Watching for file changes with StatReloader
+INFO, 20230202194802, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194802, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194802, dashboard_function.py - alarmData - Success
+INFO, 20230202194802, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194802, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194802, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194802, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194802, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194802, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194802, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194802, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194803, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194803, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194809, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194811, Run Started
+INFO, 20230202194813, Watching for file changes with StatReloader
+INFO, 20230202194821, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194821, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194821, dashboard_function.py - alarmData - Success
+INFO, 20230202194821, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194821, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194821, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194821, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194821, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194821, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194822, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194822, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194822, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194822, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194827, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194828, Run Started
+INFO, 20230202194830, Watching for file changes with StatReloader
+INFO, 20230202194837, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194837, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194837, dashboard_function.py - alarmData - Success
+INFO, 20230202194837, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194837, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194838, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194838, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194838, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194838, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194838, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194838, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194839, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194839, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194853, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202194854, Run Started
+INFO, 20230202194856, Watching for file changes with StatReloader
+INFO, 20230202194858, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194858, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194858, dashboard_function.py - alarmData - Success
+INFO, 20230202194859, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194859, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194859, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194859, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194900, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194900, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194900, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194900, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194901, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194901, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194929, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194929, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194929, dashboard_function.py - alarmData - Success
+INFO, 20230202194929, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194929, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194929, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194930, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194930, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194930, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194930, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194930, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194930, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194930, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202194939, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202194939, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202194940, dashboard_function.py - alarmData - Success
+INFO, 20230202194940, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202194940, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202194940, dashboard_function.py - vendorChartList - Success
+INFO, 20230202194940, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202194940, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202194940, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202194940, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202194941, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202194941, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202194941, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202195026, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230202195027, Run Started
+INFO, 20230202195028, Watching for file changes with StatReloader
+INFO, 20230202195251, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202195252, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202195252, dashboard_function.py - alarmData - Success
+INFO, 20230202195252, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202195252, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202195252, dashboard_function.py - vendorChartList - Success
+INFO, 20230202195252, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202195252, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202195252, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202195252, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202195252, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202195252, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202195252, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202200253, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202200253, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202200253, dashboard_function.py - alarmData - Success
+INFO, 20230202200253, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202200253, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202200253, dashboard_function.py - vendorChartList - Success
+INFO, 20230202200253, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202200254, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202200254, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202200254, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202200254, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202200254, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202200254, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202201255, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202201255, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202201255, dashboard_function.py - alarmData - Success
+INFO, 20230202201255, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202201255, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202201255, dashboard_function.py - vendorChartList - Success
+INFO, 20230202201255, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202201255, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202201255, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202201255, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202201256, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202201256, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202201256, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202202256, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202202256, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202202257, dashboard_function.py - alarmData - Success
+INFO, 20230202202257, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202202257, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202202257, dashboard_function.py - vendorChartList - Success
+INFO, 20230202202257, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202202257, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202202257, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202202257, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202202257, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202202257, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202202257, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202203258, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202203258, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202203259, dashboard_function.py - alarmData - Success
+INFO, 20230202203259, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202203259, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202203259, dashboard_function.py - vendorChartList - Success
+INFO, 20230202203259, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202203259, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202203259, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202203259, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202203259, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202203259, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202203259, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202204300, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202204300, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202204301, dashboard_function.py - alarmData - Success
+INFO, 20230202204301, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202204301, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202204301, dashboard_function.py - vendorChartList - Success
+INFO, 20230202204301, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202204301, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202204301, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202204301, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202204301, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202204301, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202204301, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202205302, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202205302, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202205303, dashboard_function.py - alarmData - Success
+INFO, 20230202205303, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202205303, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202205303, dashboard_function.py - vendorChartList - Success
+INFO, 20230202205303, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202205303, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202205303, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202205303, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202205303, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202205303, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202205303, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230202210304, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230202210304, dashboard_function.py - service_donutChartData - Success
+INFO, 20230202210305, dashboard_function.py - alarmData - Success
+INFO, 20230202210305, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230202210305, dashboard_function.py - os_donutChartData - Success
+INFO, 20230202210305, dashboard_function.py - vendorChartList - Success
+INFO, 20230202210305, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230202210305, dashboard_function.py - BNChartDataList - Success
+INFO, 20230202210305, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230202210305, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230202210305, dashboard_function.py - connectIpDataList - Success
+INFO, 20230202210306, dashboard_function.py - connectServerDataList - Success
+INFO, 20230202210306, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203084302, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203084302, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203084302, dashboard_function.py - alarmData - Success
+INFO, 20230203084302, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203084302, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203084303, dashboard_function.py - vendorChartList - Success
+INFO, 20230203084303, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203084303, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203084303, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203084304, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203084304, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203084304, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203084304, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203084304, Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 244, in ensure_connection
+    self.connect()
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 225, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\postgresql\base.py", line 203, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "C:\venvs\xion\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "1.223.168.93", port 40011 failed: No route to host (0x00002751/10065)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 35, in dashboard
+    if not 'sessionid' in request.session:
+  File "C:\venvs\xion\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __contains__
+    return key in self._session
+  File "C:\venvs\xion\lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "C:\venvs\xion\lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "C:\venvs\xion\lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "C:\venvs\xion\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\venvs\xion\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\venvs\xion\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\venvs\xion\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\venvs\xion\lib\site-packages\django\db\models\sql\compiler.py", line 1359, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 284, in cursor
+    return self._cursor()
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 260, in _cursor
+    self.ensure_connection()
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 243, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\venvs\xion\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 244, in ensure_connection
+    self.connect()
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 225, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\postgresql\base.py", line 203, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "C:\venvs\xion\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: connection to server at "1.223.168.93", port 40011 failed: No route to host (0x00002751/10065)
+	Is the server running on that host and accepting TCP/IP connections?
+
+INFO, 20230203084538, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203084538, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203084538, dashboard_function.py - alarmData - Success
+INFO, 20230203084538, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203084538, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203084539, dashboard_function.py - vendorChartList - Success
+INFO, 20230203084539, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203084539, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203084539, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203084539, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203084539, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203084539, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203084539, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203085540, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203085540, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203085540, dashboard_function.py - alarmData - Success
+INFO, 20230203085540, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203085540, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203085540, dashboard_function.py - vendorChartList - Success
+INFO, 20230203085541, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203085541, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203085541, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203085541, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203085541, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203085541, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203085541, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203090542, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203090542, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203090543, dashboard_function.py - alarmData - Success
+INFO, 20230203090543, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203090543, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203090543, dashboard_function.py - vendorChartList - Success
+INFO, 20230203090544, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203090544, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203090544, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203090545, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203090545, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203090546, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203090546, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203091547, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203091548, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203091548, dashboard_function.py - alarmData - Success
+INFO, 20230203091548, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203091548, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203091548, dashboard_function.py - vendorChartList - Success
+INFO, 20230203091548, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203091548, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203091548, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203091549, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203091549, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203091549, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203091549, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203092550, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203092551, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203092551, dashboard_function.py - alarmData - Success
+INFO, 20230203092551, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203092551, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203092551, dashboard_function.py - vendorChartList - Success
+INFO, 20230203092552, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203092552, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203092552, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203092552, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203092552, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203092552, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203092552, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203093553, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203093553, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203093554, dashboard_function.py - alarmData - Success
+INFO, 20230203093554, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203093554, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203093554, dashboard_function.py - vendorChartList - Success
+INFO, 20230203093554, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203093554, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203093554, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203093555, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203093555, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203093555, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203093555, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203094556, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203094556, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203094557, dashboard_function.py - alarmData - Success
+INFO, 20230203094557, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203094557, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203094557, dashboard_function.py - vendorChartList - Success
+INFO, 20230203094557, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203094557, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203094557, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203094557, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203094557, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203094557, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203094557, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203095558, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203095558, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203095559, dashboard_function.py - alarmData - Success
+INFO, 20230203095559, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203095559, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203095559, dashboard_function.py - vendorChartList - Success
+INFO, 20230203095559, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203095559, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203095559, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203095559, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203095559, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203095559, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203095559, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203100601, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203100601, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203100601, dashboard_function.py - alarmData - Success
+INFO, 20230203100602, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203100605, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203100606, dashboard_function.py - vendorChartList - Success
+INFO, 20230203100606, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203100608, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203100608, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203100608, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203100609, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203100609, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203100610, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203101610, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203101610, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203101611, dashboard_function.py - alarmData - Success
+INFO, 20230203101611, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203101611, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203101611, dashboard_function.py - vendorChartList - Success
+INFO, 20230203101611, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203101611, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203101611, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203101611, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203101611, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203101612, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203101612, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203102612, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203102613, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203102613, dashboard_function.py - alarmData - Success
+INFO, 20230203102614, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203102615, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203102615, dashboard_function.py - vendorChartList - Success
+INFO, 20230203102617, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203102619, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203102619, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203102620, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203102620, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203102621, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203102621, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203103622, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203103622, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203103623, dashboard_function.py - alarmData - Success
+INFO, 20230203103623, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203103623, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203103623, dashboard_function.py - vendorChartList - Success
+INFO, 20230203103623, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203103623, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203103623, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203103624, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203103624, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203103624, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203103624, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203104625, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203104625, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203104626, dashboard_function.py - alarmData - Success
+INFO, 20230203104626, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203104626, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203104626, dashboard_function.py - vendorChartList - Success
+INFO, 20230203104626, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203104626, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203104626, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203104626, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203104626, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203104626, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203104626, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203105627, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203105628, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203105628, dashboard_function.py - alarmData - Success
+INFO, 20230203105628, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203105628, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203105628, dashboard_function.py - vendorChartList - Success
+INFO, 20230203105628, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203105628, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203105628, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203105628, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203105628, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203105628, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203105629, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203110629, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203110629, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203110630, dashboard_function.py - alarmData - Success
+INFO, 20230203110630, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203110630, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203110630, dashboard_function.py - vendorChartList - Success
+INFO, 20230203110630, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203110630, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203110630, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203110630, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203110630, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203110630, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203110630, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203111631, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203111631, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203111632, dashboard_function.py - alarmData - Success
+INFO, 20230203111632, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203111632, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203111632, dashboard_function.py - vendorChartList - Success
+INFO, 20230203111632, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203111632, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203111632, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203111632, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203111632, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203111632, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203111632, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203112633, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203112633, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203112634, dashboard_function.py - alarmData - Success
+INFO, 20230203112634, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203112634, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203112634, dashboard_function.py - vendorChartList - Success
+INFO, 20230203112634, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203112634, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203112634, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203112634, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203112634, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203112634, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203112634, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203123329, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203123329, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203123330, dashboard_function.py - alarmData - Success
+INFO, 20230203123330, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203123330, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203123330, dashboard_function.py - vendorChartList - Success
+INFO, 20230203123330, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203123331, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203123331, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203123331, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203123331, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203123331, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203123331, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203124332, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203124333, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203124333, dashboard_function.py - alarmData - Success
+INFO, 20230203124333, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203124333, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203124333, dashboard_function.py - vendorChartList - Success
+INFO, 20230203124333, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203124333, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203124333, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203124333, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203124333, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203124333, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203124334, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203125334, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203125334, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203125335, dashboard_function.py - alarmData - Success
+INFO, 20230203125335, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203125335, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203125335, dashboard_function.py - vendorChartList - Success
+INFO, 20230203125335, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203125335, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203125335, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203125335, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203125336, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203125336, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203125336, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203125422, Run Finished
+INFO, 20230203125422, Run Finished

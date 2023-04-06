@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<!-- BEGIN content -->
+<div id="content" class="app-content" style="padding: 1rem !important;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="row">
+                    <div class="query-container">
+                        <button type="submit" value="submit" class="btn btn-primary btn-sm w-100px h-35px queryBtn fs-12px"><i class="fas fa-play pe-2"></i>실행</button>
+                        <button type="button" class="btn btn-secondary btn-sm w-100px h-35px queryBtn fs-12px">+ Add Script</button>
+                        <button type="button" class="btn btn-outline-white btn-sm w-100px h-35px queryBtn-outline fs-12px">QueryGrid</button>
+                        <div class="mt-sm-2">
+                            <ul class="nav nav-tabs change-tabs query-tabs">
+                                <li class="nav-item me-1 w-100px text-center fs-12px"><a href="#query1" class="nav-link change-link active" data-bs-toggle="tab">Query1</a></li>
+                                <li class="nav-item me-1 w-100px text-center fs-12px"><a href="#query2" class="nav-link change-link" data-bs-toggle="tab">Query2</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="query-box tab-pane fade show active" id="query1">
+                                    <form>
+                                        <textarea class="query-input"></textarea>
+                                    </form>
+                                </div>
+                                <div class="query-box tab-pane fade" id="query2">
+                                    <form>
+                                        <textarea class="query-input"></textarea>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-container">
+                        <div class="mt-sm-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <ul class="nav nav-tabs change-tabs result-tabs">
+                                    <li class="nav-item me-1 w-100px text-center fs-12px"><a href="#result1" class="nav-link change-link active" data-bs-toggle="tab">Result1</a></li>
+                                    <li class="nav-item me-1 w-100px text-center fs-12px"><a href="#result2" class="nav-link change-link" data-bs-toggle="tab">Result2</a></li>
+                                </ul>
+                                <div class="queryDownload-container">
+                                    <div class="queryDownload-box d-flex">
+                                        <button type="button" class="btn btn-sm downloadBtn"><i class="fas fa-file-alt file-icon"></i><span class="download-text">Excel</span><i class="fas fa-download download-icon"></i></button>
+                                        <button type="button" class="btn btn-sm downloadBtn"><i class="fas fa-file-alt file-icon"></i><span class="download-text">CSV</span><i class="fas fa-download download-icon"></i></button>
+                                        <button type="button" class="btn btn-sm downloadBtn"><i class="fas fa-file-alt file-icon"></i><span class="download-text">JSON</span><i class="fas fa-download download-icon"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="result-box tab-pane fade show active" id="result1">
+                                    <table class="table table-striped table-sm resultTable fs-12px text-nowrap">
+                                        <thead>
+                                        <tr class="table-dark text-center">
+                                            <th class="w-60px">No.</th>
+                                            <th>Statistics Unique</th>
+                                            <th class="w-150px">Classification</th>
+                                            <th class="w-150px">Item</th>
+                                            <th class="w-150px">Item Count</th>
+                                            <th class="w-150px">Date</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="text-start" title="os_Mac">os_Mac</td>
+                                            <td class="text-center">os</td>
+                                            <td class="text-center">Mac</td>
+                                            <td class="text-center">1</td>
+                                            <td class="text-center">2023-01-27</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td class="text-start" title="operating_system_Ubuntu 20.04.1">operating_system_Ubuntu 20.04.1</td>
+                                            <td class="text-center">os</td>
+                                            <td class="text-center">Ubuntu</td>
+                                            <td class="text-center">1</td>
+                                            <td class="text-center">2023-01-27</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="result-box tab-pane fade" id="result2">
+                                    <table class="table table-striped table-sm resultTable fs-12px text-nowrap">
+                                        <thead>
+                                        <tr class="table-dark text-center">
+                                            <th class="w-60px">No.</th>
+                                            <th>Statistics Unique</th>
+                                            <th class="w-150px">Classification</th>
+                                            <th class="w-150px">Item</th>
+                                            <th class="w-150px">Item Count</th>
+                                            <th class="w-150px">Date</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="text-start" title="os_Mac">os_Mac</td>
+                                            <td class="text-center">os</td>
+                                            <td class="text-center">Mac</td>
+                                            <td class="text-center">1</td>
+                                            <td class="text-center">2023-01-27</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td class="text-start" title="operating_system_Ubuntu 20.04.1">operating_system_Ubuntu 20.04.1</td>
+                                            <td class="text-center">os</td>
+                                            <td class="text-center">Ubuntu</td>
+                                            <td class="text-center">1</td>
+                                            <td class="text-center">2023-01-27</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- END content -->
+{% endblock %}

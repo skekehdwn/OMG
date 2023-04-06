@@ -1,0 +1,81 @@
+{
+  "PROJECT" : {
+    "CORE" : "Tanium",
+    "LOGIN" : "WEB",
+    "CUSTOMER" : "Xfactor",
+    "TYPE" : "System",
+    "LOG" : {
+      "directory" : "log/",
+      "fileName" : "log_",
+      "fileFormat" : ".log"
+    },
+    "MAP" : {
+      "World" : "block",
+      "Korea" : "block",
+      "Area" : {
+        "use": "block",
+        "type" : "seongnam-map"
+      }
+    },
+    "Alarm" : {
+      "RamUsage" : 60,
+      "Case" : {
+        "First" : "Drive Size No Change",
+        "Second" : "No Login History",
+        "Third" : "RAM Usage Exceeded",
+        "Fourth" : "Listen Port No Change",
+        "Fifth" : "Established Port No Change",
+        "Six" : "CPU Consumption is Excess",
+        "Seven" : "Running Process is Exceeded"
+      }
+    }
+  },
+   "API" : {
+     "apiUrl": "https://192.168.5.100",
+     "ContentType": "application/json",
+     "PATH": {
+       "SesstionKey": "/api/v2/session/login",
+       "Sensor": "/api/v2/result_data/saved_question/",
+       "Questions": {
+         "Saved": "/api/v2/saved_questions"
+       }
+     },
+     "username": "administrator",
+     "password": "xion123!",
+     "SensorID": {
+       "common": "4080",
+       "weakness": "2812"
+     }
+   },
+  "MODULE" : {
+    "DataLoadingType" : "DB"
+  },
+  "DB" : {
+    "DBHost" : "localhost",
+    "DBPort" : "5432",
+    "DBName" : "postgres",
+    "DBUser" : "postgres",
+    "DBPwd" : "psql",
+    "DBSelectTime" : 11,
+    "AssetTNM" : "daily_asset",
+    "StatisticsTNM" : "daily_statistics",
+    "MenuTNM": "web_menusetting",
+    "UserTNM": "web_user"
+  },
+  "FILE" : {
+    "asset": {
+      "Storage" : "data/asset/daily/",
+      "FileName" : "Asset_",
+      "FileType" : ".json"
+    },
+    "statistics" : {
+      "Storage" : "data/statistics/daily/",
+      "FileName" : "Statistics_",
+      "FileType" : ".json"
+    },
+    "RunningService_Except" : {
+      "USE" : "true",
+      "Location" : "/running services.xlsx"
+    }
+  }
+}

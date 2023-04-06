@@ -1,0 +1,185 @@
+INFO, 2023-03-07 08:43:24,114, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-07 08:43:25,503, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-07 08:43:26,334, dashboard_function.py - alarmData - Success
+INFO, 2023-03-07 08:43:26,956, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-07 08:43:27,383, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-07 08:43:28,155, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-07 08:43:28,807, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-07 08:43:29,914, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-07 08:43:29,915, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-07 08:43:30,458, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-07 08:43:30,670, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-07 08:43:30,881, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 2023-03-07 08:43:36,188, Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 244, in ensure_connection
+    self.connect()
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 225, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\postgresql\base.py", line 203, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "C:\venvs\xion\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "1.223.168.93", port 40011 failed: Software caused connection abort (0x00002745/10053)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\X-FACTOR\X-Factor-Asset\web\views\base_views.py", line 34, in dashboard
+    if not 'sessionid' in request.session:
+  File "C:\venvs\xion\lib\site-packages\django\contrib\sessions\backends\base.py", line 50, in __contains__
+    return key in self._session
+  File "C:\venvs\xion\lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+  File "C:\venvs\xion\lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "C:\venvs\xion\lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+  File "C:\venvs\xion\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "C:\venvs\xion\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\venvs\xion\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\venvs\xion\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\venvs\xion\lib\site-packages\django\db\models\sql\compiler.py", line 1359, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 284, in cursor
+    return self._cursor()
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 260, in _cursor
+    self.ensure_connection()
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 243, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\venvs\xion\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 244, in ensure_connection
+    self.connect()
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\base\base.py", line 225, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "C:\venvs\xion\lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\db\backends\postgresql\base.py", line 203, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "C:\venvs\xion\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: connection to server at "1.223.168.93", port 40011 failed: Software caused connection abort (0x00002745/10053)
+	Is the server running on that host and accepting TCP/IP connections?
+
+WARNING, 2023-03-07 08:43:38,540, Not Found: /favicon.ico
+INFO, 2023-03-07 08:44:21,749, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-07 08:44:21,877, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-07 08:44:21,971, dashboard_function.py - alarmData - Success
+INFO, 2023-03-07 08:44:22,079, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-07 08:44:22,195, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-07 08:44:22,300, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-07 08:44:22,395, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-07 08:44:22,595, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-07 08:44:22,596, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-07 08:44:22,770, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-07 08:44:22,842, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-07 08:44:22,918, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-07 08:54:23,809, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-07 08:54:23,881, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-07 08:54:23,953, dashboard_function.py - alarmData - Success
+INFO, 2023-03-07 08:54:24,026, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-07 08:54:24,095, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-07 08:54:24,171, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-07 08:54:24,245, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-07 08:54:24,397, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-07 08:54:24,397, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-07 08:54:24,470, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-07 08:54:24,539, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-07 08:54:24,611, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-07 08:54:24,680, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-07 09:04:25,804, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-07 09:04:25,873, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-07 09:04:25,944, dashboard_function.py - alarmData - Success
+INFO, 2023-03-07 09:04:26,017, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-07 09:04:26,087, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-07 09:04:26,156, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-07 09:04:26,225, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-07 09:04:26,375, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-07 09:04:26,376, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-07 09:04:26,449, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-07 09:04:26,519, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-07 09:04:26,596, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-07 09:04:26,669, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-07 09:14:27,789, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-07 09:14:27,858, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-07 09:14:27,930, dashboard_function.py - alarmData - Success
+INFO, 2023-03-07 09:14:28,005, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-07 09:14:28,075, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-07 09:14:28,146, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-07 09:14:28,220, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-07 09:14:28,372, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-07 09:14:28,372, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-07 09:14:28,445, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-07 09:14:28,513, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-07 09:14:28,582, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-07 09:14:28,655, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-07 09:18:17,866, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-07 09:18:17,944, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-07 09:18:18,025, dashboard_function.py - alarmData - Success
+INFO, 2023-03-07 09:18:18,105, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-07 09:18:18,184, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-07 09:18:18,264, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-07 09:18:18,343, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-07 09:18:18,628, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-07 09:18:18,628, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-07 09:18:18,726, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-07 09:18:18,823, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-07 09:18:18,928, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-07 09:18:19,028, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-07 09:28:19,808, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-07 09:28:19,877, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-07 09:28:19,947, dashboard_function.py - alarmData - Success
+INFO, 2023-03-07 09:28:20,019, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-07 09:28:20,088, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-07 09:28:20,158, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-07 09:28:20,229, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-07 09:28:20,394, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-07 09:28:20,395, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-07 09:28:20,474, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-07 09:28:20,548, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-07 09:28:20,621, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-07 09:28:20,802, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-07 09:38:21,858, dashboard_function.py - server_BChartDataList - Success
+INFO, 2023-03-07 09:38:21,975, dashboard_function.py - service_donutChartData - Success
+INFO, 2023-03-07 09:38:22,094, dashboard_function.py - alarmData - Success
+INFO, 2023-03-07 09:38:22,217, dashboard_function.py - server_LChartDataList - Success
+INFO, 2023-03-07 09:38:22,339, dashboard_function.py - os_donutChartData - Success
+INFO, 2023-03-07 09:38:22,476, dashboard_function.py - vendorChartList - Success
+INFO, 2023-03-07 09:38:22,605, dashboard_function.py - alarm_donutChartData - Success
+INFO, 2023-03-07 09:38:22,893, dashboard_function.py - BNChartDataList - Success
+INFO, 2023-03-07 09:38:22,894, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 2023-03-07 09:38:23,076, dashboard_function.py - GpuServerDataList - Success
+INFO, 2023-03-07 09:38:23,243, dashboard_function.py - connectIpDataList - Success
+INFO, 2023-03-07 09:38:23,414, dashboard_function.py - connectServerDataList - Success
+INFO, 2023-03-07 09:38:23,591, dashboard_function.py - memoryMoreDataList - Success
+INFO, 2023-03-07 09:40:54,461, Run Finished

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*!
+ * HUD v1.8.0
+ * Copyright 2022 SeanTheme
+ */
+/*!
+ * Bootstrap  v5.2.0
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ *
+ */
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 20%
+    }

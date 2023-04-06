@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load web_filter %}
+{% block content %}
+{% load static %}
+<!-- BEGIN #content -->
+<div class="col-11" style="margin: 10px auto;">
+    <!-- BEGIN page-header -->
+    <p class="fs-24px pt-10px">
+        메모리 사용률 (전체)
+    </p>
+    <!-- END page-header -->
+    <div class="row">
+        <!--BEGIN card-->
+        <div class="card h-auto ">
+            <!--BEGIN card-body-->
+            <div class="card-body">
+                <table id="MemoryDashboard-popupTable" class="table fs-14px mb-0 text-center text-white text-opacity-60 m-auto">
+                    <thead>
+                        <tr class="table-active text-white text-opacity-75">
+                            <th class="text-center">번호</th>
+                            <th class="text-center">IP 대역</th>
+                            <th class="text-center">컴퓨터 이름</th>
+                            <th class="text-center">사용량(MB)</th>
+                            <th class="text-center">총량(MB)</th>
+                            <th class="text-center">사용률(%)</th>
+                        </tr>
+                        </thead>
+                </table>
+            </div>
+            <!--END card-body-->
+            <!--BEGIN card-arrow-->
+            <div class="card-arrow">
+                <div class="card-arrow-top-left"></div>
+                <div class="card-arrow-top-right"></div>
+                <div class="card-arrow-bottom-left"></div>
+                <div class="card-arrow-bottom-right"></div>
+            </div>
+            <!--END card-arrow-->
+        </div>
+        <!--END card-->
+    </div>
+</div>
+{% endblock %}

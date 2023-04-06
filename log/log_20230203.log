@@ -1,0 +1,1425 @@
+INFO, 20230203132912, Run Started
+INFO, 20230203132913, Run Started
+INFO, 20230203132913, Watching for file changes with StatReloader
+INFO, 20230203132923, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203132923, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203132923, dashboard_function.py - alarmData - Success
+INFO, 20230203132923, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203132923, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203132923, dashboard_function.py - vendorChartList - Success
+INFO, 20230203132923, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203132923, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203132923, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203132924, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203132924, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203132924, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203132924, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203132958, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203133000, Run Started
+INFO, 20230203133002, Watching for file changes with StatReloader
+INFO, 20230203133029, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203133030, Run Started
+INFO, 20230203133032, Watching for file changes with StatReloader
+INFO, 20230203133258, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203133300, Run Started
+INFO, 20230203133303, Watching for file changes with StatReloader
+INFO, 20230203133309, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203133309, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203133309, dashboard_function.py - alarmData - Success
+INFO, 20230203133309, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203133309, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203133309, dashboard_function.py - vendorChartList - Success
+INFO, 20230203133310, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203133310, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203133310, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203133310, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203133311, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203133311, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203133311, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203133329, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203133330, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203133330, dashboard_function.py - alarmData - Success
+INFO, 20230203133331, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203133331, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203133331, dashboard_function.py - vendorChartList - Success
+INFO, 20230203133331, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203133332, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203133332, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203133332, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203133333, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203133333, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203133333, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203133354, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203133354, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203133355, dashboard_function.py - alarmData - Success
+INFO, 20230203133355, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203133355, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203133355, dashboard_function.py - vendorChartList - Success
+INFO, 20230203133356, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203133356, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203133356, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203133356, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203133357, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203133357, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203133357, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203133500, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203133501, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203133501, dashboard_function.py - alarmData - Success
+INFO, 20230203133501, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203133501, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203133502, dashboard_function.py - vendorChartList - Success
+INFO, 20230203133502, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203133502, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203133502, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203133503, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203133503, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203133503, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203133503, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203133754, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203133755, Run Started
+INFO, 20230203133757, Watching for file changes with StatReloader
+INFO, 20230203133942, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203133942, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203133942, dashboard_function.py - alarmData - Success
+INFO, 20230203133942, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203133942, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203133942, dashboard_function.py - vendorChartList - Success
+INFO, 20230203133942, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203133943, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203133943, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203133943, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203133943, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203133943, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203133944, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203134751, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203134752, Run Started
+INFO, 20230203134753, Watching for file changes with StatReloader
+INFO, 20230203134945, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203134945, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203134945, dashboard_function.py - alarmData - Success
+INFO, 20230203134945, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203134945, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203134946, dashboard_function.py - vendorChartList - Success
+INFO, 20230203134946, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203134946, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203134946, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203134947, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203134947, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203134947, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203134948, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203135950, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203135950, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203135951, dashboard_function.py - alarmData - Success
+INFO, 20230203135951, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203135951, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203135951, dashboard_function.py - vendorChartList - Success
+INFO, 20230203135951, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203135952, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203135952, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203135952, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203135952, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203135952, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203135953, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203140954, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203140954, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203140954, dashboard_function.py - alarmData - Success
+INFO, 20230203140954, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203140954, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203140954, dashboard_function.py - vendorChartList - Success
+INFO, 20230203140955, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203140955, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203140955, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203140955, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203140956, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203140956, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203140956, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203141402, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203141402, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203141403, dashboard_function.py - alarmData - Success
+INFO, 20230203141403, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203141403, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203141404, dashboard_function.py - vendorChartList - Success
+INFO, 20230203141404, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203141405, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203141405, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203141405, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203141405, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203141406, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203141406, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203141605, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203141605, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203141605, dashboard_function.py - alarmData - Success
+INFO, 20230203141605, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203141605, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203141605, dashboard_function.py - vendorChartList - Success
+INFO, 20230203141605, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203141606, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203141606, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203141606, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203141606, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203141606, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203141606, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203141716, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203141716, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203141716, dashboard_function.py - alarmData - Success
+INFO, 20230203141716, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203141716, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203141716, dashboard_function.py - vendorChartList - Success
+INFO, 20230203141716, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203141716, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203141716, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203141716, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203141717, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203141717, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203141717, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203142631, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203142631, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203142631, dashboard_function.py - alarmData - Success
+INFO, 20230203142632, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203142632, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203142632, dashboard_function.py - vendorChartList - Success
+INFO, 20230203142632, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203142632, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203142632, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203142632, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203142632, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203142632, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203142633, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203143228, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203143233, Run Started
+INFO, 20230203143237, Watching for file changes with StatReloader
+INFO, 20230203143340, Run Finished
+INFO, 20230203143341, Run Finished
+INFO, 20230203144140, Run Started
+INFO, 20230203144140, Run Started
+INFO, 20230203144141, Watching for file changes with StatReloader
+INFO, 20230203144143, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203144143, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203144143, dashboard_function.py - alarmData - Success
+INFO, 20230203144143, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203144143, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203144143, dashboard_function.py - vendorChartList - Success
+INFO, 20230203144143, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203144144, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203144144, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203144144, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203144144, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203144144, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203144144, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203144700, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203144714, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203144804, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203144805, Run Started
+INFO, 20230203144807, Watching for file changes with StatReloader
+ERROR, 20230203144811, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203144817, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203144819, Run Started
+INFO, 20230203144821, Watching for file changes with StatReloader
+ERROR, 20230203144827, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203145144, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203145144, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203145145, dashboard_function.py - alarmData - Success
+INFO, 20230203145145, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203145145, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203145145, dashboard_function.py - vendorChartList - Success
+INFO, 20230203145146, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203145146, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203145146, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203145146, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203145146, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203145147, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203145147, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203145636, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203145638, Run Started
+INFO, 20230203145641, Watching for file changes with StatReloader
+INFO, 20230203150148, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203150148, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203150148, dashboard_function.py - alarmData - Success
+INFO, 20230203150148, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203150148, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203150149, dashboard_function.py - vendorChartList - Success
+INFO, 20230203150149, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203150149, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203150149, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203150149, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203150149, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203150149, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203150149, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203151150, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203151150, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203151151, dashboard_function.py - alarmData - Success
+INFO, 20230203151151, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203151151, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203151151, dashboard_function.py - vendorChartList - Success
+INFO, 20230203151151, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203151151, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203151151, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203151151, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203151151, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203151152, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203151152, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203152153, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203152153, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203152154, dashboard_function.py - alarmData - Success
+INFO, 20230203152154, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203152154, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203152154, dashboard_function.py - vendorChartList - Success
+INFO, 20230203152154, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203152154, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203152154, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203152154, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203152154, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203152154, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203152154, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203153155, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203153155, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203153156, dashboard_function.py - alarmData - Success
+INFO, 20230203153156, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203153156, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203153156, dashboard_function.py - vendorChartList - Success
+INFO, 20230203153156, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203153156, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203153156, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203153156, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203153156, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203153156, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203153156, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203154157, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203154158, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203154158, dashboard_function.py - alarmData - Success
+INFO, 20230203154158, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203154158, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203154158, dashboard_function.py - vendorChartList - Success
+INFO, 20230203154159, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203154159, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203154159, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203154159, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203154200, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203154200, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203154200, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203155201, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203155201, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203155202, dashboard_function.py - alarmData - Success
+INFO, 20230203155202, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203155202, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203155202, dashboard_function.py - vendorChartList - Success
+INFO, 20230203155202, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203155202, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203155202, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203155202, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203155202, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203155202, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203155202, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203160203, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203160203, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203160204, dashboard_function.py - alarmData - Success
+INFO, 20230203160204, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203160204, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203160204, dashboard_function.py - vendorChartList - Success
+INFO, 20230203160204, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203160204, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203160204, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203160205, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203160205, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203160205, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203160205, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203160752, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203160753, Run Started
+INFO, 20230203160754, Watching for file changes with StatReloader
+INFO, 20230203160809, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203160810, Run Started
+INFO, 20230203160810, Watching for file changes with StatReloader
+INFO, 20230203160827, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203160827, Run Started
+INFO, 20230203160829, Watching for file changes with StatReloader
+INFO, 20230203160904, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203160905, Run Started
+INFO, 20230203160906, Watching for file changes with StatReloader
+INFO, 20230203161009, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203161009, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203161009, dashboard_function.py - alarmData - Success
+INFO, 20230203161009, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203161010, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203161010, dashboard_function.py - vendorChartList - Success
+INFO, 20230203161010, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203161011, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203161011, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203161011, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203161012, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203161012, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203161012, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203161040, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203161041, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203161041, dashboard_function.py - alarmData - Success
+INFO, 20230203161041, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203161041, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203161042, dashboard_function.py - vendorChartList - Success
+INFO, 20230203161042, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203161043, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203161043, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203161044, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203161044, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203161045, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203161046, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203161123, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203161127, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203161300, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203161302, Run Started
+INFO, 20230203161305, Watching for file changes with StatReloader
+INFO, 20230203161316, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203161316, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203161317, dashboard_function.py - alarmData - Success
+INFO, 20230203161317, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203161318, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203161318, dashboard_function.py - vendorChartList - Success
+INFO, 20230203161318, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203161319, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203161319, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203161319, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203161320, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203161320, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203161320, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203161339, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203161527, Run Finished
+INFO, 20230203161527, Run Finished
+INFO, 20230203161529, Run Started
+INFO, 20230203161529, Run Started
+INFO, 20230203161530, Watching for file changes with StatReloader
+INFO, 20230203161549, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203161549, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203161549, dashboard_function.py - alarmData - Success
+INFO, 20230203161550, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203161550, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203161550, dashboard_function.py - vendorChartList - Success
+INFO, 20230203161551, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203161551, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203161551, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203161551, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203161552, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203161552, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203161552, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203161903, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203161906, Run Started
+INFO, 20230203161908, Watching for file changes with StatReloader
+INFO, 20230203161915, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203161916, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203161916, dashboard_function.py - alarmData - Success
+INFO, 20230203161917, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203161917, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203161918, dashboard_function.py - vendorChartList - Success
+INFO, 20230203161918, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203161918, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203161918, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203161919, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203161919, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203161919, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203161920, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203162017, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203162018, Run Started
+INFO, 20230203162019, Watching for file changes with StatReloader
+INFO, 20230203162031, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203162032, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203162032, dashboard_function.py - alarmData - Success
+INFO, 20230203162032, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203162033, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203162033, dashboard_function.py - vendorChartList - Success
+INFO, 20230203162033, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203162034, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203162034, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203162034, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203162034, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203162035, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203162035, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203162255, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203162256, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203162256, dashboard_function.py - alarmData - Success
+INFO, 20230203162256, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203162256, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203162257, dashboard_function.py - vendorChartList - Success
+INFO, 20230203162257, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203162258, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203162258, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203162258, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203162258, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203162259, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203162259, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203162305, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203162305, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203162305, dashboard_function.py - alarmData - Success
+INFO, 20230203162306, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203162306, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203162307, dashboard_function.py - vendorChartList - Success
+INFO, 20230203162307, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203162308, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203162308, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203162308, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203162308, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203162308, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203162309, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203162427, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203162428, Run Started
+INFO, 20230203162430, Watching for file changes with StatReloader
+INFO, 20230203162501, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203162502, Run Started
+INFO, 20230203162504, Watching for file changes with StatReloader
+INFO, 20230203162515, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203162515, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203162515, dashboard_function.py - alarmData - Success
+INFO, 20230203162515, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203162516, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203162516, dashboard_function.py - vendorChartList - Success
+INFO, 20230203162516, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203162516, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203162516, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203162516, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203162517, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203162517, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203162517, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203162532, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 239, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203162543, Internal Server Error: /disk_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 284, in disk_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203162554, Internal Server Error: /disk_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 284, in disk_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203162625, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 239, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203162711, Internal Server Error: /disk_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 284, in disk_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203162718, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203163520, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203163521, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203163521, dashboard_function.py - alarmData - Success
+INFO, 20230203163521, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203163521, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203163521, dashboard_function.py - vendorChartList - Success
+INFO, 20230203163521, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203163522, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203163522, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203163522, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203163522, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203163522, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203163523, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203163829, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203163829, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203163829, dashboard_function.py - alarmData - Success
+INFO, 20230203163830, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203163830, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203163830, dashboard_function.py - vendorChartList - Success
+INFO, 20230203163831, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203163831, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203163831, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203163831, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203163832, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203163832, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203163832, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203163853, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 239, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203163857, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 239, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203163931, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203163937, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203164105, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203164106, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 262, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203164319, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203164320, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203164320, dashboard_function.py - alarmData - Success
+INFO, 20230203164321, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203164321, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203164321, dashboard_function.py - vendorChartList - Success
+INFO, 20230203164322, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203164322, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203164322, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203164322, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203164322, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203164322, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203164323, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203164331, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 239, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203164458, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203164458, Run Started
+INFO, 20230203164459, Watching for file changes with StatReloader
+ERROR, 20230203164514, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 239, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203164526, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203164526, Run Started
+INFO, 20230203164527, Watching for file changes with StatReloader
+INFO, 20230203164533, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203164533, Run Started
+INFO, 20230203164534, Watching for file changes with StatReloader
+ERROR, 20230203164545, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 240, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203164651, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 240, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203164843, Run Finished
+INFO, 20230203164843, Run Finished
+INFO, 20230203164845, Run Started
+INFO, 20230203164846, Run Started
+INFO, 20230203164847, Watching for file changes with StatReloader
+INFO, 20230203164921, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203164921, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203164921, dashboard_function.py - alarmData - Success
+INFO, 20230203164922, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203164922, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203164922, dashboard_function.py - vendorChartList - Success
+INFO, 20230203164922, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203164922, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203164922, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203164922, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203164923, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203164923, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203164923, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203164931, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 240, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203164953, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 240, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203165502, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203165503, Run Started
+INFO, 20230203165505, Watching for file changes with StatReloader
+INFO, 20230203165700, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203165701, Run Started
+INFO, 20230203165706, Watching for file changes with StatReloader
+INFO, 20230203165712, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203165712, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203165713, dashboard_function.py - alarmData - Success
+INFO, 20230203165713, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203165713, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203165714, dashboard_function.py - vendorChartList - Success
+INFO, 20230203165714, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203165714, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203165714, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203165715, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203165715, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203165715, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203165716, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203165729, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 264, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203165842, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203165842, Run Started
+INFO, 20230203165843, Watching for file changes with StatReloader
+INFO, 20230203165848, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203165849, Run Started
+INFO, 20230203165849, Watching for file changes with StatReloader
+ERROR, 20230203165908, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 266, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203165914, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 266, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203165917, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 266, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203165942, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203165944, Run Started
+INFO, 20230203165947, Watching for file changes with StatReloader
+INFO, 20230203170021, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203170023, Run Started
+INFO, 20230203170024, Watching for file changes with StatReloader
+ERROR, 20230203170042, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 266, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203170113, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203170114, Run Started
+INFO, 20230203170116, Watching for file changes with StatReloader
+ERROR, 20230203170121, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 266, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203170149, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203170150, Run Started
+INFO, 20230203170150, Watching for file changes with StatReloader
+ERROR, 20230203170219, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 266, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203170316, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203170319, Run Started
+INFO, 20230203170320, Watching for file changes with StatReloader
+ERROR, 20230203170327, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 266, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203170356, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203170356, Run Started
+INFO, 20230203170357, Watching for file changes with StatReloader
+INFO, 20230203170407, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203170408, Run Started
+INFO, 20230203170409, Watching for file changes with StatReloader
+ERROR, 20230203170420, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 266, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203170514, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203170515, Run Started
+INFO, 20230203170516, Watching for file changes with StatReloader
+INFO, 20230203170719, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203170719, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203170719, dashboard_function.py - alarmData - Success
+INFO, 20230203170719, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203170720, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203170720, dashboard_function.py - vendorChartList - Success
+INFO, 20230203170720, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203170720, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203170720, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203170720, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203170721, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203170721, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203170721, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203170738, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203170738, Run Started
+INFO, 20230203170739, Watching for file changes with StatReloader
+INFO, 20230203170842, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203170842, Run Started
+INFO, 20230203170846, Watching for file changes with StatReloader
+INFO, 20230203170911, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203170911, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203170912, dashboard_function.py - alarmData - Success
+INFO, 20230203170912, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203170912, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203170912, dashboard_function.py - vendorChartList - Success
+INFO, 20230203170912, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203170912, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203170912, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203170912, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203170912, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203170912, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203170912, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203171004, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203171004, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203171004, dashboard_function.py - alarmData - Success
+INFO, 20230203171004, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203171004, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203171004, dashboard_function.py - vendorChartList - Success
+INFO, 20230203171004, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203171005, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203171005, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203171005, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203171005, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203171005, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203171005, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203171107, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171107, Run Started
+INFO, 20230203171108, Watching for file changes with StatReloader
+INFO, 20230203171122, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171122, Run Started
+INFO, 20230203171123, Watching for file changes with StatReloader
+INFO, 20230203171150, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171150, Run Started
+INFO, 20230203171151, Watching for file changes with StatReloader
+INFO, 20230203171201, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171201, Run Started
+INFO, 20230203171202, Watching for file changes with StatReloader
+INFO, 20230203171214, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171215, Run Started
+INFO, 20230203171217, Watching for file changes with StatReloader
+INFO, 20230203171248, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171249, Run Started
+INFO, 20230203171250, Watching for file changes with StatReloader
+INFO, 20230203171316, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171317, Run Started
+INFO, 20230203171319, Watching for file changes with StatReloader
+INFO, 20230203171342, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203171342, Run Started
+INFO, 20230203171345, Watching for file changes with StatReloader
+INFO, 20230203171358, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171400, Run Started
+INFO, 20230203171402, Watching for file changes with StatReloader
+INFO, 20230203171414, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171415, Run Started
+INFO, 20230203171417, Watching for file changes with StatReloader
+INFO, 20230203171542, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203171542, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203171543, dashboard_function.py - alarmData - Success
+INFO, 20230203171543, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203171543, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203171544, dashboard_function.py - vendorChartList - Success
+INFO, 20230203171544, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203171545, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203171545, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203171545, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203171545, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203171546, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203171546, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203171603, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 240, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+WARNING, 20230203171621, Not Found: /favicon.ico
+INFO, 20230203171625, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203171625, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203171625, dashboard_function.py - alarmData - Success
+INFO, 20230203171625, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203171626, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203171626, dashboard_function.py - vendorChartList - Success
+INFO, 20230203171626, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203171626, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203171626, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203171626, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203171626, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203171627, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203171627, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203171640, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171641, Run Started
+INFO, 20230203171642, Watching for file changes with StatReloader
+INFO, 20230203171820, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203171820, Run Started
+INFO, 20230203171822, Watching for file changes with StatReloader
+INFO, 20230203171829, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171831, Run Started
+INFO, 20230203171833, Watching for file changes with StatReloader
+INFO, 20230203171845, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203171846, Run Started
+INFO, 20230203171848, Watching for file changes with StatReloader
+INFO, 20230203171922, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203171923, Run Started
+INFO, 20230203171924, Watching for file changes with StatReloader
+INFO, 20230203171930, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203171931, Run Started
+INFO, 20230203171932, Watching for file changes with StatReloader
+INFO, 20230203172148, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203172148, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203172149, dashboard_function.py - alarmData - Success
+INFO, 20230203172149, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203172149, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203172149, dashboard_function.py - vendorChartList - Success
+INFO, 20230203172149, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203172149, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203172149, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203172150, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203172150, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203172150, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203172150, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203172201, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172202, Run Started
+INFO, 20230203172203, Watching for file changes with StatReloader
+INFO, 20230203172226, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203172227, Run Started
+INFO, 20230203172227, Watching for file changes with StatReloader
+INFO, 20230203172236, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203172237, Run Started
+INFO, 20230203172238, Watching for file changes with StatReloader
+INFO, 20230203172251, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172252, Run Started
+INFO, 20230203172253, Watching for file changes with StatReloader
+INFO, 20230203172305, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172306, Run Started
+INFO, 20230203172307, Watching for file changes with StatReloader
+INFO, 20230203172313, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172315, Run Started
+INFO, 20230203172316, Watching for file changes with StatReloader
+INFO, 20230203172336, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172337, Run Started
+INFO, 20230203172339, Watching for file changes with StatReloader
+ERROR, 20230203172344, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 265, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203172356, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172357, Run Started
+INFO, 20230203172359, Watching for file changes with StatReloader
+INFO, 20230203172411, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172412, Run Started
+INFO, 20230203172413, Watching for file changes with StatReloader
+ERROR, 20230203172418, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 265, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203172445, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172445, Run Started
+INFO, 20230203172446, Watching for file changes with StatReloader
+INFO, 20230203172607, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172608, Run Started
+INFO, 20230203172611, Watching for file changes with StatReloader
+INFO, 20230203172657, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203172657, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203172657, dashboard_function.py - alarmData - Success
+INFO, 20230203172657, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203172657, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203172657, dashboard_function.py - vendorChartList - Success
+INFO, 20230203172657, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203172658, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203172658, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203172658, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203172658, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203172658, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203172658, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203172718, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172718, Run Started
+INFO, 20230203172719, Watching for file changes with StatReloader
+ERROR, 20230203172721, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 265, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203172817, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172817, Run Started
+INFO, 20230203172818, Watching for file changes with StatReloader
+INFO, 20230203172941, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172942, Run Started
+INFO, 20230203172944, Watching for file changes with StatReloader
+ERROR, 20230203172947, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 265, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203172954, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203172955, Run Started
+INFO, 20230203172957, Watching for file changes with StatReloader
+ERROR, 20230203173002, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 265, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203173012, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203173012, Run Started
+INFO, 20230203173014, Watching for file changes with StatReloader
+ERROR, 20230203173019, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 265, in cpu_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203173023, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203173023, Run Started
+INFO, 20230203173025, Watching for file changes with StatReloader
+INFO, 20230203173252, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203173253, Run Started
+INFO, 20230203173254, Watching for file changes with StatReloader
+INFO, 20230203173255, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203173256, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203173256, dashboard_function.py - alarmData - Success
+INFO, 20230203173256, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203173256, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203173256, dashboard_function.py - vendorChartList - Success
+INFO, 20230203173256, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203173256, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203173256, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203173256, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203173256, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203173257, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203173257, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203173310, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203173310, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203173311, dashboard_function.py - alarmData - Success
+INFO, 20230203173311, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203173311, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203173311, dashboard_function.py - vendorChartList - Success
+INFO, 20230203173311, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203173311, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203173311, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203173311, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203173311, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203173312, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203173312, dashboard_function.py - memoryMoreDataList - Success
+ERROR, 20230203173316, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 240, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+INFO, 20230203173423, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203173425, Run Started
+INFO, 20230203173429, Watching for file changes with StatReloader
+INFO, 20230203173514, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203173515, Run Started
+INFO, 20230203173516, Watching for file changes with StatReloader
+INFO, 20230203173536, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203173536, Run Started
+INFO, 20230203173536, Watching for file changes with StatReloader
+INFO, 20230203173622, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203173622, Run Started
+INFO, 20230203173623, Watching for file changes with StatReloader
+INFO, 20230203173629, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203173629, Run Started
+INFO, 20230203173632, Watching for file changes with StatReloader
+ERROR, 20230203173636, Internal Server Error: /memory_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 239, in memory_moreInfo_paging
+    for i in range(len(SMD)):
+TypeError: object of type 'NoneType' has no len()
+ERROR, 20230203173647, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 263, in cpu_moreInfo_paging
+    print(SMD[0][0])
+KeyError: 0
+INFO, 20230203173728, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203173730, Run Started
+INFO, 20230203173733, Watching for file changes with StatReloader
+ERROR, 20230203173739, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 263, in cpu_moreInfo_paging
+    print(SMD[0][0])
+KeyError: 0
+INFO, 20230203173833, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203173833, Run Started
+INFO, 20230203173834, Watching for file changes with StatReloader
+ERROR, 20230203173835, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 263, in cpu_moreInfo_paging
+    print(SMD[0][0])
+IndexError: list index out of range
+ERROR, 20230203173859, Internal Server Error: /cpu_moreInfo/paging/
+Traceback (most recent call last):
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\venvs\xion\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\venvs\xion\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "c:\X-FACTOR\X-Factor_0105\web\views\base_views.py", line 263, in cpu_moreInfo_paging
+    print(SMD[0][0])
+KeyError: 0
+INFO, 20230203173916, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203173916, Run Started
+INFO, 20230203173917, Watching for file changes with StatReloader
+INFO, 20230203173926, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203173926, Run Started
+INFO, 20230203173927, Watching for file changes with StatReloader
+INFO, 20230203174006, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203174008, Run Started
+INFO, 20230203174009, Watching for file changes with StatReloader
+INFO, 20230203174018, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203174018, Run Started
+INFO, 20230203174021, Watching for file changes with StatReloader
+INFO, 20230203174101, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203174101, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203174102, dashboard_function.py - alarmData - Success
+INFO, 20230203174103, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203174103, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203174104, dashboard_function.py - vendorChartList - Success
+INFO, 20230203174104, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203174105, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203174105, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203174106, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203174107, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203174107, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203174107, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203174206, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203174207, Run Started
+INFO, 20230203174208, Watching for file changes with StatReloader
+INFO, 20230203174255, C:\X-FACTOR\X-Factor_0105\common\Input\DB\Tanium\Postgresql\Dashboard.py changed, reloading.
+INFO, 20230203174256, Run Started
+INFO, 20230203174257, Watching for file changes with StatReloader
+INFO, 20230203174319, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203174320, Run Started
+INFO, 20230203174322, Watching for file changes with StatReloader
+INFO, 20230203174326, C:\X-FACTOR\X-Factor_0105\web\views\base_views.py changed, reloading.
+INFO, 20230203174327, Run Started
+INFO, 20230203174330, Watching for file changes with StatReloader
+INFO, 20230203174410, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203174410, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203174410, dashboard_function.py - alarmData - Success
+INFO, 20230203174410, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203174410, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203174411, dashboard_function.py - vendorChartList - Success
+INFO, 20230203174411, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203174411, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203174411, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203174412, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203174412, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203174412, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203174412, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203174430, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203174430, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203174430, dashboard_function.py - alarmData - Success
+INFO, 20230203174430, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203174430, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203174430, dashboard_function.py - vendorChartList - Success
+INFO, 20230203174430, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203174431, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203174431, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203174431, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203174431, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203174431, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203174431, dashboard_function.py - memoryMoreDataList - Success
+INFO, 20230203181054, dashboard_function.py - server_BChartDataList - Success
+INFO, 20230203181054, dashboard_function.py - service_donutChartData - Success
+INFO, 20230203181054, dashboard_function.py - alarmData - Success
+INFO, 20230203181054, dashboard_function.py - server_LChartDataList - Success
+INFO, 20230203181054, dashboard_function.py - os_donutChartData - Success
+INFO, 20230203181054, dashboard_function.py - vendorChartList - Success
+INFO, 20230203181054, dashboard_function.py - alarm_donutChartData - Success
+INFO, 20230203181054, dashboard_function.py - BNChartDataList - Success
+INFO, 20230203181054, dashboard_function.py - WMCDL(World Map Chart Data List) - Success
+INFO, 20230203181054, dashboard_function.py - GpuServerDataList - Success
+INFO, 20230203181054, dashboard_function.py - connectIpDataList - Success
+INFO, 20230203181054, dashboard_function.py - connectServerDataList - Success
+INFO, 20230203181055, dashboard_function.py - memoryMoreDataList - Success

@@ -1,0 +1,111 @@
+{% load static %}
+<div id="header" class="app-header">
+    <!-- BEGIN desktop-toggler -->
+    <div class="desktop-toggler">
+        <button type="button" class="menu-toggler" data-toggle-class="app-sidebar-collapsed" data-dismiss-class="app-sidebar-toggled" data-toggle-target=".app">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <!-- BEGIN desktop-toggler -->
+
+    <!-- BEGIN mobile-toggler -->
+    <div class="mobile-toggler">
+        <button type="button" class="menu-toggler" data-toggle-class="app-sidebar-mobile-toggled" data-toggle-target=".app">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <!-- END mobile-toggler -->
+
+    <!-- BEGIN brand -->
+    <div class="brand">
+        <a href="../dashboard" class="brand-logo">
+            {% if Customer == 'NC' %}
+            <img src="{% static 'assets/css/images/nc_newlogo.png' %}">
+            {% else %}
+            <img src="{% static 'assets/css/images/XFactor_w.png' %}">
+            {% endif %}
+
+        </a>
+    </div>
+    <!-- END brand -->
+
+    <!-- BEGIN menu -->
+    <div class="menu">
+    {% if request.session.sessionid %}
+    <div class="menu-item dropdown dropdown-mobile-full">
+        <button type="button" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link border-0 bg-transparent" >
+            <div class="menu-img online">
+                <img src="{% static 'img/common/dashboard/user.png' %}" alt="Profile" height="30"/>
+            </div>
+            <div class="menu-text d-sm-block d-none">{{ request.session.sessionid }}</div>
+        </button>
+
+        <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px top-100" >
+            {% if Login_Method != 'Tanium'%}
+            <a class="dropdown-item d-flex align-items-center" href="../updateform?user_id={{request.session.sessionid}}">{{ request.session.sessionid }} 회원정보 <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i></a>
+            <div class="dropdown-divider"></div>
+            {% endif %}
+            <a class="dropdown-item d-flex align-items-center" onclick="confirmLogout2()">로그아웃 <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
+        </div>
+
+<!--        <div>-->
+<!--        <a class="dropdown-item d-flex align-items-center" href="../updateform?user_id={{request.session.sessionid}}">{{ request.session.sessionname }} 회원정보 <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i></a>-->
+<!--        <a class="dropdown-item d-flex align-items-center" onclick="confirmLogout2()">로그아웃 <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>-->
+<!--        </div>-->
+
+    </div>
+    {% endif %}
+</div>
+
+
+<!--    <div class="menu">-->
+<!--        {% if request.session.sessionid %}-->
+<!--        <div class="menu-item dropdown dropdown-mobile-full">-->
+<!--            <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">-->
+<!--                <div class="menu-img online">-->
+<!--                    <img src="{% static 'img/common/dashboard/user.png' %}" alt="Profile" height="30"/>-->
+<!--                </div>-->
+<!--                <div class="menu-text d-sm-block d-none">{{ request.session.sessionid }}</div>-->
+<!--            </a>-->
+<!--            <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">-->
+<!--                {% if Login_Method != 'Tanium'%}-->
+<!--                <a class="dropdown-item d-flex align-items-center" href="../updateform?user_id={{request.session.sessionid}}">{{ request.session.sessionname }} 회원정보 <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i></a>-->
+<!--                <div class="dropdown-divider"></div>-->
+<!--                {% endif %}-->
+<!--                <a class="dropdown-item d-flex align-items-center" onclick="confirmLogout2()">로그아웃 <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        {% endif %}-->
+<!--    </div>-->
+
+
+    <!-- END menu -->
+
+    <!-- BEGIN menu-search -->
+    <form class="menu-search" method="POST" name="header_search_form">
+        <div class="menu-search-container">
+            <div class="menu-search-icon"><i class="bi bi-search"></i></div>
+            <div class="menu-search-input">
+                <input type="text" class="form-control form-control-lg" placeholder="Search menu..."/>
+            </div>
+            <div class="menu-search-icon">
+                <a href="#" data-toggle-class="app-header-menu-search-toggled" data-toggle-target=".app"><i class="bi bi-x-lg"></i></a>
+            </div>
+        </div>
+    </form>
+    <!-- END menu-search -->
+</div>
+
+<script>
+			function confirmLogout2() {
+				if( confirm("정말 로그아웃 하시겠습니까?") ) {
+					window.location.href = "../logout/";
+				}
+			}
+
+
+</script>

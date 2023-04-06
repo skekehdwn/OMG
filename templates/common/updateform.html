@@ -1,0 +1,88 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>X-Factor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+    <!-- favicon -->
+    <link rel="shortcunt icon" href="{% static 'img/X-Factor_favicon/favicon.ico' %}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/X-Factor_favicon/apple-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/X-Factor_favicon/apple-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/X-Factor_favicon/apple-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/X-Factor_favicon/apple-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/X-Factor_favicon/apple-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/X-Factor_favicon/apple-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/X-Factor_favicon/apple-icon-144x144.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/X-Factor_favicon/apple-icon-180x180.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{% static 'img/X-Factor_favicon/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32"  href="{% static 'img/X-Factor_favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="96x96"  href="{% static 'img/X-Factor_favicon/favicon-96x96.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16"  href="{% static 'img/X-Factor_favicon/favicon-16x16.png' %}">
+
+	<!-- ================== BEGIN core-css ================== -->
+	<link href="{% static 'assets/css/vendor.min.css' %}" rel="stylesheet" />
+	<link href="{% static 'assets/css/app.min.css' %}" rel="stylesheet" />
+	<!-- ================== END core-css ================== -->
+
+</head>
+<body class='pace-top'>
+	<!-- BEGIN #app -->
+	<div id="app" class="app app-full-height app-without-header theme-orange">
+		<!-- BEGIN login -->
+		<div class="login">
+			<!-- BEGIN login-content -->
+			<div class="login-content">
+				<form action="{% url 'updateform' %}" method="POST" name="updateform">
+					{% csrf_token %}
+					{% include "../form_errors.html" %}
+					{% if error %}
+						<div class="alert alert-danger" role="alert">{{error}}</div>
+					{% endif %}
+					<h1 class="text-center">회원정보 수정 </h1>
+					<div class="text-white text-opacity-50 text-center mb-4">
+						회원정보를 수정하시려면 암호를 입력해주세요
+					</div>
+					<input type="hidden" name="user_id" value={{request.session.sessionid}}>
+					<div class="mb-3">
+						<div class="d-flex">
+							<label class="form-label">비밀번호 <span class="text-danger">*</span></label>
+<!--							<a href="#" class="ms-auto text-white text-decoration-none text-opacity-50">비밀번호 재설정</a>-->
+						</div>
+						<input type="password" class="form-control form-control-lg bg-white bg-opacity-5" value="{{ form.user_pw.value|default_if_none:'' }}" placeholder="" name="user_pw" id="user_pw"/>
+					</div>
+					<button type="submit" class="btn btn-outline-theme btn-lg d-block w-100 fw-500 mb-3">확인</button>
+
+				</form>
+			</div>
+			<!-- END login-content -->
+		</div>
+		<!-- END login -->
+
+		<!-- BEGIN btn-scroll-top -->
+		<a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+		<!-- END btn-scroll-top -->
+	</div>
+	<!-- END #app -->
+
+	<!-- ================== BEGIN core-js ================== -->
+	<script src="assets/js/vendor.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+	<!-- ================== END core-js ================== -->
+
+
+
+	<script>
+
+
+	</script>
+</body>
+</html>
+
+
+
+
+
