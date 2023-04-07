@@ -659,14 +659,16 @@ var handleRenderDashboardPopupTableData = function () {
 			{data : 'use'},
 			{data : 'total'},
 			{data : 'usage'},
+			{data : 'index'}
 		],
 		columnDefs: [
             {targets: 0, width: "10%", className: 'text-center'},
-            {targets: 1, width: "20%", className: 'text-center text-truncate', render: function(data, type, row) {return '<span title="'+row.ip+'" data-toggle="tooltip">'+data+'</span>'}},
-            {targets: 2, width: "34%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
+            {targets: 1, width: "15%", className: 'text-center text-truncate', render: function(data, type, row) {return '<span title="'+row.ip+'" data-toggle="tooltip">'+data+'</span>'}},
+            {targets: 2, width: "35%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
             {targets: 3, width: "12%", className: 'text-center'},
             {targets: 4, width: "12%", className: 'text-center'},
-            {targets: 5, width: "12%", className: 'text-center'}
+            {targets: 5, width: "12%", className: 'text-center'},
+            {targets: 6, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary"><option value="Action">Action</option><option value="Mail">Mail</option><option value="Alarm">Alarm</option><option value="Reboot">Reboot</option></select>'}},
 		],
 		language: {
 			"decimal": "",
@@ -747,13 +749,16 @@ var CpuhandleRenderDashboardPopupTableData = function () {
 			{data: 'name'},
 			{data: 'use'},
 			{data: 'usage'},
+			{data: 'index'},
+
 		],
 		columnDefs: [
             {targets: 0, width: "10%", className: 'text-center'},
             {targets: 1, width: "20%", className: 'text-center text-truncate', render: function(data, type, row) {return '<span title="'+row.ip+'" data-toggle="tooltip">'+data+'</span>'}},
-            {targets: 2, width: "40%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
-            {targets: 3, width: "17%", className: 'text-center'},
-            {targets: 4, width: "13%", className: 'text-center'},
+            {targets: 2, width: "34%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
+            {targets: 3, width: "13%", className: 'text-center'},
+            {targets: 4, width: "9%", className: 'text-center'},
+            {targets: 5, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary"><option value="Action">Action</option><option value="Mail">Mail</option><option value="Alarm">Alarm</option><option value="Reboot">Reboot</option></select>'}},
 		],
 		language: {
 			"decimal": "",
@@ -834,14 +839,16 @@ var DiskhandleRenderDashboardPopupTableData = function () {
 			{data : 'use'},
 			{data : 'total'},
 			{data : 'usage'},
+			{data : 'index'},
 		],
 		columnDefs: [
             {targets: 0, width: "10%", className: 'text-center'},
-            {targets: 1, width: "20%", className: 'text-center text-truncate', render: function(data, type, row) {return '<span title="'+row.ip+'" data-toggle="tooltip">'+data+'</span>'}},
-            {targets: 2, width: "34%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
+            {targets: 1, width: "15%", className: 'text-center text-truncate', render: function(data, type, row) {return '<span title="'+row.ip+'" data-toggle="tooltip">'+data+'</span>'}},
+            {targets: 2, width: "35%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
             {targets: 3, width: "12%", className: 'text-center'},
             {targets: 4, width: "12%", className: 'text-center'},
-            {targets: 5, width: "12%", className: 'text-center'}
+            {targets: 5, width: "12%", className: 'text-center'},
+            {targets: 6, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary"><option value="Action">Action</option><option value="Mail">Mail</option><option value="Alarm">Alarm</option><option value="Reboot">Reboot</option></select>'}},
 		],
 		language: {
 			"decimal": "",
