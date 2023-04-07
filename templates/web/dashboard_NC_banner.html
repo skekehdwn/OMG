@@ -80,24 +80,21 @@
 
 
         <!-- BEGIN col-3 -->
-        <div class="col-xl-3 col-lg-6">
+        <div class="col-xl-iscsi col-lg-iscsi">
             <!-- BEGIN card -->
             <div class="card mb-3">
                 <!-- BEGIN card-body -->
                 <div class="card-body h-150px">
                     <!-- BEGIN title -->
-                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo serverBandBy-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
-                    <div class="d-flex fw-bold fs-12px">
-                        <div class="flex-grow-1">각 대역별 서버 수 (상위 3개)</div>
+                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo gpuServer-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="d-flex fw-bold small">
+                        <div class="flex-grow-1">예상 유휴 장비 수량</div>
                     </div>
                     <!-- END title -->
                     <!-- BEGIN stat-lg -->
-                    <div class="h-100px">
-                        <!-- END stat-sm -->
-                        <div>
-                            <div class="col-12">
-                                <div class="mt-n3 mb-n2 h-100px" id="apexIPlistChart"></div>
-                            </div>
+                    <div class="col-12 h-100px d-flex text-center align-content-center justify-content-center flex-md-column">
+                        <div class="count-num">
+                            <span class="fw-bold text-opacity-60 fs-35px pe-3 pb-10px">4개</span>
                         </div>
                     </div>
                     <!-- END stat-lg -->
@@ -116,6 +113,43 @@
             <!-- END card -->
         </div>
         <!-- END col-3 -->
+        <!-- BEGIN col-3 -->
+        <div class="col-xl-iscsi col-lg-iscsi">
+            <!-- BEGIN card -->
+            <div class="card mb-3">
+                <!-- BEGIN card-body -->
+                <div class="card-body h-150px">
+                    <!-- BEGIN title -->
+                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo alarmCase-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="d-flex fw-bold fs-12px">
+                        <div class="flex-grow-1">알람 발생 자산 수</div>
+                    </div>
+                    <!-- END title -->
+                    <!-- BEGIN stat-lg -->
+
+                    <div class="col-12 h-100px d-flex text-center align-content-center justify-content-center flex-md-column">
+                        <div class="count-num">
+
+                            <span class="fw-bold text-opacity-60 fs-35px pe-3 pb-10px"> {{chartData.alamCaseDataList.nodeDataList.0.alarmCount|add:chartData.alamCaseDataList.nodeDataList.1.alarmCount|add:chartData.alamCaseDataList.nodeDataList.2.alarmCount|add:chartData.alamCaseDataList.nodeDataList.3.alarmCount}}개</span>
+                        </div>
+                    </div>
+                    <!-- END stat-lg -->
+                </div>
+                <!-- END card-body -->
+
+                <!-- BEGIN card-arrow -->
+                <div class="card-arrow">
+                    <div class="card-arrow-top-left"></div>
+                    <div class="card-arrow-top-right"></div>
+                    <div class="card-arrow-bottom-left"></div>
+                    <div class="card-arrow-bottom-right"></div>
+                </div>
+                <!-- END card-arrow -->
+            </div>
+            <!-- END card -->
+        </div>
+        <!-- END col-3 -->
+
 
         <!-- BEGIN col-3 -->
         <div class="col-xl-3 col-lg-6">
@@ -465,77 +499,28 @@
         </div>
         <!-- END col-3 -->
         <!-- BEGIN col-3 -->
-        <div class="col-xl-iscsi col-lg-iscsi">
+        <div class="col-xl-3 col-lg-6">
             <!-- BEGIN card -->
             <div class="card mb-3">
                 <!-- BEGIN card-body -->
                 <div class="card-body h-150px">
                     <!-- BEGIN title -->
-                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo physicalServer-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
-                    <div class="d-flex fw-bold small">
-                        <div class="flex-grow-1">ISCSI 사용 현황</div>
-                    </div>
-                    <!-- END title -->
-                    <!-- BEGIN stat-lg -->
-                    <div>
-                        <div class="col-12">
-                            <div class="mt-n3 mb-n2 h-100px" id=></div>
-                        </div>
-                    </div>
-                    <!-- END stat-lg -->
-                </div>
-                <!-- END card-body -->
-
-                <!-- BEGIN card-arrow -->
-                <div class="card-arrow">
-                    <div class="card-arrow-top-left"></div>
-                    <div class="card-arrow-top-right"></div>
-                    <div class="card-arrow-bottom-left"></div>
-                    <div class="card-arrow-bottom-right"></div>
-                </div>
-                <!-- END card-arrow -->
-            </div>
-            <!-- END card -->
-        </div>
-        <!-- END col-3 -->
-        <!-- BEGIN col-3 -->
-        <div class="col-xl-iscsi col-lg-iscsi">
-            <!-- BEGIN card -->
-            <div class="card mb-3">
-                <!-- BEGIN card-body -->
-                <div class="card-body h-150px">
-                    <!-- BEGIN title -->
-                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo gpuServer-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo serverBandBy-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
                     <div class="d-flex fw-bold fs-12px">
-                        <div class="flex-grow-1">GPU 서버 수량</div>
+                        <div class="flex-grow-1">각 대역별 서버 수 (상위 3개)</div>
                     </div>
                     <!-- END title -->
                     <!-- BEGIN stat-lg -->
-                    {% if chartData.GpuServerDataList %}
-                    <div class="col-12 h-100px d-flex text-center align-content-center justify-content-center flex-md-column">
-                        <div class="count-num">
-                            <span class="fw-bold text-opacity-60 fs-35px pe-3 pb-10px ">{{ chartData.GpuServerDataList.value }}개</span>
-                            <div class="conNumImg" style="position: relative;">
-                                {% if chartData.GpuServerDataList.roc == 0 %}
-                                <a class="conNumIcon text-decoration-none fs-25px"> - </a>
-                                {% elif chartData.GpuServerDataList.roc > 0 %}
-                                <img class="conArrow fs-25px pt-25px" src="{% static 'img/common/dashboard/arrowTop.png' %}">
-                                {% elif chartData.GpuServerDataList.roc < 0 %}
-                                <img class="conArrow fs-25px pt-25px" src="{% static 'img/common/dashboard/arrowBot.png' %}">
-                                {% endif %}
+                    <div class="h-100px">
+                        <!-- END stat-sm -->
+                        <div>
+                            <div class="col-12">
+                                <div class="mt-n3 mb-n2 h-100px" id="apexIPlistChart"></div>
                             </div>
-                            <span class="conNum text-theme fw-bold fs-25px">
-                            {% if chartData.GpuServerDataList.roc < 0 %}
-                            {% widthratio chartData.GpuServerDataList.roc 1 -1 %}
-                            {% else %}
-                            {{ chartData.GpuServerDataList.roc }}
-                            {% endif %}
-                            </span>
                         </div>
                     </div>
                     <!-- END stat-lg -->
                 </div>
-                {% endif %}
                 <!-- END card-body -->
 
                 <!-- BEGIN card-arrow -->
