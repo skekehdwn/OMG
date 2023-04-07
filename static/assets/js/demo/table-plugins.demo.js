@@ -668,7 +668,7 @@ var handleRenderDashboardPopupTableData = function () {
             {targets: 3, width: "12%", className: 'text-center'},
             {targets: 4, width: "12%", className: 'text-center'},
             {targets: 5, width: "12%", className: 'text-center'},
-            {targets: 6, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary"><option value="Action">Action</option><option value="Mail">Mail</option><option value="Alarm">Alarm</option><option value="Reboot">Reboot</option></select>'}},
+            {targets: 6, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary" onchange="confirm(this.options[this.selectedIndex].value)"><option value="Action">Action</option><option value="메일을 보내시겠습니까?">Mail</option><option value="알람을 보내시겠습니까?">Alarm</option><option value="정말로 리부팅을 실행시키겠습니까?">Reboot</option></select>'}},
 		],
 		language: {
 			"decimal": "",
@@ -758,7 +758,7 @@ var CpuhandleRenderDashboardPopupTableData = function () {
             {targets: 2, width: "34%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
             {targets: 3, width: "13%", className: 'text-center'},
             {targets: 4, width: "9%", className: 'text-center'},
-            {targets: 5, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary"><option value="Action">Action</option><option value="Mail">Mail</option><option value="Alarm">Alarm</option><option value="Reboot">Reboot</option></select>'}},
+            {targets: 5, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary" onchange="confirm(this.options[this.selectedIndex].value)"><option value="Action">Action</option><option value="메일을 보내시겠습니까?">Mail</option><option value="알람을 보내시겠습니까?">Alarm</option><option value="정말로 리부팅을 실행시키겠습니까?">Reboot</option></select>'}},
 		],
 		language: {
 			"decimal": "",
@@ -848,7 +848,7 @@ var DiskhandleRenderDashboardPopupTableData = function () {
             {targets: 3, width: "12%", className: 'text-center'},
             {targets: 4, width: "12%", className: 'text-center'},
             {targets: 5, width: "12%", className: 'text-center'},
-            {targets: 6, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary"><option value="Action">Action</option><option value="Mail">Mail</option><option value="Alarm">Alarm</option><option value="Reboot">Reboot</option></select>'}},
+            {targets: 6, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary" onchange="confirm(this.options[this.selectedIndex].value)"><option value="Action">Action</option><option value="메일을 보내시겠습니까?">Mail</option><option value="알람을 보내시겠습니까?">Alarm</option><option value="정말로 리부팅을 실행시키겠습니까?">Reboot</option></select>'}},
 		],
 		language: {
 			"decimal": "",
