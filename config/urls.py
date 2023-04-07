@@ -14,9 +14,9 @@ urlpatterns = [
     path('report/', base_views.report, name='report'),
     path('updateform/', views.updateform, name='updateform'),
     path('update/', views.update, name='update'),
-    path('dashboard/', base_views.dashboard, name='dashboard'),
-    path('reportdaily/', base_views.reportdaily, name='reportdaily'),
-    path('reportmonthly/', base_views.reportmonthly, name='reportmonthly'),
+    #path('dashboard/', base_views.dashboard, name='dashboard'),
+    #path('reportdaily/', base_views.reportdaily, name='reportdaily'),
+    #path('reportmonthly/', base_views.reportmonthly, name='reportmonthly'),
     path('reportannual/', base_views.reportannual, name='reportannual'),
     path('NC_banner/', base_views.ncBanner, name='NC_banner'),
     path('customizing/', base_views.customizing, name='customizing'),
@@ -41,6 +41,23 @@ urlpatterns = [
     path('alarmCase_moreInfo/', base_views.alarmCase_moreInfo, name='alarmCase_moreInfo'),
     path('alarmCase_moreInfo/paging/', base_views.alarmCase_moreInfo_paging, name='alarmCase_moreInfo_paging'),
     # -------------------------------------- 종윤-------------------------------------
+    path('dashboard/', base_views.om, name='dashboard'),
+    path('operation/', base_views.dashboard, name='operation'),
+    path('send_email/', views.send_email_view, name='send_email'),
+    path('reportdaily/', base_views.reportdaily, name='reportdaily'),
+    path('reportPagedaily/', base_views.reportPagedaily, name='reportPage_daily'),
+    path('reportPagedaily1/', base_views.reportPagedaily1, name='reportPage_daily1'),
+    path('reportPagedaily2/', base_views.reportPagedaily2, name='reportPage_daily2'),
+    path('reportPagedaily3/', base_views.reportPagedaily3, name='reportPage_daily3'),
+    path('reportPagedaily4/', base_views.reportPagedaily4, name='reportPage_daily4'),
+
+    path('reportmonthly/', base_views.reportmonthly, name='reportmonthly'),
+    path('reportPageweekly/', base_views.reportPageweekly, name='reportPage_weekly'),
+    path('reportPageweekly1/', base_views.reportPageweekly1, name='reportPage_weekly1'),
+    path('reportPageweekly2/', base_views.reportPageweekly2, name='reportPage_weekly2'),
+    path('reportPageweekly3/', base_views.reportPageweekly3, name='reportPage_weekly3'),
+    path('reportPageweekly4/', base_views.reportPageweekly4, name='reportPage_weekly4'),
+
     path('connectDestinationIp_moreInfo/', base_views.connectDestinationIp_moreInfo, name='connectDestinationIp_moreInfo'),
     path('connectDestinationIp_moreInfo/paging/', base_views.connectDestinationIp_moreInfo_paging, name='connectDestinationIp_moreInfo_paging'),
     path('connectSourceIp_moreInfo/', base_views.connectSourceIp_moreInfo, name='connectSourceIp_moreInfo'),
@@ -66,6 +83,5 @@ urlpatterns = [
     path('Navigator_DF/', base_views.dataFabric_Navigator, name='Navigator_DF'),
     path('setting_DF/', base_views.dataFabric_setting, name='setting_DF'),
     ####################################OM############################################
-    path('om/', base_views.om, name='om'),
 
 ]

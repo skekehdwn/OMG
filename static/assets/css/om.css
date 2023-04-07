@@ -14,3 +14,12 @@
         flex: 0 0 auto;
         width: 20%
     }
+
+    .om-r{
+        flex: 0 0 auto;
+        width :60%
+    }
+    .om-l{
+        flex: 0 0 auto;
+        width :40%
+    }

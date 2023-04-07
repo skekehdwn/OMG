@@ -30361,9 +30361,11 @@ body .note-modal-backdrop {
 .table-report td {
     vertical-align: middle;
 }
-
+.table-report th:nth-child(1) {
+    width: 10%;
+}
 .table-report th:nth-child(2) {
-    width: 70%;
+    width: 50%;
 }
 
 .table-report th:nth-child(3) {

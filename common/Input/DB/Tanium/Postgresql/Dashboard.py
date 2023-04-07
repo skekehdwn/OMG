@@ -945,10 +945,6 @@ def plug_in(table, day, type):
                                     classification = 'virtual'
                                 and
                                     item != 'unconfirmed'
-                                and
-                                    to_char(statistics_collection_date, 'YYYY-MM-DD')
-                                in 
-                                    """ + str(LM)+ """
                                 order by
                                     statistics_collection_date ASC;
                             """

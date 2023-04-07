@@ -3,6 +3,12 @@ from django.shortcuts import render, redirect
 import hashlib
 import psycopg2
 import json
+from django.core.mail import send_mail
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import smtplib
 
 with open("setting.json", encoding="UTF-8") as f:
     SETTING = json.loads(f.read())
@@ -324,3 +330,41 @@ def taniumUsers(user_id, user_pw):
 
     except ConnectionError as e:
         print(e)
+
+
+@csrf_exempt
+def send_email_view(request):
+    if request.method == "POST":
+        subject = "알람"
+        ip = request.POST['ip']
+        name = request.POST['name']
+        ram = request.POST['ram']
+        cpu = request.POST['cpu']
+        drive = request.POST['drive']
+        date = request.POST['date']
+
+        body = ip + ' 컴퓨터가 경고가 발생하였습니다 ' + name +  ram +  cpu +  drive +  date + '표시되었습니다'
+        to_email = "djlee@xionits.com"
+        from_email = 'djlee@xionits.com'  # 이메일 주소 변경
+        password = 'xion123!'  # 이메일 계정의 비밀번호 변경
+
+        msg = MIMEMultipart()
+        msg['From'] = from_email
+        msg['To'] = to_email
+        msg['Subject'] = subject
+
+        msg.attach(MIMEText(body, 'plain'))
+
+        try:
+            server = smtplib.SMTP('smtp.office365.com', 587)
+            server.starttls()
+            server.login(from_email, password)
+            text = msg.as_string()
+            server.sendmail(from_email, to_email, text)
+            server.quit()
+            print('이메일이 성공적으로 전송되었습니다.')
+        except Exception as e:
+            print(f'이메일 전송 중 오류 발생: {e}')
+        return JsonResponse({'status': 'success'})
+    else:
+        return JsonResponse({'status': 'fail'})

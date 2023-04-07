@@ -915,6 +915,7 @@ var alarmCasehandleRenderDashboardPopupTableData = function () {
 				return data;
 			}
 		},
+
 		columns: [
 			{data: 'index'},
 			{data: 'ip'},
@@ -923,15 +924,20 @@ var alarmCasehandleRenderDashboardPopupTableData = function () {
 			{data: 'cpuusage'},
 			{data: 'driveusage'},
 			{data: 'date'},
+			{data: 'index',
+            className: 'select-checkbox',
+            orderable: false}
 		],
 		columnDefs: [
-            {targets: 0, width: "6%", className: 'text-center'},
-            {targets: 1, width: "16%", className: 'text-center text-truncate', render: function(data, type, row) {return '<span title="'+row.ip+'" data-toggle="tooltip">'+data+'</span>'}},
-            {targets: 2, width: "30%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
+            {targets: 0, width: "3%", className: 'text-center'},
+            {targets: 1, width: "14%", className: 'text-center text-truncate', render: function(data, type, row) {return '<span title="'+row.ip+'" data-toggle="tooltip">'+data+'</span>'}},
+            {targets: 2, width: "25%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
             {targets: 3, width: "12%", className: 'text-center'},
             {targets: 4, width: "12%", className: 'text-center'},
             {targets: 5, width: "12%", className: 'text-center'},
-            {targets: 6, width: "12%", className: 'text-center'}
+            {targets: 6, width: "12%", className: 'text-center'},
+            {targets: 7, width: "5%", render: function(data, type, row) {
+            return `<button class="btn btn-outline-primary" onclick="sendEmail(\'`+row.ip+`\',\'`+row.name+`\',\'`+row.ramusage+`\',\'`+row.cpuusage+`\',\'`+row.driveusage+`\',\'`+row.date+`\')">전송</button>`}},
 		],
 		language: {
 			"decimal": "",
@@ -969,7 +975,6 @@ var alarmCasehandleRenderDashboardPopupTableData = function () {
             }
         }
 });
-
 	$(document).on('click', '#nexts, #after', function() {
         var current_page = dashboardpopupTable.page();
         var total_pages = dashboardpopupTable.page.info().pages;

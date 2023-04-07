@@ -9,7 +9,7 @@
             <div class="menu-header"></div>
             {% for menu in menuList %}
             {% if menu.menuUse == '1' %}
-            {% if menu.menuName == "Dashboard" or menu.menuName == "취약점 진단" or menu.menuName == "Operation" %}
+            {% if menu.menuName == "대시보드" or menu.menuName == "취약점 진단" or menu.menuName == "운영관리" %}
             {% if request.get_full_path|cut:'/' == menu.menuUrl %}
             <div class="menu-item active">
                 {% else %}
@@ -17,17 +17,17 @@
                     {% endif %}
 
                     <a href="../{{menu.menuUrl}}" class="menu-link">
-                        {% if menu.menuName == "Operation" %}
+                        {% if menu.menuName == "운영관리" %}
                         <span class="menu-icon"><i class="bi bi-columns-gap"></i></span>
 
                         {% endif %}
-                        {% if menu.menuName == "Dashboard" %}
+                        {% if menu.menuName == "대시보드" %}
                         <span class="menu-icon"><i class="bi bi-columns-gap"></i></span>
                         {% elif menu.menuName == "취약점 진단" %}
                         <span class="menu-icon"><i class="bi bi-cpu"></i></span>
                         {% else %}
                         {% endif %}
-                        {% if menu.menuName != "Setting" and menu.menuName != "Report" %}
+                        {% if menu.menuName != "설정" and menu.menuName != "보고서" %}
                         <span class="menu-text">{{ menu.menuName }}</span>
                         {% else %}
                         {% endif %}
@@ -36,7 +36,7 @@
 
                 </div>
 
-                {% elif menu.menuName == "Report" %}
+                {% elif menu.menuName == "보고서" %}
                 {% if request.get_full_path|cut:'/' == 'reportdaily' or request.get_full_path|cut:'/' == 'reportmonthly' or request.get_full_path|cut:'/' == 'reportannual' or request.get_full_path|cut:'/' == 'report' %}
                 <div class="menu-item has-sub active">
                     {% else %}
@@ -65,15 +65,10 @@
                                     <span class="menu-text">월간 보고서</span>
                                 </a>
                             </div>
-                            <div class="menu-item">
-                                <a href="../report" class="menu-link">
-                                    <span class="menu-text">보고서</span>
-                                </a>
-                            </div>
                         </div>
                     </div>
 
-                    {% elif menu.menuName == "Setting" %}
+                    {% elif menu.menuName == "설정" %}
 
                     <div class="menu-item has-sub">
                         <a href="#" class="menu-link">

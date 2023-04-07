@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5614640-b170-45e2-948c-77cfd9719b78" name="Changes" comment="" />
+    <list default="true" id="a5614640-b170-45e2-948c-77cfd9719b78" name="Changes" comment="123">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/Input/DB/Tanium/Postgresql/Dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Input/DB/Tanium/Postgresql/Dashboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/app.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/om.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/om.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/demo/om.demo.nc.banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/demo/om.demo.nc.banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/demo/table-plugins.demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/demo/table-plugins.demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/popup/alarmCase_moreInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/popup/alarmCase_moreInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web/dashboard_NC_banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/web/dashboard_NC_banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web/om.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/web/om.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web/reportPage_daily.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web/reportPage_weekly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web/report_daily.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web/report_monthly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/base_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/base_views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +60,14 @@
       <option name="presentableId" value="Default" />
       <updated>1680761461422</updated>
     </task>
+    <task id="LOCAL-00001" summary="123">
+      <created>1680781404208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680781404208</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -53,5 +80,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
 </project>
