@@ -41,8 +41,8 @@ urlpatterns = [
     path('alarmCase_moreInfo/', base_views.alarmCase_moreInfo, name='alarmCase_moreInfo'),
     path('alarmCase_moreInfo/paging/', base_views.alarmCase_moreInfo_paging, name='alarmCase_moreInfo_paging'),
     # -------------------------------------- 종윤-------------------------------------
-    path('dashboard/', base_views.om, name='dashboard'),
-    path('operation/', base_views.dashboard, name='operation'),
+    path('dashboard/', base_views.dashboard, name='dashboard'),
+    path('operation/', base_views.om, name='operation'),
     path('send_email/', views.send_email_view, name='send_email'),
     path('reportdaily/', base_views.reportdaily, name='reportdaily'),
     path('reportPagedaily/', base_views.reportPagedaily, name='reportPage_daily'),

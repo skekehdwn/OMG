@@ -7,6 +7,7 @@ from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
 from common.Input.DB.Tanium.Postgresql.Dashboard import plug_in as PDPI
 from web.model.dashboard_function import DashboardData
+from web.model.dashboard_function import MainData
 from web.model.dashboard_function import AssetData
 from django.views.decorators.csrf import csrf_exempt
 from common.menu import MenuSetting
@@ -29,7 +30,7 @@ def index(request):
     return render(request, 'web/index.html', returnData)
 
 def dashboard(request):
-    DCDL = DashboardData()
+    DCDL = MainData()
     res_data = {}
     if not 'sessionid' in request.session:
         res_data['error'] = '먼저 로그인을 해주세요.'

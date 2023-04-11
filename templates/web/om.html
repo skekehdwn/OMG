@@ -16,22 +16,85 @@
     <!-- BEGIN row -->
     <div class="row">
         <!-- BEGIN col-3 -->
-        <div class="col-xl-2 col-lg-2">
+        <div class="col-xl-6 col-lg-6">
             <!-- BEGIN card -->
             <div class="card mb-3">
                 <!-- BEGIN card-body -->
-                <div class="card-body h-220px">
+                <div class="card-body h-150px">
                     <!-- BEGIN title -->
                     <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo osVersion-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
                     <div class="d-flex fw-bold fs-12px">
-                        <div class="flex-grow-1">DISK 사용률 초과 서버</div>
+                        <div class="flex-grow-1">OS 버전별 서버 수 (상위 8개)</div>
                     </div>
                     <!-- END title -->
                     <!-- BEGIN stat-lg -->
-                    <div class="h-200px d-flex flex-row align-items-center justify-content-sm-between">
+                    <div class="h-100px d-flex flex-row align-items-center justify-content-sm-between">
+                        <div class="d-flex col-9">
+                            {% if chartData.os_chartPartOne %}
+                            <div class="col-5 small text-white text-opacity-50 text-truncate">
+                                {% for data in chartData.os_chartPartOne %}
+                                <i class="fas fa-server fa-fw me-1" style="color: {{ data.color }}"></i>
+                                <span title="{{data.name}}">{{data.name}}</span>
+                                <br>
+                                {% endfor %}
+                            </div>
+                            <div class="col-1">
+                                {% for data in chartData.os_chartPartOne %}
+                                <div class="small text-white text-opacity-50 text-truncate text-center" title="{{data.value}}">{{ data.value }}</div>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            <div class="col-5 small text-white text-opacity-50 text-truncate ps-3">
+                                {% for data in chartData.os_chartPartTwo %}
+                                <i class="fas fa-server fa-fw me-1" style="color: {{ data.color }}"></i>
+                                <span title="{{data.name}}">{{data.name}}</span>
+                                <br>
+                                {% endfor %}
+                            </div>
+                            <div class="col-1">
+                                {% for data in chartData.os_chartPartTwo %}
+                                <div class="small text-white text-opacity-50 text-truncate text-center" title="{{data.value}}">{{ data.value }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mt-n3 mb-n2 h-100px" id="apexOSversionChart"></div>
+                        </div>
+                    </div>
+                    <!-- END stat-lg -->
+                </div>
+                <!-- END card-body -->
 
-                        <div class="col-12">
-                            <div class="mt-n3 mb-n2 h-150px" id="om_disk_chart"></div>
+                <!-- BEGIN card-arrow -->
+                <div class="card-arrow">
+                    <div class="card-arrow-top-left"></div>
+                    <div class="card-arrow-top-right"></div>
+                    <div class="card-arrow-bottom-left"></div>
+                    <div class="card-arrow-bottom-right"></div>
+                </div>
+                <!-- END card-arrow -->
+            </div>
+            <!-- END card -->
+        </div>
+        <!-- END col-3 -->
+
+
+        <!-- BEGIN col-3 -->
+        <div class="col-xl-iscsi col-lg-iscsi">
+            <!-- BEGIN card -->
+            <div class="card mb-3">
+                <!-- BEGIN card-body -->
+                <div class="card-body h-150px">
+                    <!-- BEGIN title -->
+                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo gpuServer-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="d-flex fw-bold small">
+                        <div class="flex-grow-1">예상 유휴 장비 수량</div>
+                    </div>
+                    <!-- END title -->
+                    <!-- BEGIN stat-lg -->
+                    <div class="col-12 h-100px d-flex text-center align-content-center justify-content-center flex-md-column">
+                        <div class="count-num">
+                            <span class="fw-bold text-opacity-60 fs-35px pe-3 pb-10px">4개</span>
                         </div>
                     </div>
                     <!-- END stat-lg -->
@@ -51,22 +114,23 @@
         </div>
         <!-- END col-3 -->
         <!-- BEGIN col-3 -->
-        <div class="col-xl-2 col-lg-2">
+        <div class="col-xl-iscsi col-lg-iscsi">
             <!-- BEGIN card -->
             <div class="card mb-3">
                 <!-- BEGIN card-body -->
-                <div class="card-body h-220px">
+                <div class="card-body h-150px">
                     <!-- BEGIN title -->
-                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo osVersion-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo alarmCase-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
                     <div class="d-flex fw-bold fs-12px">
-                        <div class="flex-grow-1">MEMORY 사용률 초과 서버</div>
+                        <div class="flex-grow-1">알람 발생 자산 수</div>
                     </div>
                     <!-- END title -->
                     <!-- BEGIN stat-lg -->
-                    <div class="h-200px d-flex flex-row align-items-center justify-content-sm-between">
 
-                        <div class="col-12">
-                            <div class="mt-n3 mb-n2 h-150px" id="om_mem_chart"></div>
+                    <div class="col-12 h-100px d-flex text-center align-content-center justify-content-center flex-md-column">
+                        <div class="count-num">
+
+                            <span class="fw-bold text-opacity-60 fs-35px pe-3 pb-10px"> {{chartData.alamCaseDataList.nodeDataList.0.alarmCount|add:chartData.alamCaseDataList.nodeDataList.1.alarmCount|add:chartData.alamCaseDataList.nodeDataList.2.alarmCount|add:chartData.alamCaseDataList.nodeDataList.3.alarmCount}}개</span>
                         </div>
                     </div>
                     <!-- END stat-lg -->
@@ -85,29 +149,43 @@
             <!-- END card -->
         </div>
         <!-- END col-3 -->
+
+
         <!-- BEGIN col-3 -->
-        <div class="col-xl-2 col-lg-2">
+        <div class="col-xl-3 col-lg-6">
             <!-- BEGIN card -->
             <div class="card mb-3">
                 <!-- BEGIN card-body -->
-                <div class="card-body h-220px">
+                <div class="card-body h-150px">
                     <!-- BEGIN title -->
-                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo osVersion-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo runningService-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
                     <div class="d-flex fw-bold fs-12px">
-                        <div class="flex-grow-1">OS 설치현황</div>
+                        <div class="flex-grow-1">실행 중인 서비스 통계 (상위 5개)</div>
                     </div>
                     <!-- END title -->
                     <!-- BEGIN stat-lg -->
-                    <div class="h-200px d-flex flex-row align-items-center justify-content-sm-between">
-
-                        <div class="col-12">
-                            <div class="mt-n3 mb-n2 h-150px" id="om_os_chart"></div>
+                    <div class="h-100px d-flex flex-row align-items-center justify-content-sm-between">
+                        <div class="col-5 small text-white text-opacity-50 text-truncate">
+                            {% if chartData.donutChartDataList %}
+                            {% for data in chartData.donutChartDataList %}
+                            <i class="fas fa-cogs fa-fw me-1" style="color: {{ data.color }}"></i>
+                            <span title="{{data.name}}">{{data.name}}</span>
+                            <br>
+                            {% endfor %}
+                        </div>
+                        <div class="col-2">
+                            {% for data in chartData.donutChartDataList %}
+                             <div class="small text-white text-opacity-50 text-truncate text-center" title="{{data.value}}">{{data.value}}</div>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="col-5">
+                            <div class="mt-n3 mb-n2 h-100px" id="apexRunServiceChart"></div>
                         </div>
                     </div>
                     <!-- END stat-lg -->
                 </div>
                 <!-- END card-body -->
-
                 <!-- BEGIN card-arrow -->
                 <div class="card-arrow">
                     <div class="card-arrow-top-left"></div>
@@ -120,166 +198,73 @@
             <!-- END card -->
         </div>
         <!-- END col-3 -->
-        <!-- BEGIN col-3 -->
-        <div class="col-xl-2 col-lg-2">
-            <!-- BEGIN card -->
-            <div class="card mb-3">
-                <!-- BEGIN card-body -->
-                <div class="card-body h-220px">
-                    <!-- BEGIN title -->
-                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo osVersion-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
-                    <div class="d-flex fw-bold fs-12px">
-                        <div class="flex-grow-1">유/무선 연결 현황</div>
-                    </div>
-                    <!-- END title -->
-                    <!-- BEGIN stat-lg -->
-                    <div class="h-200px d-flex flex-row align-items-center justify-content-sm-between">
-
-                        <div class="col-12">
-                            <div class="mt-n3 mb-n2 h-150px" id="om_wire_chart"></div>
-                        </div>
-                    </div>
-                    <!-- END stat-lg -->
-                </div>
-                <!-- END card-body -->
-
-                <!-- BEGIN card-arrow -->
-                <div class="card-arrow">
-                    <div class="card-arrow-top-left"></div>
-                    <div class="card-arrow-top-right"></div>
-                    <div class="card-arrow-bottom-left"></div>
-                    <div class="card-arrow-bottom-right"></div>
-                </div>
-                <!-- END card-arrow -->
-            </div>
-            <!-- END card -->
-        </div>
-        <!-- END col-3 -->
-        <!-- BEGIN col-3 -->
-        <div class="col-xl-2 col-lg-2">
-            <!-- BEGIN card -->
-            <div class="card mb-3">
-                <!-- BEGIN card-body -->
-                <div class="card-body h-220px">
-                    <!-- BEGIN title -->
-                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo osVersion-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
-                    <div class="d-flex fw-bold fs-12px">
-                        <div class="flex-grow-1">물리/가상 자산 현황</div>
-                    </div>
-                    <!-- END title -->
-                    <!-- BEGIN stat-lg -->
-                    <div class="h-200px d-flex flex-row align-items-center justify-content-sm-between">
-
-                        <div class="col-12">
-                            <div class="mt-n3 mb-n2 h-150px" id="om_vp_chart"></div>
-                        </div>
-                    </div>
-                    <!-- END stat-lg -->
-                </div>
-                <!-- END card-body -->
-
-                <!-- BEGIN card-arrow -->
-                <div class="card-arrow">
-                    <div class="card-arrow-top-left"></div>
-                    <div class="card-arrow-top-right"></div>
-                    <div class="card-arrow-bottom-left"></div>
-                    <div class="card-arrow-bottom-right"></div>
-                </div>
-                <!-- END card-arrow -->
-            </div>
-            <!-- END card -->
-        </div>
-        <!-- END col-3 -->
-
-<!--        -->
-<!--        &lt;!&ndash; BEGIN col-3 &ndash;&gt;-->
-<!--        <div class="col-xl-3 col-lg-6">-->
-<!--            &lt;!&ndash; BEGIN card &ndash;&gt;-->
-<!--            <div class="card mb-3">-->
-<!--                &lt;!&ndash; BEGIN card-body &ndash;&gt;-->
-<!--                <div class="card-body h-150px">-->
-<!--                    &lt;!&ndash; BEGIN title &ndash;&gt;-->
-<!--                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo serverBandBy-moreInfo"><i class="fas fa-ellipsis-h"></i></button>-->
-<!--                    <div class="d-flex fw-bold fs-12px">-->
-<!--                        <div class="flex-grow-1">각 대역별 서버 수 (상위 3개)</div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END title &ndash;&gt;-->
-<!--                    &lt;!&ndash; BEGIN stat-lg &ndash;&gt;-->
-<!--                    <div class="h-100px">-->
-<!--                        &lt;!&ndash; END stat-sm &ndash;&gt;-->
-<!--                        <div>-->
-<!--                            <div class="col-12">-->
-<!--                                <div class="mt-n3 mb-n2 h-100px" id="apexIPlistChart"></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END stat-lg &ndash;&gt;-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-body &ndash;&gt;-->
-
-<!--                &lt;!&ndash; BEGIN card-arrow &ndash;&gt;-->
-<!--                <div class="card-arrow">-->
-<!--                    <div class="card-arrow-top-left"></div>-->
-<!--                    <div class="card-arrow-top-right"></div>-->
-<!--                    <div class="card-arrow-bottom-left"></div>-->
-<!--                    <div class="card-arrow-bottom-right"></div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-arrow &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; END card &ndash;&gt;-->
-<!--        </div>-->
-<!--        &lt;!&ndash; END col-3 &ndash;&gt;-->
-
-<!--        &lt;!&ndash; BEGIN col-3 &ndash;&gt;-->
-<!--        <div class="col-xl-3 col-lg-6">-->
-<!--            &lt;!&ndash; BEGIN card &ndash;&gt;-->
-<!--            <div class="card mb-3">-->
-<!--                &lt;!&ndash; BEGIN card-body &ndash;&gt;-->
-<!--                <div class="card-body h-150px">-->
-<!--                    &lt;!&ndash; BEGIN title &ndash;&gt;-->
-<!--                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo runningService-moreInfo"><i class="fas fa-ellipsis-h"></i></button>-->
-<!--                    <div class="d-flex fw-bold fs-12px">-->
-<!--                        <div class="flex-grow-1">실행 중인 서비스 통계 (상위 5개)</div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END title &ndash;&gt;-->
-<!--                    &lt;!&ndash; BEGIN stat-lg &ndash;&gt;-->
-<!--                    <div class="h-100px d-flex flex-row align-items-center justify-content-sm-between">-->
-<!--                        <div class="col-5 small text-white text-opacity-50 text-truncate">-->
-<!--                            {% if chartData.donutChartDataList %}-->
-<!--                            {% for data in chartData.donutChartDataList %}-->
-<!--                            <i class="fas fa-cogs fa-fw me-1" style="color: {{ data.color }}"></i>-->
-<!--                            <span title="{{data.name}}">{{data.name}}</span>-->
-<!--                            <br>-->
-<!--                            {% endfor %}-->
-<!--                        </div>-->
-<!--                        <div class="col-2">-->
-<!--                            {% for data in chartData.donutChartDataList %}-->
-<!--                             <div class="small text-white text-opacity-50 text-truncate text-center" title="{{data.value}}">{{data.value}}</div>-->
-<!--                            {% endfor %}-->
-<!--                            {% endif %}-->
-<!--                        </div>-->
-<!--                        <div class="col-5">-->
-<!--                            <div class="mt-n3 mb-n2 h-100px" id="apexRunServiceChart"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END stat-lg &ndash;&gt;-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-body &ndash;&gt;-->
-<!--                &lt;!&ndash; BEGIN card-arrow &ndash;&gt;-->
-<!--                <div class="card-arrow">-->
-<!--                    <div class="card-arrow-top-left"></div>-->
-<!--                    <div class="card-arrow-top-right"></div>-->
-<!--                    <div class="card-arrow-bottom-left"></div>-->
-<!--                    <div class="card-arrow-bottom-right"></div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-arrow &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; END card &ndash;&gt;-->
-<!--        </div>-->
-<!--        &lt;!&ndash; END col-3 &ndash;&gt;-->
 
         <!-- BEGIN col-6 -->
-        <div class="om-r">
+        <div class="col-xl-6">
+            <div>
+                <!-- BEGIN card -->
+                <div class="card mb-3">
+                    <!-- BEGIN card-body -->
+                    <div class="card-body h-284px">
+                        <!-- BEGIN title -->
+                        <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo memoryCpuDisk-moreInfo"><i class="fas fa-ellipsis-h"></i>
+                        </button>
+                        <div class="btn-group mb-3">
+                            <button type="button" id="btn-memory" class="mcdBtn btn btn-outline-warning btn-sm active">메모리</button>
+                            <button type="button" id="btn-cpu" class="mcdBtn btn btn-outline-warning btn-sm w-57px">CPU</button>
+                            <button type="button" id="btn-disk" class="mcdBtn btn btn btn-outline-warning btn-sm">디스크</button>
+                        </div>
+                        <!-- END title -->
+                        <div class="d-flex justify-content-center align-items-center" id="mcdDiv">
+                            <!-- BEGIN chart -->
+                            <div class="col-4 MemoryCharts">
+                                <div id="apexMemory95usageChart"></div>
+                            </div>
+                            <div class="col-4 MemoryCharts">
+                                <div id="apexMemory75usageChart"></div>
+                            </div>
+                            <div class="col-4 MemoryCharts">
+                                <div id="apexMemory60usageChart"></div>
+                            </div>
+                            <!-- END chart -->
+
+                            <!-- BEGIN chart -->
+                            <div class="col-4 CPUCharts" style="display:none;">
+                                <div id="apexCPU95usageChart"></div>
+                            </div>
+                            <div class="col-4 CPUCharts" style="display:none;">
+                                <div id="apexCPU75usageChart"></div>
+                            </div>
+                            <div class="col-4 CPUCharts" style="display:none;">
+                                <div id="apexCPU60usageChart"></div>
+                            </div>
+                            <!-- END chart -->
+
+                            <!-- BEGIN chart -->
+                            <div class="col-4 DiskCharts" style="display:none;">
+                                <div id="apexDisk95usageChart"></div>
+                            </div>
+                            <div class="col-4 DiskCharts" style="display:none;">
+                                <div id="apexDisk75usageChart"></div>
+                            </div>
+                            <div class="col-4 DiskCharts" style="display:none;">
+                                <div id="apexDisk60usageChart"></div>
+                            </div>
+                            <!-- END chart -->
+                        </div>
+                    </div>
+                    <!-- END card-body -->
+                    <!-- BEGIN card-arrow -->
+                    <div class="card-arrow">
+                        <div class="card-arrow-top-left"></div>
+                        <div class="card-arrow-top-right"></div>
+                        <div class="card-arrow-bottom-left"></div>
+                        <div class="card-arrow-bottom-right"></div>
+                    </div>
+                    <!-- END card-arrow -->
+                </div>
+                <!-- END card -->
+            </div>
             <div class="d-flex">
                 <!-- BEGIN card -->
                 <div class="col-xl-6 col-lg-6" style="padding-right: 0.5rem;">
@@ -289,14 +274,14 @@
                         <!-- BEGIN title -->
                         {% if chartData.server_LChartDataList %}
                         <div class="d-flex fw-bold fs-12px mb-2">
-                            <div class="flex-grow-1">관리 자산 </div>
+                            <div class="flex-grow-1">Virtual 서버 수량 그래프 (최근 1년) </div>
                             <div class="d-flex fw-bold fs-17px mb-2"><br>Current : {{ chartData.server_LChartDataList.0.data.0.data | last }} unit</div>
                         </div>
                         {% endif %}
                         <!-- END title -->
                         <div class="col-12" style="padding-right: 5px;">
                             <!-- BEGIN chart -->
-                            <div class="mt-nd h-145px" id="om_m_chart"></div>
+                            <div class="mt-nd h-145px" id="apexTotalServerChart"></div>
                             <!-- END chart -->
                             <!-- BEGIN row -->
                             <!-- END row -->
@@ -315,7 +300,7 @@
                 </div>
 
                 <!-- END card -->
-                <!-- BEGIN card -->
+                                <!-- BEGIN card -->
                 <div class="col-xl-6 col-lg-6" style="padding-left: 0.5rem;">
                     <div class="card mb-3">
                     <!-- BEGIN card-body -->
@@ -323,7 +308,7 @@
                         <!-- BEGIN title -->
                         {% if chartData.server_LChartDataList %}
                         <div class="d-flex fw-bold fs-12px mb-2">
-                            <div class="flex-grow-1">미관리 자산</div>
+                            <div class="flex-grow-1">Physical 서버 수량 그래프 (최근 1년)</div>
                             <div class="d-flex fw-bold fs-17px mb-2"><br>Current : {{ chartData.server_LChartDataList.0.data.1.data | last }} unit</div>
                         </div>
                         {% endif %}
@@ -331,7 +316,7 @@
                         <!-- END title -->
                         <div class="col-12" style="padding-right: 5px;">
                             <!-- BEGIN chart -->
-                            <div class="mt-nd h-145px"  id="om_um_chart"></div>
+                            <div class="mt-nd h-145px"  id="apexTotalServerChart2"></div>
                             <!-- END chart -->
                             <!-- BEGIN row -->
                             <!-- END row -->
@@ -350,714 +335,376 @@
                 </div>
                 <!-- END card -->
             </div>
-
-
-            <div class="d-flex">
-                <div class="col-xl-6 col-l-6" style="padding-right: 0.5rem;">
-                    <!-- BEGIN 인증서 card -->
-                    <div class="card" style="height:440px">
-
-                        <div class="card-body">
-                            <!-- title -->
-                            <div class="d-flex fw-bold fs-12px mb-2">
-                                <div class="flex-grow-1">인증서 관리</div>
-                            </div>
-                            <!-- BEGIN #datatable -->
-                            <table class="table table-report text-nowrap " width="100%" style="border-collapse: separate; border-spacing : 0 10px" >
-                                <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>발급 인증서</th>
-                                    <th style="text-align:center">만료 일자</th>
-
-                                </tr>
-                                </thead>
-                                <tbody class="fw-bold fs-12px mb-2">
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        Security Communication RootCA
-                                    </td>
-                                    <td>2023-09-30</td>
-
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>
-                                        GlobalSign Root CA
-                                    </td>
-                                    <td>2028-01-28</td>
-
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>
-                                        Security Communication RootCA
-                                    </td>
-                                    <td>2029-05-29</td>
-
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>
-                                        DigiCert Global Root CA
-                                    </td>
-                                    <td>2031-11-10</td>
-
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>
-                                        DigitalZone Root CA
-                                    </td>
-                                    <td>2036-03-09</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>
-                                        thawte Primary Root CA
-                                    </td>
-                                    <td>2036-07-17</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>
-                                        iniLINE CrossEX RootCA
-                                    </td>
-                                    <td>2099-12-31</td>
-                                </tr>
-
-
-                                </tbody>
-                            </table>
-
-
-                            <!-- END #datatable -->
-
-                        </div>
-                        <div class="card-arrow">
-                            <div class="card-arrow-top-left"></div>
-                            <div class="card-arrow-top-right"></div>
-                            <div class="card-arrow-bottom-left"></div>
-                            <div class="card-arrow-bottom-right"></div>
-                        </div>
-                    </div>
-                <!-- END 인증서 card -->
-                </div>
-            <!--새로운 칸-->
-                <div class="col-xl-6 col-l-6" style="padding-left: 0.5rem;">
-                    <!-- BEGIN 인증서 card -->
-                    <div class="card" style="height:440px">
-
-                        <div class="card-body">
-                            <!-- title -->
-                            <div class="d-flex fw-bold fs-12px mb-2">
-                                <div class="flex-grow-1">알람 발송 관리</div>
-                            </div>
-                            <!-- BEGIN #datatable -->
-                            <table class="table table-report text-nowrap " width="100%" style="border-collapse: separate; border-spacing : 0 10px" >
-                                <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>발송 알람 내용</th>
-                                    <th style="text-align:center">발송 건수</th>
-
-                                </tr>
-                                </thead>
-                                <tbody class="fw-bold fs-12px mb-2">
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        DISK Usage Exceed Alarm
-                                    </td>
-                                    <td>35</td>
-
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>
-                                        System Crash Event
-                                    </td>
-                                    <td>28</td>
-
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>
-                                        CPU Usage Exceed Alarm
-                                    </td>
-                                    <td>13</td>
-
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>
-                                       MEMORY Usage Exceed Alarm
-                                    </td>
-                                    <td>10</td>
-
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>
-                                        Application Crash Event
-                                    </td>
-                                    <td>9</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>
-                                        Unmanaged Device Detected
-                                    </td>
-                                    <td>5</td>
-                                </tr>
-
-
-
-                                </tbody>
-                            </table>
-
-
-                            <!-- END #datatable -->
-
-                        </div>
-                        <div class="card-arrow">
-                            <div class="card-arrow-top-left"></div>
-                            <div class="card-arrow-top-right"></div>
-                            <div class="card-arrow-bottom-left"></div>
-                            <div class="card-arrow-bottom-right"></div>
-                        </div>
-                    </div>
-                <!-- END 인증서 card -->
-                </div>
-
-
-
-
-
-
-            <!-- d-flex end-->
-            </div>
-
         </div>
-
         <!-- END col-6 -->
-        <!-- 리포트 부분--->
+
         <!-- BEGIN col-6 -->
-        <div class="om-l">
-                <div class="d-flex">
-                    <!-- BEGIN card -->
-                    <div class="card">
+        <div class="col-xl-6">
+            <div>
+                <!-- BEGIN card -->
+                <div class="card mb-3">
+                    <!-- BEGIN card-body -->
+                    <div class="card-body h-284px">
+                        <!-- BEGIN title -->
+                        <div class="d-flex fw-bold fs-12px">
+                            <div class="flex-grow-1 mb-3 " style="position: relative; text_dragNot">
+                                알람 케이스 감지 모니터링
 
-                    <div class="card-body">
-                        <!-- title -->
-                        <div class="d-flex fw-bold fs-12px mb-2">
-                            <div class="flex-grow-1">일간 자산 리포트</div>
+                            </div>
+                            <a href="#" data-toggle="card-expand"
+                               class="pt-6px text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
                         </div>
-                        <!-- BEGIN #datatable -->
-                        <table class="table table-report text-nowrap" width="100%">
-                            <thead class="fw-bold fs-14px mb-2">
-                            <tr>
-                                <th>No</th>
-                                <th>리포트 이름</th>
-                                <th>생성 일자</th>
-                                <th></th>
-                            </tr>
-                            </thead>
-                            <tbody class="fw-bold fs-14px mb-2">
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <a href="../reportPagedaily">
-                                        일간 자산 리포트
-                                    </a>
-                                </td>
-                                <td>2023-04-09</td>
-                                <td>
-                                    <a href="http://localhost:8000/reportPagedaily/"download>
-                                        <button type="button" class="btn btn-outline-warning" value="print">
-                                            다운로드
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <a href="../reportPagedaily1">
-                                        일간 자산 리포트
-                                    </a>
-                                </td>
-                                <td>2023-04-08</td>
-                                <td>
-                                    <a href="http://localhost:8000/reportPagedaily1/"download>
-                                        <button type="button" class="btn btn-outline-warning" value="print">
-                                            다운로드
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>
-                                    <a href="../reportPagedaily2">
-                                        일간 자산 리포트
-                                    </a>
-                                </td>
-                                <td>2023-04-07</td>
-                                <td>
-                                    <a href="http://localhost:8000/reportPagedaily2/"download>
-                                        <button type="button" class="btn btn-outline-warning" value="print">
-                                            다운로드
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>
-                                    <a href="../reportPagedaily3">
-                                        일간 자산 리포트
-                                    </a>
-                                </td>
-                                <td>2023-04-06</td>
-                                <td>
-                                    <a href="http://localhost:8000/reportPagedaily3/"download>
-                                        <button type="button" class="btn btn-outline-warning" value="print">
-                                            다운로드
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-
-                        <!-- END #datatable -->
-
+                        <!-- END title -->
+                        <!-- BEGIN map -->
+                        <div class="ratio ratio-21x9 maps" style="width: 100%; height: 90%; margin: 0 auto;">
+                            {% if MapUse.WorldUse == 'block' %}
+                            <div id="world-map" style="display:{{MapUse.WorldUse}}" class="selectMap"></div>
+                            {%endif%}
+                            {% if MapUse.KoreaUse == 'block' %}
+                            <div id="korea-map" style="display:{{MapUse.KoreaUse}}"></div>
+                            {%endif%}
+                            {% if MapUse.AreaUse == 'block' %}
+                            <div id="seoul-map" style="display:{{MapUse.AreaUse}}"></div>
+                            <div id="seongnam-map" style="display:{{MapUse.AreaUse}}"></div>
+                            {%endif%}
+                        </div>
+                        <!-- END map -->
                     </div>
+                    <!-- END card-body -->
+                    <!-- BEGIN card-arrow -->
                     <div class="card-arrow">
                         <div class="card-arrow-top-left"></div>
                         <div class="card-arrow-top-right"></div>
                         <div class="card-arrow-bottom-left"></div>
                         <div class="card-arrow-bottom-right"></div>
                     </div>
+                    <!-- END card-arrow -->
                 </div>
+                <!-- END card -->
+            </div>
+            <div class="d-flex">
+                <div class="col-xl-6 col-lg-6" style="padding-right: 0.5rem">
+                    <!-- BEGIN card -->
+                    <div class="card mb-3 ">
+                        <!-- BEGIN card-body -->
+                        <div class="card-body h-205px" style="display: inline-flex;">
+                            <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo alarmCase-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                            <table class="table table-sm-se w-90 fs-12px mb-0 text-truncate text-white text-opacity-60"
+                                   style="margin: 0 auto; vertical-align: middle;">
+                                <thead class="">
+                                <tr class="text-white text-opacity-75">
+                                    <th class="w-50 fw-bold">알람 케이스</th>
+                                    <th class="w-25 fw-bold text-center">자산 수</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for alarmDataList in chartData.alamCaseDataList.nodeDataList %}
+                                <tr>
+                                    <td>{{alarmDataList.alarmCase}}</td>
+                                    <td class="text-center">{{ alarmDataList.alarmCount }}</td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- END card-body -->
+                        <!-- BEGIN card-arrow -->
+                        <div class="card-arrow">
+                            <div class="card-arrow-top-left"></div>
+                            <div class="card-arrow-top-right"></div>
+                            <div class="card-arrow-bottom-left"></div>
+                            <div class="card-arrow-bottom-right"></div>
+                        </div>
+                        <!-- END card-arrow -->
+                    </div>
                     <!-- END card -->
                 </div>
-
-
-
-
-        <!-- END col-6 -->
-
+                <div class="col-xl-6 col-lg-6" style="padding-left: 0.5rem">
+                    <!-- BEGIN card -->
+                    <div class="card mb-3">
+                        <!-- BEGIN card-body -->
+                        <div class="card-body h-205px">
+                            <div class="text-white text-opacity-75 mb-2">
+                                <span class="w-50 fw-bold fs-12px">IP 대역별 총 알람 수 (상위 5개)</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div id="apexTotalAlarmChart"></div>
+                                </div>
+                                <div class="col-6">
+                                    {% if chartData.alarm_donutChartData %}
+                                    <div class="pt-sm-2">
+                                        {% for data in chartData.alarm_donutChartData|slice:":5" %}
+                                        <div class="d-flex small text-white text-opacity-50 text-truncate">
+                                            <div class="col-9 d-flex">
+                                                <i class="fas fa-neuter fa-fw me-1 totalAlarmPin" style="color: {{data.color}}"></i>
+                                                <div title="{{data.key}}">{{data.key}}</div>
+                                            </div>
+                                            <div class="col-2 text-center mb-sm-2">{{data.value}}</div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END card-body -->
+                        <!-- BEGIN card-arrow -->
+                        <div class="card-arrow">
+                            <div class="card-arrow-top-left"></div>
+                            <div class="card-arrow-top-right"></div>
+                            <div class="card-arrow-bottom-left"></div>
+                            <div class="card-arrow-bottom-right"></div>
+                        </div>
+                        <!-- END card-arrow -->
+                    </div>
+                    <!-- END card -->
+                </div>
+            </div>
+        </div>
         <!-- END col-6 -->
 
         <!-- BEGIN col-3 -->
-
-
-        <br>
-                    <!-- BEGIN card -->
-                <div id="datatable" class="datatable w-100">
-                    <div class="card">
-                        <div class="card-body">
-                        <!-- title -->
-                        <div class="d-flex fw-bold fs-12px mb-2">
-                            <div class="flex-grow-1">주간 자산 리포트</div>
+        <div class="col-xl-3 col-lg-6">
+            <!-- BEGIN card -->
+            <div class="card mb-3">
+                <!-- BEGIN card-body -->
+                <div class="card-body h-150px">
+                    <!-- BEGIN title -->
+                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo physicalServer-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="d-flex fw-bold fs-12px">
+                        <div class="flex-grow-1">물리서버 벤더별 수량 (상위 3개)</div>
+                    </div>
+                    <!-- END title -->
+                    <!-- BEGIN stat-lg -->
+                    <div>
+                        <div class="col-12">
+                            <div class="mt-n3 mb-n2 h-100px" id="apexPhysicalServerChart"></div>
                         </div>
-                        <!-- BEGIN #datatable -->
-                        <table class="table table-report text-nowrap" width="100%">
-                            <thead class="fw-bold fs-14px mb-2">
-                                <tr>
-                                    <th>No</th>
-                                    <th>리포트 이름</th>
-                                    <th>생성 일자</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody class="fw-bold fs-14px mb-2">
-                                <tr>
-                                    <td>1</td>
-                                    <td>
-                                        <a href="../reportPageweekly">
-                                            주간 자산 리포트
-                                        </a>
-                                    </td>
-                                    <td>2023-04-10</td>
-                                    <td>
-                                        <a href="http://localhost:8000/reportPageweekly/"download>
-                                            <button type="button" class="btn btn-outline-warning" value="print">
-                                                다운로드
-                                            </button>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>
-                                        <a href="../reportPageweekly1">
-                                            주간 자산 리포트
-                                        </a>
-                                    </td>
-                                    <td>2023-04-03</td>
-                                    <td>
-                                        <a href="http://localhost:8000/reportPageweekly1/"download>
-                                            <button type="button" class="btn btn-outline-warning" value="print">
-                                                다운로드
-                                            </button>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>
-                                        <a href="../reportPageweekly2">
-                                            주간 자산 리포트
-                                        </a>
-                                    </td>
-                                    <td>2023-03-27</td>
-                                    <td>
-                                        <a href="http://localhost:8000/reportPageweekly2/"download>
-                                            <button type="button" class="btn btn-outline-warning" value="print">
-                                                다운로드
-                                            </button>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>
-                                        <a href="../reportPageweekly3">
-                                            주간 자산 리포트
-                                        </a>
-                                    </td>
-                                    <td>2023-03-20</td>
-                                    <td>
-                                        <a href="http://localhost:8000/reportPageweekly3/"download>
-                                            <button type="button" class="btn btn-outline-warning" value="print">
-                                                다운로드
-                                            </button>
-                                        </a>
-                                    </td>
-                                </tr>
-
-
-                            </tbody>
-                        </table>
-
-
-                        <!-- END #datatable -->
-
                     </div>
-                    <div class="card-arrow">
-                        <div class="card-arrow-top-left"></div>
-                        <div class="card-arrow-top-right"></div>
-                        <div class="card-arrow-bottom-left"></div>
-                        <div class="card-arrow-bottom-right"></div>
-                    </div>
-                    </div>
-                <!-- END card-body -->
+                    <!-- END stat-lg -->
                 </div>
-                    <!-- END card -->
+                <!-- END card-body -->
 
-
+                <!-- BEGIN card-arrow -->
+                <div class="card-arrow">
+                    <div class="card-arrow-top-left"></div>
+                    <div class="card-arrow-top-right"></div>
+                    <div class="card-arrow-bottom-left"></div>
+                    <div class="card-arrow-bottom-right"></div>
+                </div>
+                <!-- END card-arrow -->
             </div>
+            <!-- END card -->
+        </div>
+        <!-- END col-3 -->
+        <!-- BEGIN col-3 -->
+        <div class="col-xl-3 col-lg-6">
+            <!-- BEGIN card -->
+            <div class="card mb-3">
+                <!-- BEGIN card-body -->
+                <div class="card-body h-150px">
+                    <!-- BEGIN title -->
+                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo serverBandBy-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="d-flex fw-bold fs-12px">
+                        <div class="flex-grow-1">각 대역별 서버 수 (상위 3개)</div>
+                    </div>
+                    <!-- END title -->
+                    <!-- BEGIN stat-lg -->
+                    <div class="h-100px">
+                        <!-- END stat-sm -->
+                        <div>
+                            <div class="col-12">
+                                <div class="mt-n3 mb-n2 h-100px" id="apexIPlistChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END stat-lg -->
+                </div>
+                <!-- END card-body -->
 
+                <!-- BEGIN card-arrow -->
+                <div class="card-arrow">
+                    <div class="card-arrow-top-left"></div>
+                    <div class="card-arrow-top-right"></div>
+                    <div class="card-arrow-bottom-left"></div>
+                    <div class="card-arrow-bottom-right"></div>
+                </div>
+                <!-- END card-arrow -->
+            </div>
+            <!-- END card -->
+        </div>
+        <!-- END col-3 -->
 
+        <!-- BEGIN col-3 -->
+        <div class="col-xl-3 col-lg-6">
+            <!-- BEGIN card -->
+            <div class="card mb-3">
+                <!-- BEGIN card-body -->
+                <div class="card-body h-150px">
+                    <!-- BEGIN title -->
+                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo connectDestinationIp-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="d-flex fw-bold fs-12px">
+                        <div class="flex-grow-1 text-opacity-75">최다 연결 Destination IP/Port (상위 3개)</div>
+                    </div>
+                    <!-- END title -->
+                    <!-- BEGIN stat-lg -->
+                    <div class="col-12 h-100px">
+                        <!-- END stat-sm -->
+                        {% if chartData.connectIpDataList %}
+                        <div class="fs-12px">
+                            <table class="table-sm-se w-90 text-white text-opacity-60" style="margin: 0 auto; vertical-align: middle; table-layout: fixed;">
+                                <thead>
+                                <tr class="w-50 fw-bold">
+                                    <td class="text-start text-truncate width-35">Destination IP</td>
+                                    <td class="text-start text-truncate width-35">Hostname</td>
+                                    <td class="text-center text-truncate width-15">Port</td>
+                                    <td class="text-center text-truncate width-15">Count</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for data in chartData.connectIpDataList %}
+                                <tr class="text-opacity-60">
+                                    <td class="text-start text-truncate" title="{{ data.ip }}">{{ data.ip }}</td>
+                                    <td class="text-start text-truncate" title="{{ data.host }}">{{ data.name }}</td>
+                                    <td class="text-center text-truncate" title="{{ data.host }}">{{ data.host }}</td>
+                                    <td class="text-center text-truncate" title="{{ data.count }}">{{ data.count }}</td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <!-- END stat-lg -->
+                </div>
+                <!-- END card-body -->
 
+                <!-- BEGIN card-arrow -->
+                <div class="card-arrow">
+                    <div class="card-arrow-top-left"></div>
+                    <div class="card-arrow-top-right"></div>
+                    <div class="card-arrow-bottom-left"></div>
+                    <div class="card-arrow-bottom-right"></div>
+                </div>
+                <!-- END card-arrow -->
+            </div>
+            <!-- END card -->
+        </div>
+        <!-- END col-3 -->
 
-        <!-- END col-6 -->
-
-<!--        &lt;!&ndash; BEGIN col-3 &ndash;&gt;-->
-<!--        <div class="col-xl-3 col-lg-6">-->
-<!--            &lt;!&ndash; BEGIN card &ndash;&gt;-->
-<!--            <div class="card mb-3">-->
-<!--                &lt;!&ndash; BEGIN card-body &ndash;&gt;-->
-<!--                <div class="card-body h-150px">-->
-<!--                    &lt;!&ndash; BEGIN title &ndash;&gt;-->
-<!--                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo physicalServer-moreInfo"><i class="fas fa-ellipsis-h"></i></button>-->
-<!--                    <div class="d-flex fw-bold fs-12px">-->
-<!--                        <div class="flex-grow-1">물리서버 벤더별 수량 (상위 3개)</div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END title &ndash;&gt;-->
-<!--                    &lt;!&ndash; BEGIN stat-lg &ndash;&gt;-->
-<!--                    <div>-->
-<!--                        <div class="col-12">-->
-<!--                            <div class="mt-n3 mb-n2 h-100px" id="apexPhysicalServerChart"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END stat-lg &ndash;&gt;-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-body &ndash;&gt;-->
-
-<!--                &lt;!&ndash; BEGIN card-arrow &ndash;&gt;-->
-<!--                <div class="card-arrow">-->
-<!--                    <div class="card-arrow-top-left"></div>-->
-<!--                    <div class="card-arrow-top-right"></div>-->
-<!--                    <div class="card-arrow-bottom-left"></div>-->
-<!--                    <div class="card-arrow-bottom-right"></div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-arrow &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; END card &ndash;&gt;-->
-<!--        </div>-->
-<!--        &lt;!&ndash; END col-3 &ndash;&gt;-->
-<!--        &lt;!&ndash; BEGIN col-3 &ndash;&gt;-->
-<!--        <div class="col-xl-iscsi col-lg-iscsi">-->
-<!--            &lt;!&ndash; BEGIN card &ndash;&gt;-->
-<!--            <div class="card mb-3">-->
-<!--                &lt;!&ndash; BEGIN card-body &ndash;&gt;-->
-<!--                <div class="card-body h-150px">-->
-<!--                    &lt;!&ndash; BEGIN title &ndash;&gt;-->
-<!--                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo physicalServer-moreInfo"><i class="fas fa-ellipsis-h"></i></button>-->
-<!--                    <div class="d-flex fw-bold small">-->
-<!--                        <div class="flex-grow-1">ISCSI 사용 현황</div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END title &ndash;&gt;-->
-<!--                    &lt;!&ndash; BEGIN stat-lg &ndash;&gt;-->
-<!--                    <div>-->
-<!--                        <div class="col-12">-->
-<!--                            <div class="mt-n3 mb-n2 h-100px" id=></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END stat-lg &ndash;&gt;-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-body &ndash;&gt;-->
-
-<!--                &lt;!&ndash; BEGIN card-arrow &ndash;&gt;-->
-<!--                <div class="card-arrow">-->
-<!--                    <div class="card-arrow-top-left"></div>-->
-<!--                    <div class="card-arrow-top-right"></div>-->
-<!--                    <div class="card-arrow-bottom-left"></div>-->
-<!--                    <div class="card-arrow-bottom-right"></div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-arrow &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; END card &ndash;&gt;-->
-<!--        </div>-->
-<!--        &lt;!&ndash; END col-3 &ndash;&gt;-->
-<!--        &lt;!&ndash; BEGIN col-3 &ndash;&gt;-->
-<!--        <div class="col-xl-iscsi col-lg-iscsi">-->
-<!--            &lt;!&ndash; BEGIN card &ndash;&gt;-->
-<!--            <div class="card mb-3">-->
-<!--                &lt;!&ndash; BEGIN card-body &ndash;&gt;-->
-<!--                <div class="card-body h-150px">-->
-<!--                    &lt;!&ndash; BEGIN title &ndash;&gt;-->
-<!--                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo gpuServer-moreInfo"><i class="fas fa-ellipsis-h"></i></button>-->
-<!--                    <div class="d-flex fw-bold fs-12px">-->
-<!--                        <div class="flex-grow-1">GPU 서버 수량</div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END title &ndash;&gt;-->
-<!--                    &lt;!&ndash; BEGIN stat-lg &ndash;&gt;-->
-<!--                    {% if chartData.GpuServerDataList %}-->
-<!--                    <div class="col-12 h-100px d-flex text-center align-content-center justify-content-center flex-md-column">-->
-<!--                        <div class="count-num">-->
-<!--                            <span class="fw-bold text-opacity-60 fs-35px pe-3 pb-10px ">{{ chartData.GpuServerDataList.value }}개</span>-->
-<!--                            <div class="conNumImg" style="position: relative;">-->
-<!--                                {% if chartData.GpuServerDataList.roc == 0 %}-->
-<!--                                <a class="conNumIcon text-decoration-none fs-25px"> - </a>-->
-<!--                                {% elif chartData.GpuServerDataList.roc > 0 %}-->
-<!--                                <img class="conArrow fs-25px pt-25px" src="{% static 'img/common/dashboard/arrowTop.png' %}">-->
-<!--                                {% elif chartData.GpuServerDataList.roc < 0 %}-->
-<!--                                <img class="conArrow fs-25px pt-25px" src="{% static 'img/common/dashboard/arrowBot.png' %}">-->
-<!--                                {% endif %}-->
-<!--                            </div>-->
-<!--                            <span class="conNum text-theme fw-bold fs-25px">-->
-<!--                            {% if chartData.GpuServerDataList.roc < 0 %}-->
-<!--                            {% widthratio chartData.GpuServerDataList.roc 1 -1 %}-->
-<!--                            {% else %}-->
-<!--                            {{ chartData.GpuServerDataList.roc }}-->
-<!--                            {% endif %}-->
-<!--                            </span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END stat-lg &ndash;&gt;-->
-<!--                </div>-->
-<!--                {% endif %}-->
-<!--                &lt;!&ndash; END card-body &ndash;&gt;-->
-
-<!--                &lt;!&ndash; BEGIN card-arrow &ndash;&gt;-->
-<!--                <div class="card-arrow">-->
-<!--                    <div class="card-arrow-top-left"></div>-->
-<!--                    <div class="card-arrow-top-right"></div>-->
-<!--                    <div class="card-arrow-bottom-left"></div>-->
-<!--                    <div class="card-arrow-bottom-right"></div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-arrow &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; END card &ndash;&gt;-->
-<!--        </div>-->
-<!--        &lt;!&ndash; END col-3 &ndash;&gt;-->
-
-<!--        &lt;!&ndash; BEGIN col-3 &ndash;&gt;-->
-<!--        <div class="col-xl-3 col-lg-6">-->
-<!--            &lt;!&ndash; BEGIN card &ndash;&gt;-->
-<!--            <div class="card mb-3">-->
-<!--                &lt;!&ndash; BEGIN card-body &ndash;&gt;-->
-<!--                <div class="card-body h-150px">-->
-<!--                    &lt;!&ndash; BEGIN title &ndash;&gt;-->
-<!--                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo connectDestinationIp-moreInfo"><i class="fas fa-ellipsis-h"></i></button>-->
-<!--                    <div class="d-flex fw-bold fs-12px">-->
-<!--                        <div class="flex-grow-1 text-opacity-75">최다 연결 Destination IP/Port (상위 3개)</div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END title &ndash;&gt;-->
-<!--                    &lt;!&ndash; BEGIN stat-lg &ndash;&gt;-->
-<!--                    <div class="col-12 h-100px">-->
-<!--                        &lt;!&ndash; END stat-sm &ndash;&gt;-->
-<!--                        {% if chartData.connectIpDataList %}-->
-<!--                        <div class="fs-12px">-->
-<!--                            <table class="table-sm-se w-90 text-white text-opacity-60" style="margin: 0 auto; vertical-align: middle; table-layout: fixed;">-->
-<!--                                <thead>-->
-<!--                                <tr class="w-50 fw-bold">-->
-<!--                                    <td class="text-start text-truncate width-35">Destination IP</td>-->
-<!--                                    <td class="text-start text-truncate width-35">Hostname</td>-->
-<!--                                    <td class="text-center text-truncate width-15">Port</td>-->
-<!--                                    <td class="text-center text-truncate width-15">Count</td>-->
-<!--                                </tr>-->
-<!--                                </thead>-->
-<!--                                <tbody>-->
-<!--                                {% for data in chartData.connectIpDataList %}-->
-<!--                                <tr class="text-opacity-60">-->
-<!--                                    <td class="text-start text-truncate" title="{{ data.ip }}">{{ data.ip }}</td>-->
-<!--                                    <td class="text-start text-truncate" title="{{ data.host }}">{{ data.name }}</td>-->
-<!--                                    <td class="text-center text-truncate" title="{{ data.host }}">{{ data.host }}</td>-->
-<!--                                    <td class="text-center text-truncate" title="{{ data.count }}">{{ data.count }}</td>-->
-<!--                                </tr>-->
-<!--                                {% endfor %}-->
-<!--                                </tbody>-->
-<!--                            </table>-->
-<!--                        </div>-->
-<!--                        {% endif %}-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END stat-lg &ndash;&gt;-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-body &ndash;&gt;-->
-
-<!--                &lt;!&ndash; BEGIN card-arrow &ndash;&gt;-->
-<!--                <div class="card-arrow">-->
-<!--                    <div class="card-arrow-top-left"></div>-->
-<!--                    <div class="card-arrow-top-right"></div>-->
-<!--                    <div class="card-arrow-bottom-left"></div>-->
-<!--                    <div class="card-arrow-bottom-right"></div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-arrow &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; END card &ndash;&gt;-->
-<!--        </div>-->
-<!--        &lt;!&ndash; END col-3 &ndash;&gt;-->
-
-<!--        &lt;!&ndash; BEGIN col-3 &ndash;&gt;-->
-<!--        <div class="col-xl-3 col-lg-6">-->
-<!--            &lt;!&ndash; BEGIN card &ndash;&gt;-->
-<!--            <div class="card mb-3">-->
-<!--                &lt;!&ndash; BEGIN card-body &ndash;&gt;-->
-<!--                <div class="card-body h-150px">-->
-<!--                    &lt;!&ndash; BEGIN title &ndash;&gt;-->
-<!--                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo connectSourceIp-moreInfo"><i class="fas fa-ellipsis-h"></i></button>-->
-<!--                    <div class="d-flex fw-bold fs-12px">-->
-<!--                        <div class="flex-grow-1 text-opacity-75">최다 연결 Source IP (상위 3개)</div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END title &ndash;&gt;-->
-<!--                    &lt;!&ndash; BEGIN stat-lg &ndash;&gt;-->
-<!--                    <div class="col-12 h-100px">-->
-<!--                        &lt;!&ndash; END stat-sm &ndash;&gt;-->
-<!--                        {% if chartData.connectServerDataList %}-->
-<!--                        <div class="fs-12px">-->
-<!--                            <table class="table-sm-se w-90 text-white text-opacity-60" style="margin: 0 auto; vertical-align: middle;">-->
-<!--                                <thead>-->
-<!--                                <tr class="w-50 fw-bold">-->
-<!--                                    <td class="tw-l150 text-truncate">Source IP</td>-->
-<!--                                    <td class="text-start text-truncate">Hostname</td>-->
-<!--                                    <td class="text-center text-truncate">Count</td>-->
-<!--                                </tr>-->
-<!--                                </thead>-->
-<!--                                <tbody>-->
-<!--                                {% for data in chartData.connectServerDataList %}-->
-<!--                                <tr class="text-opacity-60">-->
-<!--                                    <td class="text-start text-truncate" title="{{ data.ip }}">{{ data.ip }}</td>-->
-<!--                                    <td class="text-start text-truncate" title="{{ data.name }}">{{ data.name }}</td>-->
-<!--                                    <td class="w-80px text-center text-truncate" title="{{ data.count }}">{{ data.count }}</td>-->
-<!--                                </tr>-->
-<!--                                {% endfor %}-->
-<!--                                </tbody>-->
-<!--                            </table>-->
-<!--                        </div>-->
-<!--                        {% endif %}-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END stat-lg &ndash;&gt;-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-body &ndash;&gt;-->
-<!--                &lt;!&ndash; BEGIN card-arrow &ndash;&gt;-->
-<!--                <div class="card-arrow">-->
-<!--                    <div class="card-arrow-top-left"></div>-->
-<!--                    <div class="card-arrow-top-right"></div>-->
-<!--                    <div class="card-arrow-bottom-left"></div>-->
-<!--                    <div class="card-arrow-bottom-right"></div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-arrow &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; END card &ndash;&gt;-->
-<!--        </div>-->
-<!--        &lt;!&ndash; END col-3 &ndash;&gt;-->
-<!--        &lt;!&ndash; BEGIN col-6 &ndash;&gt;-->
-<!--        <div class="col-xl-12 h-130px">-->
-<!--            &lt;!&ndash; BEGIN card &ndash;&gt;-->
-<!--            <div class="card mb-3">-->
-<!--                &lt;!&ndash; BEGIN card-body &ndash;&gt;-->
-<!--                <div class="card-body h-130px">-->
-<!--                    &lt;!&ndash; BEGIN swiper &ndash;&gt;-->
-<!--                    <div class="swiper-container">-->
-<!--                        <div class="swiper-wrapper">-->
-<!--                            {% if chartData.bannerDataList %}-->
-<!--                            {% for bannerData in chartData.bannerDataList %}-->
-<!--                            <div class="swiper-slide">-->
-<!--                                <div class="conBanner">-->
-<!--                                    <div class="count-title text-truncate fw-normal text-white text-opacity-75 px-sm-3 fs-12px"-->
-<!--                                         title="{{bannerData.name}} Count">{{bannerData.name}}-->
-<!--                                    </div>-->
-<!--                                    <div class="count-num">-->
-<!--                                        <span class="conTotalnum fw-bold text-opacity-60 fs-4">{{bannerData.value}}</span>-->
-<!--                                        <div class="conNumImg">-->
-<!--                                            {% if bannerData.roc == 0 %}-->
-<!--                                            <a class="conNumIcon text-decoration-none"> - </a>-->
-<!--                                            {% elif bannerData.roc > 0 %}-->
-<!--                                            <img class="conArrow"-->
-<!--                                                 src="{% static 'img/common/dashboard/arrowTop.png' %}">-->
-<!--                                            {% elif bannerData.roc < 0 %}-->
-<!--                                            <img class="conArrow"-->
-<!--                                                 src="{% static 'img/common/dashboard/arrowBot.png' %}">-->
-<!--                                            {% else %}-->
-<!--                                            <a class="conNumIcon text-decoration-none"> - </a>-->
-<!--                                            {% endif %}-->
-<!--                                        </div>-->
-<!--                                        <span class="conNum text-theme fw-bold">-->
-<!--											{% if bannerData.roc < 0 %}-->
-<!--											{% widthratio bannerData.roc 1 -1 %}-->
-<!--											{% else %}-->
-<!--											{{bannerData.roc}}-->
-<!--											{% endif %}-->
-<!--										</span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            {% endfor %}-->
-<!--                            {% endif %}-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; END swiper &ndash;&gt;-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-body &ndash;&gt;-->
-<!--                &lt;!&ndash; BEGIN card-arrow &ndash;&gt;-->
-<!--                <div class="card-arrow">-->
-<!--                    <div class="card-arrow-top-left"></div>-->
-<!--                    <div class="card-arrow-top-right"></div>-->
-<!--                    <div class="card-arrow-bottom-left"></div>-->
-<!--                    <div class="card-arrow-bottom-right"></div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash; END card-arrow &ndash;&gt;-->
-<!--            </div>-->
-<!--            &lt;!&ndash; END card &ndash;&gt;-->
-<!--        </div>-->
+        <!-- BEGIN col-3 -->
+        <div class="col-xl-3 col-lg-6">
+            <!-- BEGIN card -->
+            <div class="card mb-3">
+                <!-- BEGIN card-body -->
+                <div class="card-body h-150px">
+                    <!-- BEGIN title -->
+                    <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo connectSourceIp-moreInfo"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="d-flex fw-bold fs-12px">
+                        <div class="flex-grow-1 text-opacity-75">최다 연결 Source IP (상위 3개)</div>
+                    </div>
+                    <!-- END title -->
+                    <!-- BEGIN stat-lg -->
+                    <div class="col-12 h-100px">
+                        <!-- END stat-sm -->
+                        {% if chartData.connectServerDataList %}
+                        <div class="fs-12px">
+                            <table class="table-sm-se w-90 text-white text-opacity-60" style="margin: 0 auto; vertical-align: middle;">
+                                <thead>
+                                <tr class="w-50 fw-bold">
+                                    <td class="tw-l150 text-truncate">Source IP</td>
+                                    <td class="text-start text-truncate">Hostname</td>
+                                    <td class="text-center text-truncate">Count</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for data in chartData.connectServerDataList %}
+                                <tr class="text-opacity-60">
+                                    <td class="text-start text-truncate" title="{{ data.ip }}">{{ data.ip }}</td>
+                                    <td class="text-start text-truncate" title="{{ data.name }}">{{ data.name }}</td>
+                                    <td class="w-80px text-center text-truncate" title="{{ data.count }}">{{ data.count }}</td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <!-- END stat-lg -->
+                </div>
+                <!-- END card-body -->
+                <!-- BEGIN card-arrow -->
+                <div class="card-arrow">
+                    <div class="card-arrow-top-left"></div>
+                    <div class="card-arrow-top-right"></div>
+                    <div class="card-arrow-bottom-left"></div>
+                    <div class="card-arrow-bottom-right"></div>
+                </div>
+                <!-- END card-arrow -->
+            </div>
+            <!-- END card -->
+        </div>
+        <!-- END col-3 -->
+        <!-- BEGIN col-6 -->
+        <div class="col-xl-12 h-130px">
+            <!-- BEGIN card -->
+            <div class="card mb-3">
+                <!-- BEGIN card-body -->
+                <div class="card-body h-130px">
+                    <!-- BEGIN swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            {% if chartData.bannerDataList %}
+                            {% for bannerData in chartData.bannerDataList %}
+                            <div class="swiper-slide">
+                                <div class="conBanner">
+                                    <div class="count-title text-truncate fw-normal text-white text-opacity-75 px-sm-3 fs-12px"
+                                         title="{{bannerData.name}} Count">{{bannerData.name}}
+                                    </div>
+                                    <div class="count-num">
+                                        <span class="conTotalnum fw-bold text-opacity-60 fs-4">{{bannerData.value}}</span>
+                                        <div class="conNumImg">
+                                            {% if bannerData.roc == 0 %}
+                                            <a class="conNumIcon text-decoration-none"> - </a>
+                                            {% elif bannerData.roc > 0 %}
+                                            <img class="conArrow"
+                                                 src="{% static 'img/common/dashboard/arrowTop.png' %}">
+                                            {% elif bannerData.roc < 0 %}
+                                            <img class="conArrow"
+                                                 src="{% static 'img/common/dashboard/arrowBot.png' %}">
+                                            {% else %}
+                                            <a class="conNumIcon text-decoration-none"> - </a>
+                                            {% endif %}
+                                        </div>
+                                        <span class="conNum text-theme fw-bold">
+											{% if bannerData.roc < 0 %}
+											{% widthratio bannerData.roc 1 -1 %}
+											{% else %}
+											{{bannerData.roc}}
+											{% endif %}
+										</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <!-- END swiper -->
+                </div>
+                <!-- END card-body -->
+                <!-- BEGIN card-arrow -->
+                <div class="card-arrow">
+                    <div class="card-arrow-top-left"></div>
+                    <div class="card-arrow-top-right"></div>
+                    <div class="card-arrow-bottom-left"></div>
+                    <div class="card-arrow-bottom-right"></div>
+                </div>
+                <!-- END card-arrow -->
+            </div>
+            <!-- END card -->
+        </div>
         <!-- END col-6 -->
     </div>
     <!-- END row -->
@@ -1065,6 +712,24 @@
 <!-- END #content -->
 <script>
 	window.setTimeout('window.location.reload()',600000);
+
+    //메모리,CPU,디스크 자동롤링
+    var buttons = document.querySelectorAll(".mcdBtn"); // 버튼 요소들을 가져옴
+    var index = 0; // 버튼 요소들의 인덱스
+    setInterval(function() {
+      buttons[index].click(); // 버튼 클릭 이벤트 실행
+      index = (index + 1) % buttons.length; // 다음 버튼의 인덱스 계산
+    }, 7000); // 7초마다 실행
+
+    //지도 자동롤링
+    var buttons2 = document.querySelectorAll(".who_btn"); // 버튼 요소들을 가져옴
+    var index2 = 0; // 버튼 요소들의 인덱스
+    setInterval(function() {
+      buttons2[index].click(); // 버튼 클릭 이벤트 실행
+      index2 = (index + 1) % buttons2.length; // 다음 버튼의 인덱스 계산
+    }, 7000); // 7초마다 실행
+
+
 </script>
 {% endblock %}
 
