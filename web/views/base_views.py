@@ -47,41 +47,50 @@ def dashboard(request):
             service_donutChartData = DCDL["service_donutChartData"]
             CpuChartDataList = DCDL["usageChartDataList"]["CpuChartDataList"]
             MemoryChartDataList = DCDL["usageChartDataList"]["MemoryChartDataList"]
-            alamCaseDataList = DCDL["alamCaseDataList"]
-            os_donutChartData = DCDL["os_donutChartData"]
-            os_chartPartOne = DCDL["os_chartPartOne"]
-            os_chartPartTwo = DCDL["os_chartPartTwo"]
+            ############################################
+            ResourceDiskChartDataList = DCDL["ResourceDiskChartDataList"]
+            ResourceMemoryChartDataList= DCDL["ResourceMemoryChartDataList"]
+            ############################################
+
             vendorChartList = DCDL["vendorChartList"]
             alarm_donutChartData = DCDL["alarm_donutChartData"]
             bannerData = DCDL["bannerDataList"]
-            WorldMapData = DCDL["WorldMapDataList"]
+
             GpuServerDataList = DCDL["GpuServerDataList"]
-            connectIpDataList = DCDL["connectIpDataList"]
-            connectServerDataList = DCDL["connectServerDataList"]
+
+
             chartData = {'DiskChartDataList': DiskChartDataList, 'donutChartDataList': service_donutChartData, 'MemoryChartDataList': MemoryChartDataList, 'CpuChartDataList': CpuChartDataList,
-                        'os_donutChartData': os_donutChartData, 'server_barChartDataList': server_barChartData, "server_LChartDataList": server_LChartDataList, "alamCaseDataList": alamCaseDataList,
-                        "os_chartPartOne": os_chartPartOne, "os_chartPartTwo": os_chartPartTwo, "vendorChartList": vendorChartList, "alarm_donutChartData": alarm_donutChartData,
-                        "bannerDataList": bannerData, "WorldMapDataList": WorldMapData,
-                        "GpuServerDataList": GpuServerDataList, "connectIpDataList": connectIpDataList, "connectServerDataList": connectServerDataList}
+                        "server_LChartDataList": server_LChartDataList,
+                         ##############################################
+                        "ResourceDiskChartDataList": ResourceDiskChartDataList,
+                        "ResourceMemoryChartDataList": ResourceMemoryChartDataList,
+                        ################################################
+                        "vendorChartList": vendorChartList, "alarm_donutChartData": alarm_donutChartData,
+                        "bannerDataList": bannerData,
+                        "GpuServerDataList": GpuServerDataList,
+                         }
 
             returnData = {'menuList': menuListDB, 'chartData': chartData, 'Customer': Customer, 'MapUse': MapUse, 'Login_Method': Login_Method}
         else:
             dashboardType = 'web/dashboard.html'
-            barChartData = DCDL["barChartData"]
-            lineChartData = DCDL["lineChartData"]
+            # lineChartData = DCDL["lineChartData"]
             pieChartData = DCDL["pieChartData"]
             bannerData = DCDL["bannerData"]
             minidonutData = DCDL['MiniDonutChart']
             alarmData = DCDL["alarmListData"]
             AssociationData = DCDL["AssociationDataList"]
-            WorldMapData = DCDL["WorldMapDataList"]
+
             TotalTopData = DCDL['TotalTopDataList']
             TotalData = DCDL["TotalDataList"]
             donutChartData = DCDL["donutChartDataList"]
-            MapUse = {"WorldUse": WorldUse, "KoreaUse": KoreaUse, "AreaUse": AreaUse, "AreaType": AreaType}
-            chartData = {'barChartDataList': barChartData, 'minidonutData': minidonutData, 'lineChartDataList': lineChartData, 'pieChartDataList': pieChartData, 'bannerDataList': bannerData, 'alarmDataList': alarmData, 'AssociationDataList': AssociationData,
-                         'TotalTopDataList': TotalTopData, 'TotalDataList': TotalData, 'WorldMapDataList': WorldMapData, 'donutChartDataList': donutChartData}
-            returnData = {'menuList': menuListDB, 'chartData': chartData, 'Customer': Customer, 'MapUse': MapUse, 'Login_Method': Login_Method}
+
+            chartData = {'minidonutData': minidonutData,
+                         # 'lineChartDataList': lineChartData,
+                         'pieChartDataList': pieChartData, 'bannerDataList': bannerData,
+                         'alarmDataList': alarmData,
+                         'AssociationDataList': AssociationData,
+                         'TotalTopDataList': TotalTopData, 'TotalDataList': TotalData, 'donutChartDataList': donutChartData}
+            returnData = {'menuList': menuListDB, 'chartData': chartData, 'Customer': Customer, 'Login_Method': Login_Method}
         return render(request, dashboardType, returnData)
 
 def om(request):

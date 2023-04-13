@@ -818,6 +818,25 @@ def plug_in(table, day, type):
                             statistics_collection_date >= '""" + fiveMinutesAgo + """'
 
                     """
+                    # ----------------------Main dashboard 디스크 메모리 도넛차트용 데이터-------------------------------
+                elif type == 'ResourceUsage':
+                    query = """
+                        select
+                            classification, item, item_count
+                        from
+                            minutely_statistics
+                        where
+                            classification in ('ram_usage_size_exceeded', 'drive_usage_size_exceeded')
+                        and
+                            item in ('95Risk')
+                        and
+                            NOT item IN ('unconfirmed', 'No', 'Safety')
+                        and
+                            statistics_collection_date >= '""" + fiveMinutesAgo + """'
+
+                    """
+
+                    # -------------------------------추가 종윤 -------------------------
                 # 물리서버 벤더별 수량
                 elif type == 'vendor':
                     query = """
