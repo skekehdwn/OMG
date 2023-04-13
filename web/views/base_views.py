@@ -41,7 +41,7 @@ def dashboard(request):
             MapUse = {"WorldUse": WorldUse, "KoreaUse": KoreaUse, "AreaUse": AreaUse, "AreaType": AreaType}
 
             # NC버전
-            server_barChartData = DCDL["server_BChartDataList"]
+
             server_LChartDataList = DCDL["server_LChartDataList"]
             DiskChartDataList = DCDL["usageChartDataList"]["DiskChartDataList"]
             service_donutChartData = DCDL["service_donutChartData"]
