@@ -29,6 +29,9 @@ def MainData():
     if Customer == 'NC' or Customer == 'Xfactor':
         if ProjectType == 'System':
             if core == 'Tanium':
+                os_pieChartData = []
+                wire_pieChartData = []
+                virtual_pieChartData = []
                 service_donutChartData = []
                 DiskChartDataList = []
                 CpuChartDataList = []
@@ -36,6 +39,43 @@ def MainData():
                 os_donutChartData = []
                 alarm_donutChartData = []
                 vendorChartList = []
+
+                # 대시보드 os_pie Chart 데이터
+                try :
+                    OPC = PDPI('statistics', 'today', 'os')
+                    os_pieChartData = CTDF(OPC, 'pie')
+                    if not OPC:
+                        os_pieChartData = [{"name": "-", "value": 0}]
+                    logger.info('dashboard_function.py - os_pieChartData - Success')
+
+                except:
+                    logger.warning('dashboard_function.py - Error Occurred')
+                    logger.warning('Error - os_pieChartData')
+
+                #대시보드 wire_pie Chart 데이터
+                try :
+                    DPC = PDPI('statistics', 'today', 'wire')
+                    wire_pieChartData = CTDF(DPC, 'pie')
+                    if not DPC:
+                        wire_pieChartData = [{"name": "-", "value": 0}]
+                    logger.info('dashboard_function.py - wire_pieChartData - Success')
+
+                except:
+                    logger.warning('dashboard_function.py - Error Occurred')
+                    logger.warning('Error - wire_pieChartData')
+
+                # 대시보드 virtual_pie Chart 데이터
+                try:
+                    VPC = PDPI('statistics', 'today', 'virtual')
+                    virtual_pieChartData = CTDF(VPC, 'pie')
+                    if not VPC:
+                        virtual_pieChartData = [{"name": "-", "value": 0}]
+                    logger.info('dashboard_function.py - virtual_pieChartData - Success')
+
+                except:
+                    logger.warning('dashboard_function.py - Error Occurred')
+                    logger.warning('Error - virtual_pieChartData')
+
 
                 # NC 대역벌 서버수량 chart
                 try:
@@ -303,6 +343,9 @@ def MainData():
                 CIDL = connectIpDataList
                 CSDL = connectServerDataList
                 MMDL = []
+                WDL = wire_pieChartData
+                ODL = os_pieChartData
+                VDL = virtual_pieChartData
 
             elif core == 'Zabbix':
                 print()
@@ -324,7 +367,10 @@ def MainData():
             "GpuServerDataList": GSDL,
             "connectIpDataList": CIDL,
             "connectServerDataList": CSDL,
-            "memoryMoreDataList": MMDL
+            "memoryMoreDataList": MMDL,
+            "wire_pieChartData" : WDL,
+            "os_pieChartData" : ODL,
+            "virtual_pieChartData" : VDL
         }
     else:
         if ProjectType == 'System':

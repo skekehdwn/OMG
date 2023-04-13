@@ -914,6 +914,47 @@ def plug_in(table, day, type):
                             order by
                                 item_count::INTEGER desc limit 3
                     """
+                # --------------------------------------------NewDashboard Pie Chart (OM)---------------------------------------
+                elif type == 'wire':
+                    query = """
+                            select 
+                                item, item_count
+                            from
+                                minutely_statistics
+                            where 
+                                classification = 'wire'
+                                AND item != 'unconfirmed'
+                                and NOT item IN ('unconfirmed')
+                                and statistics_collection_date >= '""" + fiveMinutesAgo + """'
+                            order by item_count desc
+                    """
+                elif type == 'os':
+                    query = """
+                            select 
+                                item, item_count
+                            from
+                                minutely_statistics
+                            where 
+                                classification = 'os'
+                                AND item != 'unconfirmed'
+                                and NOT item IN ('unconfirmed')
+                                and statistics_collection_date >= '""" + fiveMinutesAgo + """'
+                            order by item_count desc
+                    """
+
+                elif type == 'virtual':
+                    query = """
+                            select 
+                                item, item_count
+                            from
+                                minutely_statistics
+                            where 
+                                classification = 'virtual'
+                                AND item != 'unconfirmed'
+                                and NOT item IN ('unconfirmed')
+                                and statistics_collection_date >= '""" + fiveMinutesAgo + """'
+                            order by item desc
+                    """
             # NC 서버 총 수량 추이 그래프(30일)
             if day == 'monthly':
                 if type == 'asset':

@@ -312,16 +312,16 @@ var handleRenderChartNC2 = function () {
     var osDonutValue = []
     var osDonutName = []
 
-    for (var i = 0; i < a.bannerDataList.length; i++) {
-        if (a.bannerDataList[i]['name'] == 'Windows'){
-            osDonutValue.push(a.bannerDataList[i]['value']);
-            osDonutName.push(a.bannerDataList[i]['name']);
-        }else if (a.bannerDataList[i].name == 'Linux'){
-            osDonutValue.push(a.bannerDataList[i]['value']);
-            osDonutName.push(a.bannerDataList[i]['name']);
-        }else if (a.bannerDataList[i].name == 'Mac'){
-            osDonutValue.push(a.bannerDataList[i]['value']);
-            osDonutName.push(a.bannerDataList[i]['name']);
+    for (var i = 0; i < a.os_pieChartData.length; i++) {
+        if (a.os_pieChartData[i]['name'] == 'Windows'){
+            osDonutValue.push(a.os_pieChartData[i]['value']);
+            osDonutName.push(a.os_pieChartData[i]['name']);
+        }else if (a.os_pieChartData[i].name == 'Linux'){
+            osDonutValue.push(a.os_pieChartData[i]['value']);
+            osDonutName.push(a.os_pieChartData[i]['name']);
+        }else if (a.os_pieChartData[i].name == 'Mac'){
+            osDonutValue.push(a.os_pieChartData[i]['value']);
+            osDonutName.push(a.os_pieChartData[i]['name']);
         }
     };
 
@@ -391,6 +391,15 @@ var handleRenderChartNC2 = function () {
     var wireValue = []
     var wireName = []
 
+    for (var i = 0; i < a.wire_pieChartData.length; i++) {
+        if ((a.wire_pieChartData[i]['name']) == 'Wired'){
+            wireValue.push(a.wire_pieChartData[i]['value']);
+            wireName.push(a.wire_pieChartData[i]['name']);
+        }else if ((a.wire_pieChartData[i]['name']) == 'Wireless'){
+            wireValue.push(a.wire_pieChartData[i]['value']);
+            wireName.push(a.wire_pieChartData[i]['name']);
+        }
+    };
 
     var om_wire_chartOptions = {
         chart: {
@@ -429,8 +438,8 @@ var handleRenderChartNC2 = function () {
           position: 'left',
         },
         colors: ["#db7f08", "#ff9f0c", "#ffbe48", "#ffd16d", "#ffe49d", "#fff3ce"],
-        labels: ['Wired','Wireless'],
-        series: [15,21],
+        labels: wireName,
+        series: wireValue,
         tooltip: {
           theme: 'dark',
           x: {
@@ -456,15 +465,14 @@ var handleRenderChartNC2 = function () {
     // OM- om_vp_chart
     //--------------------------------------------------------------------------
     var vpDonutValue = []
-    var vpDonutName = []
-    var arr = a.server_LChartDataList[0]['data'][0]['data']
-    var last = arr[arr.length -1 ];
-    vpDonutValue.push(parseInt(a.server_LChartDataList[0]['data'][0]['data'][arr.length -1]));
-    vpDonutName.push(a.server_LChartDataList[0]['data'][0]['name']);
-    vpDonutValue.push(parseInt(a.server_LChartDataList[0]['data'][1]['data'][arr.length -1]));
-    vpDonutName.push(a.server_LChartDataList[0]['data'][1]['name']);
 
-    console.log(vpDonutName);
+    for (var i = 0; i < a.virtual_pieChartData.length; i++) {
+        if ((a.virtual_pieChartData[i]['name']) == 'No'){
+            vpDonutValue.push(a.virtual_pieChartData[i]['value']);
+        }else if ((a.virtual_pieChartData[i]['name']) == 'Yes'){
+            vpDonutValue.push(a.virtual_pieChartData[i]['value']);
+        }
+    };
     console.log(vpDonutValue);
     var om_vp_chartOptions = {
         chart: {
@@ -503,7 +511,7 @@ var handleRenderChartNC2 = function () {
           position: 'left',
         },
         colors: ["#db7f08", "#ff9f0c", "#ffbe48", "#ffd16d", "#ffe49d", "#fff3ce"],
-        labels: vpDonutName,
+        labels: ['Physical','Virtual'],
         series: vpDonutValue,
         tooltip: {
           theme: 'dark',
