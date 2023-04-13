@@ -100,21 +100,21 @@ var handleRenderChartNC2 = function () {
     // OM - diskChart
     //--------------------------------------------------------------------------
 
-    for (var i = 0; i < a.DiskChartDataList.length; i++) {
-        if (a.DiskChartDataList[i]['name'] == '60Risk') {
-          disk60 = a.DiskChartDataList[i]['value']
-        } else if (a.DiskChartDataList[i]['name'] == '75Risk') {
-          disk75 = a.DiskChartDataList[i]['value']
-        } else if (a.DiskChartDataList[i]['name'] == '95Risk') {
-          disk95 = a.DiskChartDataList[i]['value']
-        } else if (a.DiskChartDataList[i]['name'] == '99Risk') {
-          disk99 = a.DiskChartDataList[i]['value']
+    for (var i = 0; i < a.ResourceDiskChartDataList.length; i++) {
+        if (a.ResourceDiskChartDataList[i]['name'] == '60Risk') {
+          disk60 = a.ResourceDiskChartDataList[i]['value']
+        } else if (a.ResourceDiskChartDataList[i]['name'] == '75Risk') {
+          disk75 = a.ResourceDiskChartDataList[i]['value']
+        } else if (a.ResourceDiskChartDataList[i]['name'] == '95Risk') {
+          disk95 = a.ResourceDiskChartDataList[i]['value']
+        } else if (a.ResourceDiskChartDataList[i]['name'] == '99Risk') {
+          disk99 = a.ResourceDiskChartDataList[i]['value']
         }
     };
 
-    if (a.DiskChartDataList[0]['name'] == '-') {
+    if (a.ResourceDiskChartDataList[0]['name'] == '-') {
         disk99 = '-'
-        disk95 = ''
+        disk95 = '-'
         disk75 = ''
         disk60 = ''
     };
@@ -196,7 +196,7 @@ var handleRenderChartNC2 = function () {
         stroke: {
           lineCap: 'round'
         },
-        labels: [disk99 + disk95 + ' 대'],
+        labels: [disk95 + ' 대'],
     };
     var om_disk_chart = new ApexCharts(document.querySelector('#om_disk_chart'),om_disk_chartOptions);
     om_disk_chart.render();
@@ -205,18 +205,18 @@ var handleRenderChartNC2 = function () {
     //--------------------------------------------------------------------------
     // OM - om_mem_chart
     //--------------------------------------------------------------------------
-    for (var i = 0; i < a.MemoryChartDataList.length; i++) {
-        if (a.MemoryChartDataList[i]['name'] == '60Risk') {
-          memory60 = a.MemoryChartDataList[i]['value']
-        } else if (a.MemoryChartDataList[i]['name'] == '75Risk') {
-          memory75 = a.MemoryChartDataList[i]['value']
+    for (var i = 0; i < a.ResourceMemoryChartDataList.length; i++) {
+        if (a.ResourceMemoryChartDataList[i]['name'] == '60Risk') {
+          memory60 = a.ResourceMemoryChartDataList[i]['value']
+        } else if (a.ResourceMemoryChartDataList[i]['name'] == '75Risk') {
+          memory75 = a.ResourceMemoryChartDataList[i]['value']
         } else {
-          memory95 = a.MemoryChartDataList[i]['value']
+          memory95 = a.ResourceMemoryChartDataList[i]['value']
         }
     };
-    console.log(a);
 
-    if (a.MemoryChartDataList[0]['name'] == '-') {
+
+    if (a.ResourceMemoryChartDataList[0]['name'] == '-') {
         memory95 = '-'
         memory75 = ''
         memory60 = ''

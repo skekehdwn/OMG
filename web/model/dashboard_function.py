@@ -39,6 +39,9 @@ def MainData():
                 os_donutChartData = []
                 alarm_donutChartData = []
                 vendorChartList = []
+                ############# 대시보드 ###############
+                ResourceDiskChartDataList = []
+                ResourceMemoryChartDataList = []
 
                 # 대시보드 os_pie Chart 데이터
                 try :
@@ -101,6 +104,26 @@ def MainData():
                 except:
                     logger.warning('dashboard_function.py - Error Occurred')
                     logger.warning('Error - service_donutChartData')
+
+                    # ------------------------------디스크,메모리 도넛차트 ------------------------
+                try:
+                    ResourceUsagechart = PDPI('statistics', 'today', 'ResourceUsage')
+
+                    for i in range(len(ResourceUsagechart)):
+                        if ResourceUsagechart[i][0].startswith('drive_'):
+                            ResourceDiskChartDataList.append({"name": ResourceUsagechart[i][1], "value": int(ResourceUsagechart[i][2])})
+                            if ResourceMemoryChartDataList == None:
+                                ResourceDiskChartDataList.append({"name": '-', "value": 0})
+                        elif ResourceUsagechart[i][0].startswith('ram_'):
+                            ResourceMemoryChartDataList.append({"name": ResourceUsagechart[i][1], "value": int(ResourceUsagechart[i][2])})
+                            if ResourceMemoryChartDataList == None:
+                                ResourceMemoryChartDataList.append({"name": '-', "value": 0})
+                    logger.info('dashboard_function.py - ResourceDiskChartDataList - Success')
+                except:
+                    logger.warning('dashboard_function.py - Error Occurred')
+                    logger.warning('Error - ResourceDiskChartDataList')
+
+
 
                 # 디스크, cpu, ram 95%, 75%, 60% 사용량 차트
                 try:
@@ -174,28 +197,7 @@ def MainData():
                     logger.warning('dashboard_function.py - Error Occurred')
                     logger.warning('Error - server_LChartDataList')
 
-                # OS 버전별 서버 수 차트
-                colorList = ['#934903', '#b76306', '#db7f08', '#ff9f0c', '#ffbe48', '#ffd16d', '#ffe49d', '#fff3ce']
-                try:
-                    Ochart = PDPI('statistics', 'today', 'os_version')
-                    try:
-                        for i in range(len(Ochart)):
-                            os_donutChartData.append({"name": Ochart[i][0], "value": int(Ochart[i][1]), "color": colorList[i]})
-                        OSNum = 4
-                        result = [os_donutChartData[i * OSNum:(i + 1) * OSNum] for i in range((len(os_donutChartData) + OSNum - 1) // OSNum)]
-                        if len(Ochart) <= 4:
-                            os_chartPartOne = result[0]
-                            os_chartPartTwo = []
-                        else:
-                            os_chartPartOne = result[0]
-                            os_chartPartTwo = result[1]
-                    except:
-                        os_chartPartOne = [{"name": "-", "value": 0}]
-                        os_chartPartTwo = [{"name": "-", "value": 0}]
-                    logger.info('dashboard_function.py - os_donutChartData - Success')
-                except:
-                    logger.warning('dashboard_function.py - Error Occurred')
-                    logger.warning('Error - os_donutChartData')
+
 
                 # 물리서버 벤더별 수량 차트
                 try:
@@ -227,7 +229,6 @@ def MainData():
                     logger.warning('dashboard_function.py - Error Occurred')
                     logger.warning('Error - alarm_donutChartData')
 
-                # alarm_donutChartDataList = [{'key': '192.168.0.0/21', 'value': 4}, {'key': '192.168.0.0/22', 'value': 4}, {'key': '192.168.0.0/23', 'value': 4},{'key': '192.168.0.0/24', 'value': 4},{'key': '192.168.0.0/25', 'value': 4}]*2
 
                 # 배너 슬라이드
                 try:
@@ -278,41 +279,6 @@ def MainData():
                         logger.warning('dashboard_function.py - Error Occurred')
                         logger.warning('Error - GpuServerDataList')
 
-                # 서버 최다 연결 IP
-                try:
-                    connectIpDataList = []
-                    connectIpData = PDPI('statistics', 'today', 'ip')
-                    for i in range(len(connectIpData)):
-                        if connectIpData[i][0].startswith('::'):
-                            break
-                        else:
-                            split = connectIpData[i][0].split(':')
-                            ip = split[0]
-                            host = split[1]
-                            name = connectIpData[i][2]
-                            connectIpDataList.append({'ip': ip, 'name': name, 'host': host, 'count': connectIpData[i][1]})
-                    if not connectIpData:
-                        connectIpDataExcept = [{'ip': '-', 'host': '-', 'count': '-'}]
-                        connectIpDataList = connectIpDataExcept * 3
-                    logger.info('dashboard_function.py - connectIpDataList - Success')
-                except:
-                    logger.warning('dashboard_function.py - Error Occurred')
-                    logger.warning('Error - connectIpDataList')
-
-                # 세션 최다 연결 서버
-                try:
-                    connectServerDataList = []
-                    connectServerData = PDPI('statistics_list', 'today', 'server')
-                    for i in range(len(connectServerData)):
-                        connectServerDataList.append({'ip': connectServerData[i][0], 'name': connectServerData[i][1], 'count': connectServerData[i][2]})
-                    if not connectServerData:
-                        connectServerDataExcept = [{'ip': '-', 'name': '-', 'count': '-'}]
-                        connectServerDataList = connectServerDataExcept * 3
-                    logger.info('dashboard_function.py - connectServerDataList - Success')
-                except:
-                    logger.warning('dashboard_function.py - Error Occurred')
-                    logger.warning('Error - connectServerDataList')
-
                 # 게이지 차트 사용량 더보기
                 # 메모리 부분
                 try:
@@ -328,20 +294,20 @@ def MainData():
                     logger.warning('Error - memoryMoreDataList')
 
                 USCDL = {"DiskChartDataList": DiskChartDataList, "CpuChartDataList": CpuChartDataList, "MemoryChartDataList": MemoryChartDataList}
-                ODDLC = os_donutChartData
-                OCPO = os_chartPartOne
-                OCPT = os_chartPartTwo
-                SBDL = server_BChartDataList
+
                 SLCD = server_LChartDataList
                 DDLC = service_donutChartData
                 UCDL = USCDL
-                ACDL = alarmDataList
+
+                RDCDL = ResourceDiskChartDataList
+                RMCDL = ResourceMemoryChartDataList
+
                 VCDL = vendorChartList
                 ADDLC = alarm_donutChartDataList
                 BNDL = BNChartDataList
                 GSDL = GpuServerDataList
-                CIDL = connectIpDataList
-                CSDL = connectServerDataList
+
+
                 MMDL = []
                 WDL = wire_pieChartData
                 ODL = os_pieChartData
@@ -354,79 +320,56 @@ def MainData():
         RD = {
             "service_donutChartData": DDLC,
             "usageChartDataList": UCDL,
-            "server_BChartDataList": SBDL,
             "server_LChartDataList": SLCD,
-            "alamCaseDataList": ACDL,
-            "os_donutChartData": ODDLC,
-            "os_chartPartOne": OCPO,
-            "os_chartPartTwo": OCPT,
+            ##########
+            "ResourceDiskChartDataList": RDCDL,
+            "ResourceMemoryChartDataList": RMCDL,
+            ###########
             "vendorChartList": VCDL,
             "alarm_donutChartData": ADDLC,
             "bannerDataList": BNDL,
             "WorldMapDataList": WMCDL,
             "GpuServerDataList": GSDL,
-            "connectIpDataList": CIDL,
-            "connectServerDataList": CSDL,
             "memoryMoreDataList": MMDL,
-            "wire_pieChartData" : WDL,
-            "os_pieChartData" : ODL,
-            "virtual_pieChartData" : VDL
+            "wire_pieChartData": WDL,
+            "os_pieChartData": ODL,
+            "virtual_pieChartData": VDL
         }
     else:
         if ProjectType == 'System':
             if core == 'Tanium':
 
-                BCQ = PDPI('statistics', 'today', 'bar')
-                BChartDataList = CTDF(BCQ, 'bar')
-
                 PCQ = PDPI('statistics', 'today', 'pie')
                 PChartDataList = CTDF(PCQ, 'pie')
-
                 LG = PDPI('statistics', "assetItem", "Group")
-                # print(LG)
                 LINEGROUP = CTDF(LG, 'group')
-
                 LCQ = PDPI('statistics', 'fiveDay', 'asset')
                 LNFD = [LCQ, LINEGROUP]
-                # print(LCQ)
+                # ESAIDL = TDLC(LNFD)
 
-                ESAIDL = TDLC(LNFD)
-                # print(ESAIDL)
-                LChartDataList = TDCD(ESAIDL, "Line")
-                # print(LChartDataList)
+                # LChartDataList = TDCD(ESAIDL, "Line")
+
 
                 DCQ = PDPI('statistics', 'today', 'donut')
                 DChartDataList = CTDF(DCQ, 'donut')
-                # EAYL = IDPI('asset', 'yesterday', '')
-                # print(EAML)
+
 
                 # banner chart
                 BNY = PDPI('statistics', 'yesterday', '')
-                # print(BNY)
                 TSDLY = TDBA(BNY, 'yetoday')
-                # print(TSDLY)
                 BNT = PDPI('statistics', 'today', '')
-                # print(BNT)
                 TSDLT = TDBA(BNT, 'yetoday')
-                # print(TSDLT)
                 SBNDL = ASDC(TSDLY, TSDLT)
-                # print(SBNDL)
                 BNChartDataList = TDCD(SBNDL, 'Banner')
-                # print(BNChartDataList)
 
                 ACDT = PDPI('statistics_list', 'today', 'statistics')
-                # print(ACDT)
 
                 # alarmcase chart
                 RD = ACDF(ACDT, 'alarmTotal')
                 RDCase = {'nodeDataList': RD}
 
                 RDL = ACDF(ACDT, 'alarmTop')
-                # print(RDL)
                 RDLCase = {'nodeDataList': RDL}
-                # print(RDLCase)
-                # TATA = nodeDataListx + nodeDataList
-                # print(RDCase)
 
                 # ram, cpu 사용량 초과 mini donut
                 MDRC = PDPI('statistics', '', 'ram')
@@ -445,8 +388,8 @@ def MainData():
                 RCList = RDDF(ACDT)
                 RACA = {'nodeDataList': RDL + RCList}
 
-                BDL = BChartDataList
-                LDL = LChartDataList
+
+                # LDL = LChartDataList
                 PDL = PChartDataList
                 BNDL = BNChartDataList
                 ALDL = [[]]
@@ -454,7 +397,7 @@ def MainData():
                 TACC = RDCase
                 TACT = RDLCase
                 WMCDL = [WMAC]
-                MDRU = []
+
                 DDLC = DChartDataList
 
             elif core == 'Zabbix':
