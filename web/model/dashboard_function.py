@@ -105,23 +105,32 @@ def MainData():
                     logger.warning('dashboard_function.py - Error Occurred')
                     logger.warning('Error - service_donutChartData')
 
-                    # ------------------------------디스크,메모리 도넛차트 ------------------------
+                    # ------------------------------디스크 사용률 도넛차트 ------------------------
                 try:
-                    ResourceUsagechart = PDPI('statistics', 'today', 'ResourceUsage')
-
-                    for i in range(len(ResourceUsagechart)):
-                        if ResourceUsagechart[i][0].startswith('drive_'):
-                            ResourceDiskChartDataList.append({"name": ResourceUsagechart[i][1], "value": int(ResourceUsagechart[i][2])})
-                            if ResourceMemoryChartDataList == None:
-                                ResourceDiskChartDataList.append({"name": '-', "value": 0})
-                        elif ResourceUsagechart[i][0].startswith('ram_'):
-                            ResourceMemoryChartDataList.append({"name": ResourceUsagechart[i][1], "value": int(ResourceUsagechart[i][2])})
-                            if ResourceMemoryChartDataList == None:
-                                ResourceMemoryChartDataList.append({"name": '-', "value": 0})
+                    RDUC = PDPI('statistics', 'today', 'ResourceDiskUsage')
+                    if not RDUC:
+                        ResourceDiskChartDataList = [{'name': '-', 'value': 0}]
+                    else:
+                         for i in range(len(RDUC)):
+                            ResourceDiskChartDataList.append({"name": RDUC[i][1], "value": int(RDUC[i][2])})
                     logger.info('dashboard_function.py - ResourceDiskChartDataList - Success')
                 except:
                     logger.warning('dashboard_function.py - Error Occurred')
                     logger.warning('Error - ResourceDiskChartDataList')
+                    # ------------------------------- 메모리 사용률 도넛 차트 ------------------------------
+                try:
+                    RRUC = PDPI('statistics', 'today', 'ResourceRamUsage')
+                    if not RRUC:
+                        ResourceMemoryChartDataList = [{'name': '-', 'value': 0}]
+                    else:
+                        for i in range(len(RRUC)):
+                            ResourceMemoryChartDataList.append({"name": RRUC[i][1], "value": int(RRUC[i][2])})
+
+                    logger.info('dashboard_function.py - ResourceRemChartDataList - Success')
+                except:
+                    logger.warning('dashboard_function.py - Error Occurred')
+                    logger.warning('Error - ResourceMemoryChartDataList')
+
 
 
 
