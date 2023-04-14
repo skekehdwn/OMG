@@ -4,7 +4,7 @@
 {% load static %}
 <!-- your_template.html -->
 {% csrf_token %}
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <!-- BEGIN #content -->
@@ -32,7 +32,7 @@
                             <th class="text-center">CPU 95% 초과(%)</th>
                             <th class="text-center">디스크 99% 초과(%)</th>
                             <th class="text-center">30분 이내 오프라인</th>
-                            <th class="text-center">전송</th>
+                            <th class="text-center"></th>
                         </tr>
                     </thead>
                 </table>
@@ -53,28 +53,53 @@
 
 
 <script>
-        function sendEmail(ip,name,ram,cpu,drive,date) {
-        const csrfToken = document.getElementsByName('csrfmiddlewaretoken')[0].value;
-            $.ajax({
-                type: "POST",
-                url: "{% url 'send_email' %}",
-                data: {
-                    csrfmiddlewaretoken: "{{ csrf_token }}",
-                    "ip" : ip,
-                    "name" : name,
-                    "ram" : ram,
-                    "cpu" : cpu,
-                    "drive" : drive,
-                    "date" : date,
-                },
-                success: function (response) {
-                    if (response.status === 'success') {
-                        alert('이메일이 성공적으로 전송되었습니다.');
-                    } else {
-                        alert('이메일 전송에 실패했습니다.');
+function sendAction(element, ip, name, ram ,cpu, drive, date) {
+    if (element.value === "mail") {
+        if (confirm('이메일을 전송하시겠습니까?')) {
+            const csrfToken = document.getElementsByName('csrfmiddlewaretoken')[0].value;
+                $.ajax({
+                    type: "POST",
+                    url: "{% url 'send_email' %}",
+                    data: {
+                        csrfmiddlewaretoken: "{{ csrf_token }}",
+                        "ip" : ip,
+                        "name" : name,
+                        "ram" : ram,
+                        "cpu" : cpu,
+                        "drive" : drive,
+                        "date" : date,
+                    },
+
+                    success: function (response) {
+                        if (response.status === 'success') {
+                            alert('이메일이 성공적으로 전송되었습니다.');
+                        } else {
+                            alert('이메일 전송에 실패했습니다.');
+                        }
                     }
-                }
-            });
-        }
-    </script>
+                });
+            };
+        } else if (element.value === "reboot"){
+            if (confirm("정말로 종료하시겠습니까?")){
+                const csrfToken = document.getElementsByName('csrfmiddlewaretoken')[0].value;
+                    $.ajax({
+                        type: "POST"
+                        url: "{% url 'send_reboot' %}",
+                        data: {
+                            csrfmiddlewaretoken: "{{ csrf_token }}",
+                            "name' : name,
+                        },
+                        success: function(response) {
+                            if (response.status === 'success') {
+                                alert('리부트를 시작하겠습니다.');
+                            } else {
+                                alert('요청에 실패했습니다.'});
+                            }
+                        }
+                    });
+                };
+            };
+        };
+
+</script>
 {% endblock %}

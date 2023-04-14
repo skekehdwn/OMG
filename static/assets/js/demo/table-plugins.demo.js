@@ -668,7 +668,7 @@ var handleRenderDashboardPopupTableData = function () {
             {targets: 3, width: "12%", className: 'text-center'},
             {targets: 4, width: "12%", className: 'text-center'},
             {targets: 5, width: "12%", className: 'text-center'},
-            {targets: 6, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary" onchange="confirm(this.options[this.selectedIndex].value)"><option value="Action">Action</option><option value="메일을 보내시겠습니까?">Mail</option><option value="알람을 보내시겠습니까?">Alarm</option><option value="정말로 리부팅을 실행시키겠습니까?">Reboot</option></select>'}},
+            {targets: 6, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary" onchange="confirm(this.options[this.selectedIndex].value)"><option value="" selected disabled>Action</option><option value="메일을 보내시겠습니까?">Mail</option><option value="알람을 보내시겠습니까?">Alarm</option><option value="정말로 리부팅을 실행시키겠습니까?">Reboot</option></select>'}},
 		],
 		language: {
 			"decimal": "",
@@ -758,7 +758,7 @@ var CpuhandleRenderDashboardPopupTableData = function () {
             {targets: 2, width: "34%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
             {targets: 3, width: "13%", className: 'text-center'},
             {targets: 4, width: "9%", className: 'text-center'},
-            {targets: 5, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary" onchange="confirm(this.options[this.selectedIndex].value)"><option value="Action">Action</option><option value="메일을 보내시겠습니까?">Mail</option><option value="알람을 보내시겠습니까?">Alarm</option><option value="정말로 리부팅을 실행시키겠습니까?">Reboot</option></select>'}},
+            {targets: 5, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary" onchange="confirm(this.options[this.selectedIndex].value)"><option value="" selected disabled>Action</option><option value="메일을 보내시겠습니까?">Mail</option><option value="알람을 보내시겠습니까?">Alarm</option><option value="정말로 리부팅을 실행시키겠습니까?">Reboot</option></select>'}},
 		],
 		language: {
 			"decimal": "",
@@ -848,7 +848,7 @@ var DiskhandleRenderDashboardPopupTableData = function () {
             {targets: 3, width: "12%", className: 'text-center'},
             {targets: 4, width: "12%", className: 'text-center'},
             {targets: 5, width: "12%", className: 'text-center'},
-            {targets: 6, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary" onchange="confirm(this.options[this.selectedIndex].value)"><option value="Action">Action</option><option value="메일을 보내시겠습니까?">Mail</option><option value="알람을 보내시겠습니까?">Alarm</option><option value="정말로 리부팅을 실행시키겠습니까?">Reboot</option></select>'}},
+            {targets: 6, width: "14%", render: function(data, type, row) {return '<select class="btn btn-outline-primary" onchange="confirm(this.options[this.selectedIndex].value)"><option value="" selected disabled>Action</option><option value="메일을 보내시겠습니까?">Mail</option><option value="알람을 보내시겠습니까?">Alarm</option><option value="정말로 리부팅을 실행시키겠습니까?">Reboot</option></select>'}},
 		],
 		language: {
 			"decimal": "",
@@ -936,15 +936,19 @@ var alarmCasehandleRenderDashboardPopupTableData = function () {
             orderable: false}
 		],
 		columnDefs: [
-            {targets: 0, width: "3%", className: 'text-center'},
-            {targets: 1, width: "14%", className: 'text-center text-truncate', render: function(data, type, row) {return '<span title="'+row.ip+'" data-toggle="tooltip">'+data+'</span>'}},
-            {targets: 2, width: "25%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
+            {targets: 0, width: "4%", className: 'text-center'},
+            {targets: 1, width: "13%", className: 'text-center text-truncate', render: function(data, type, row) {return '<span title="'+row.ip+'" data-toggle="tooltip">'+data+'</span>'}},
+            {targets: 2, width: "20%", className: 'text-start text-truncate', render: function(data, type, row) {return '<span title="'+row.name+'" data-toggle="tooltip">'+data+'</span>'}},
             {targets: 3, width: "12%", className: 'text-center'},
-            {targets: 4, width: "12%", className: 'text-center'},
+            {targets: 4, width: "11%", className: 'text-center'},
             {targets: 5, width: "12%", className: 'text-center'},
-            {targets: 6, width: "12%", className: 'text-center'},
-            {targets: 7, width: "5%", render: function(data, type, row) {
-            return `<button class="btn btn-outline-primary" onclick="sendEmail(\'`+row.ip+`\',\'`+row.name+`\',\'`+row.ramusage+`\',\'`+row.cpuusage+`\',\'`+row.driveusage+`\',\'`+row.date+`\')">전송</button>`}},
+            {targets: 6, width: "11%", className: 'text-center'},
+            {targets: 7, width: "11%", render: function(data, type, row) {
+            return `<select class="btn btn-outline-primary" onchange="sendAction(this,\'`+row.ip+`\',\'`+row.name+`\',\'`+row.ramusage+`\',\'`+row.cpuusage+`\',\'`+row.driveusage+`\',\'`+row.date+`\')">
+                    <option value=""selected disabled>action</option>
+                    <option value="mail">mail</option>
+                    <option value="reboot">reboot</option>
+                    </select>`}},
 		],
 		language: {
 			"decimal": "",
