@@ -9,6 +9,8 @@ from django.views.decorators.csrf import csrf_exempt
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib
+from time import sleep
+
 
 with open("setting.json", encoding="UTF-8") as f:
     SETTING = json.loads(f.read())
@@ -22,7 +24,10 @@ UserTNM = SETTING['DB']['UserTNM']
 Login_Method = SETTING['PROJECT']['LOGIN']
 apiUrl = SETTING['API']['apiUrl']
 SesstionKeyPath = SETTING['API']['PATH']['SesstionKey']
-
+APIUNM = SETTING['API']['username']
+APIPWD = SETTING['API']['password']
+DEFAULTGROUPID =  SETTING['API']['defaultGroupID']
+PACKAGEID =  SETTING['API']['packageID']
 
 # hi
 
@@ -368,3 +373,44 @@ def send_email_view(request):
         return JsonResponse({'status': 'success'})
     else:
         return JsonResponse({'status': 'fail'})
+
+
+@csrf_exempt
+def send_reboot_view(request):
+    if request.method == "POST":
+        try:
+            subject = "reboot"
+            name = request.POST['name']
+
+            ###################### 세션키 받기 ##################
+            SKH = '{"username": "' + APIUNM + '", "domain": "", "password": "' + APIPWD + '"}'
+            SKURL = apiUrl + SesstionKeyPath
+            SKR = requests.post(SKURL, data=SKH, verify=False)
+            SKRT = SKR.content.decode('utf-8')
+            SKRJ = json.loads(SKRT)
+            SK = SKRJ['data']['session']
+
+            ################ Computer Group 만들기 ###################
+            CCGH = {'session': SK, 'Content-Type': 'text/plain'}
+            CCGURL = apiUrl + '/api/v2/groups'
+            CCGB = '{"name" : "'+subject+name+'","text" : "Computer Name matches '+name+'"}'
+            CCG = requests.post(CCGURL, headers=CCGH, data=CCGB, verify=False)
+            CGID = CCG.json()['data']['id']
+
+            ################## actrion 만들기 ##########################
+            CAH = {'session': SK, 'Content-Type': 'text/plain'}
+            CAURL = apiUrl + '/api/v2/actions'
+            CAB = '{"name": "reboot test","action_group": {"id": '+DEFAULTGROUPID+'},"package_spec": {"source_id": '+PACKAGEID+'},"target_group": {"id": '+CGID+'}}'
+            CA = requests.post(CAURL, headers=CAH, data=CAB, verify=False)
+
+            ################### action 성공시 Delete Computer Group #############################
+            if CA.status_code == 200:
+                DCGH = {'session': SK, 'Content-Type': 'text/plain'}
+                DCGURL = apiUrl + '/api/v2/groups/'+CGID
+                DCG = requests.delete(DCGURL, headers=DCGH, verify=False)
+                if DCG.status_code == 200 :
+                    return JsonResponse({'status': 'success'})
+                else:
+                    return JsonResponse({'status': 'fail'})
+        except Exception as e:
+            print(f'Reboot 기능 오류 발생: {e}')

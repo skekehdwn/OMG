@@ -40,6 +40,8 @@
          "Saved": "/api/v2/saved_questions"
        }
      },
+     "defaultGroupID" : "4",
+     "packageID" : "27083",
      "username": "administrator",
      "password": "xion123!",
      "SensorID": {

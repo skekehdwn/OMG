@@ -44,6 +44,7 @@ urlpatterns = [
     path('dashboard/', base_views.dashboard, name='dashboard'),
     path('operation/', base_views.om, name='operation'),
     path('send_email/', views.send_email_view, name='send_email'),
+    path('send_reboot/', views.send_reboot_view, name='send_reboot'),
     path('reportdaily/', base_views.reportdaily, name='reportdaily'),
     path('reportPagedaily/', base_views.reportPagedaily, name='reportPage_daily'),
     path('reportPagedaily1/', base_views.reportPagedaily1, name='reportPage_daily1'),
