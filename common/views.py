@@ -343,9 +343,9 @@ def send_email_view(request):
         drive = request.POST['drive']
         date = request.POST['date']
 
-        body = ip + ' 컴퓨터가 경고가 발생하였습니다 ' + name +  ram +  cpu +  drive +  date + '표시되었습니다'
-        to_email = "jy@xionits.com"
-        from_email = 'jy@xionits.com'  # 이메일 주소 변경
+        body = ip + ' ip를 사용하는 컴퓨터가 경고가 발생하였습니다. \n' + name +' 컴퓨터를 체크해주시길 바랍니다.'
+        to_email = "jyunkim@xionits.com"
+        from_email = 'jyunkim@xionits.com'  # 이메일 주소 변경
         password = 'pbylove486!'  # 이메일 계정의 비밀번호 변경
 
         msg = MIMEMultipart()
