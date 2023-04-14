@@ -87,7 +87,12 @@ function sendAction(element, ip, name, ram ,cpu, drive, date) {
                         url: "{% url 'send_reboot' %}",
                         data: {
                             csrfmiddlewaretoken: "{{ csrf_token }}",
-                            "name' : name,
+                            "ip" : ip,
+                            "name" : name,
+                            "ram" : ram,
+                            "cpu" : cpu,
+                            "drive" : drive,
+                            "date" : date,
                         },
                         success: function(response) {
                             if (response.status === 'success') {
