@@ -380,8 +380,9 @@ def send_reboot_view(request):
     if request.method == "POST":
         try:
             subject = "reboot"
-            name = request.POST['name']
-
+            #name = request.POST['name']
+            print(request.POST['name'])
+            name= 'DESKTOP-H58JR1U'
             ###################### 세션키 받기 ##################
             SKH = '{"username": "' + APIUNM + '", "domain": "", "password": "' + APIPWD + '"}'
             SKURL = apiUrl + SesstionKeyPath
@@ -389,19 +390,23 @@ def send_reboot_view(request):
             SKRT = SKR.content.decode('utf-8')
             SKRJ = json.loads(SKRT)
             SK = SKRJ['data']['session']
+            print("SessionKey 불러오기 성공")
 
             ################ Computer Group 만들기 ###################
             CCGH = {'session': SK, 'Content-Type': 'text/plain'}
             CCGURL = apiUrl + '/api/v2/groups'
             CCGB = '{"name" : "'+subject+name+'","text" : "Computer Name matches '+name+'"}'
             CCG = requests.post(CCGURL, headers=CCGH, data=CCGB, verify=False)
-            CGID = CCG.json()['data']['id']
+            CGID = str(CCG.json()['data']['id'])
+            print("Computer Group 만들기 성공")
 
             ################## actrion 만들기 ##########################
             CAH = {'session': SK, 'Content-Type': 'text/plain'}
             CAURL = apiUrl + '/api/v2/actions'
             CAB = '{"name": "reboot test","action_group": {"id": '+DEFAULTGROUPID+'},"package_spec": {"source_id": '+PACKAGEID+'},"target_group": {"id": '+CGID+'}}'
             CA = requests.post(CAURL, headers=CAH, data=CAB, verify=False)
+            sleep(5)
+            print("Action 성공")
 
             ################### action 성공시 Delete Computer Group #############################
             if CA.status_code == 200:
@@ -409,8 +414,11 @@ def send_reboot_view(request):
                 DCGURL = apiUrl + '/api/v2/groups/'+CGID
                 DCG = requests.delete(DCGURL, headers=DCGH, verify=False)
                 if DCG.status_code == 200 :
+                    print("Computer Group 지우기 성공")
                     return JsonResponse({'status': 'success'})
                 else:
                     return JsonResponse({'status': 'fail'})
+            else :
+                return JsonResponse({'status': 'fail'})
         except Exception as e:
             print(f'Reboot 기능 오류 발생: {e}')
