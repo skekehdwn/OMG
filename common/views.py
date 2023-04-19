@@ -382,7 +382,7 @@ def send_reboot_view(request):
             subject = "reboot"
             #name = request.POST['name']
             print(request.POST['name'])
-            name= 'DESKTOP-H58JR1U'
+            name = 'jh-test'
             ###################### 세션키 받기 ##################
             SKH = '{"username": "' + APIUNM + '", "domain": "", "password": "' + APIPWD + '"}'
             SKURL = apiUrl + SesstionKeyPath
