@@ -945,9 +945,12 @@ var alarmCasehandleRenderDashboardPopupTableData = function () {
             {targets: 6, width: "11%", className: 'text-center'},
             {targets: 7, width: "11%", render: function(data, type, row) {
             return `<select class="btn btn-outline-primary" onchange="sendAction(this,\'`+row.ip+`\',\'`+row.name+`\',\'`+row.ramusage+`\',\'`+row.cpuusage+`\',\'`+row.driveusage+`\',\'`+row.date+`\')">
-                    <option value="">action</option>
-                    <option value="mail">mail</option>
-                    <option value="reboot">reboot</option>
+                    <option value="">Action</option>
+                    <option value="mail">Mail</option>
+                    <option value="">Alarm</option>
+                    <option value="">Off Process</option>
+                    <option value="">Service Restart</option>
+                    <option value="reboot">Reboot</option>
                     </select>`}},
 		],
 		language: {

@@ -209,11 +209,18 @@
                         <!-- BEGIN title -->
                         <button type="button" class="btn btn-outline-link btn-sm btn-moreInfo memoryCpuDisk-moreInfo"><i class="fas fa-ellipsis-h"></i>
                         </button>
-                        <div class="btn-group mb-3">
-                            <button type="button" id="btn-memory" class="mcdBtn btn btn-outline-warning btn-sm active">메모리</button>
-                            <button type="button" id="btn-cpu" class="mcdBtn btn btn-outline-warning btn-sm w-57px">CPU</button>
-                            <button type="button" id="btn-disk" class="mcdBtn btn btn btn-outline-warning btn-sm">디스크</button>
-                        </div>
+                            <div class="btn-group">
+                                <div class="btn-group mb-3">
+                                    <button type="button" id="btn-memory" class="mcdBtn btn btn-outline-warning btn-sm active">메모리</button>
+                                    <button type="button" id="btn-cpu" class="mcdBtn btn btn-outline-warning btn-sm w-57px">CPU</button>
+                                    <button type="button" id="btn-disk" class="mcdBtn btn btn btn-outline-warning btn-sm">디스크</button>
+                                </div>
+                                <div id="mcdDiv">
+                                    <div class="MemoryCharts">안전자산 비율 : {{chartData.memoryNormalDataList}}</div>
+                                    <div class="CPUCharts" style="display:none;">안전자산 비율 : {{chartData.cpuNormalDataList}}</div>
+                                    <div class="DiskCharts" style="display:none;">안전자산 비율 : {{chartData.diskNormalDataList}}</div>
+                                </div>
+                            </div>
                         <!-- END title -->
                         <div class="d-flex justify-content-center align-items-center" id="mcdDiv">
                             <!-- BEGIN chart -->

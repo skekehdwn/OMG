@@ -818,6 +818,45 @@ def plug_in(table, day, type):
                             statistics_collection_date >= '""" + fiveMinutesAgo + """'
 
                     """
+                    # ==============================disk memory cpu noraml 데이터====================================================
+
+                elif type == 'cpuNormal':
+                    query = """
+                        select
+                            ms.classification, ms.item, ms.item_count
+                        from
+                            minutely_statistics ms 
+                        where
+                            classification = 'cpu_usage_size_exceeded'
+                        and
+                            statistics_collection_date >= '""" + fiveMinutesAgo + """'
+                    """
+                elif type == 'memoryNormal':
+                    query = """
+                            select
+                                ms.classification, ms.item, ms.item_count
+                            from
+                                minutely_statistics ms 
+                            where
+                                classification = 'ram_usage_size_exceeded'
+                            and
+                                statistics_collection_date >= '""" + fiveMinutesAgo + """'
+                        """
+                elif type == 'diskNormal':
+                    query = """
+                            select
+                                ms.classification, ms.item, ms.item_count
+                            from
+                                minutely_statistics ms 
+                            where
+                                classification = 'drive_usage_size_exceeded'
+                            and
+                                statistics_collection_date >= '""" + fiveMinutesAgo + """'
+                        """
+
+
+
+
                     # ----------------------Main dashboard 디스크 메모리 도넛차트용 데이터-------------------------------
                 elif type == 'ResourceRamUsage':
                     query = """

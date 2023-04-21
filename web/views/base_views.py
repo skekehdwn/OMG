@@ -123,11 +123,19 @@ def om(request):
             GpuServerDataList = DCDL["GpuServerDataList"]
             connectIpDataList = DCDL["connectIpDataList"]
             connectServerDataList = DCDL["connectServerDataList"]
+            cpuNormalDataList = DCDL["cpuNormalDataList"]
+            memoryNormalDataList = DCDL["memoryNormalDataList"]
+            diskNormalDataList = DCDL["diskNormalDataList"]
             chartData = {'DiskChartDataList': DiskChartDataList, 'donutChartDataList': service_donutChartData, 'MemoryChartDataList': MemoryChartDataList, 'CpuChartDataList': CpuChartDataList,
                         'os_donutChartData': os_donutChartData, 'server_barChartDataList': server_barChartData, "server_LChartDataList": server_LChartDataList, "alamCaseDataList": alamCaseDataList,
                         "os_chartPartOne": os_chartPartOne, "os_chartPartTwo": os_chartPartTwo, "vendorChartList": vendorChartList, "alarm_donutChartData": alarm_donutChartData,
                         "bannerDataList": bannerData, "WorldMapDataList": WorldMapData,
-                        "GpuServerDataList": GpuServerDataList, "connectIpDataList": connectIpDataList, "connectServerDataList": connectServerDataList}
+                        "GpuServerDataList": GpuServerDataList, "connectIpDataList": connectIpDataList, "connectServerDataList": connectServerDataList,
+                        "diskNormalDataList": diskNormalDataList,
+                        "memoryNormalDataList": memoryNormalDataList,
+                        "cpuNormalDataList": cpuNormalDataList,
+                         }
+
 
             returnData = {'menuList': menuListDB, 'chartData': chartData, 'Customer': Customer, 'MapUse': MapUse, 'Login_Method': Login_Method}
         else:

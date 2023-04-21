@@ -1634,7 +1634,7 @@ var handleRenderChartNC2 = function () {
             data: [20,20,20,15,18,15,12,20,15,15]
         }],
         xaxis: {
-          categories: ['28','29','30','31','1','2','3','4','5','6'],
+          categories: ['11','12','13','14','15','16','17','18','19','20'],
           labels: {
             show: true,
           },
@@ -1713,7 +1713,7 @@ var handleRenderChartNC2 = function () {
             data: [9,20,13,15,8,15,12,11,15,20]
         }],
         xaxis: {
-          categories: ['28','29','30','31','1','2','3','4','5','6'],
+          categories: ['11','12','13','14','15','16','17','18','19','20'],
           labels: {
             show: true,
           },

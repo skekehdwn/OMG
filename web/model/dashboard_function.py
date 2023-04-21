@@ -442,6 +442,9 @@ def DashboardData():
                 os_donutChartData = []
                 alarm_donutChartData = []
                 vendorChartList = []
+                CNDL = []
+                MNDL = []
+                DNDL = []
 
                 # NC 대역벌 서버수량 chart
                 try:
@@ -467,6 +470,61 @@ def DashboardData():
                 except:
                     logger.warning('dashboard_function.py - Error Occurred')
                     logger.warning('Error - service_donutChartData')
+
+                # cpu normal
+                try:
+                    CND = PDPI('statistics', 'today', 'cpuNormal')
+                    TCND = []
+                    for i in range(len(CND)):
+                        TCND.append(int(CND[i][2]))
+                        if CND[i][1].startswith('Safety'):
+                            CNDL.append(int(CND[i][2]))
+
+                    CNDL.append(sum(TCND))
+
+                    logger.info('dashboard_function.py - CNDL - Success')
+                except:
+                    logger.warning('dashboard_function.py - Error Occurred')
+                    logger.warning('Error - CNDL')
+
+                # memory normal
+                try:
+                    MND = PDPI('statistics', 'today', 'memoryNormal')
+                    TMND = []
+                    for i in range(len(MND)):
+                        TMND.append(int(MND[i][2]))
+                        if MND[i][1].startswith('Safety'):
+                            MNDL.append(int(MND[i][2]))
+
+                    MNDL.append(sum(TMND))
+
+                    logger.info('dashboard_function.py - MNDL - Success')
+                except:
+                    logger.warning('dashboard_function.py - Error Occurred')
+                    logger.warning('Error - MNDL')
+
+                # disk nomal
+                try:
+                    DND = PDPI('statistics', 'today', 'diskNormal')
+                    TDND = []
+                    for i in range(len(DND)):
+                        TDND.append(int(DND[i][2]))
+                        if DND[i][1].startswith('Safety'):
+                            DNDL.append(int(DND[i][2]))
+
+                    DNDL.append(sum(TDND))
+
+                    logger.info('dashboard_function.py - DNDL - Success')
+                except:
+                    logger.warning('dashboard_function.py - Error Occurred')
+                    logger.warning('Error - DNDL')
+
+                # 데이터 연산
+                MNDLF = str(round((MNDL[0] / MNDL[1]) * 100)) + '%'
+                DNDLF = str(round((DNDL[0] / DNDL[1]) * 100)) + '%'
+                CNDLF = str(round((CNDL[0] / CNDL[1]) * 100)) + '%'
+
+
 
                 #디스크, cpu, ram 95%, 75%, 60% 사용량 차트
                 try:
@@ -731,7 +789,11 @@ def DashboardData():
             "GpuServerDataList": GSDL,
             "connectIpDataList": CIDL,
             "connectServerDataList": CSDL,
-            "memoryMoreDataList": MMDL
+            "memoryMoreDataList": MMDL,
+            "cpuNormalDataList": CNDLF,
+            "memoryNormalDataList": MNDLF,
+            "diskNormalDataList": DNDLF,
+
         }
     else :
         if ProjectType == 'System':
