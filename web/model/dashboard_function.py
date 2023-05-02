@@ -475,11 +475,15 @@ def DashboardData():
                 try:
                     CND = PDPI('statistics', 'today', 'cpuNormal')
                     TCND = []
+                    NCD = []
                     for i in range(len(CND)):
                         TCND.append(int(CND[i][2]))
                         if CND[i][1].startswith('Safety'):
-                            CNDL.append(int(CND[i][2]))
+                            NCD.append(int(CND[i][2]))
+                        elif CND[i][1].startswith('unconfirmed'):
+                            NCD.append(int(CND[i][2]))
 
+                    CNDL.append(sum(NCD))
                     CNDL.append(sum(TCND))
 
                     logger.info('dashboard_function.py - CNDL - Success')
@@ -491,11 +495,14 @@ def DashboardData():
                 try:
                     MND = PDPI('statistics', 'today', 'memoryNormal')
                     TMND = []
+                    NMD = []
                     for i in range(len(MND)):
                         TMND.append(int(MND[i][2]))
                         if MND[i][1].startswith('Safety'):
-                            MNDL.append(int(MND[i][2]))
-
+                            NMD.append(int(MND[i][2]))
+                        elif MND[i][1].startswith('unconfirmed'):
+                            NMD.append(int(MND[i][2]))
+                    MNDL.append(sum(NMD))
                     MNDL.append(sum(TMND))
 
                     logger.info('dashboard_function.py - MNDL - Success')
@@ -503,15 +510,18 @@ def DashboardData():
                     logger.warning('dashboard_function.py - Error Occurred')
                     logger.warning('Error - MNDL')
 
-                # disk nomal
+                # disk normal
                 try:
                     DND = PDPI('statistics', 'today', 'diskNormal')
                     TDND = []
+                    NDD = []
                     for i in range(len(DND)):
                         TDND.append(int(DND[i][2]))
                         if DND[i][1].startswith('Safety'):
-                            DNDL.append(int(DND[i][2]))
-
+                            NDD.append(int(DND[i][2]))
+                        elif DND[i][1].startswith('unconfirmed'):
+                            NDD.append(int(DND[i][2]))
+                    DNDL.append(sum(NDD))
                     DNDL.append(sum(TDND))
 
                     logger.info('dashboard_function.py - DNDL - Success')
